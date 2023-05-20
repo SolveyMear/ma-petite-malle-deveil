@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ma petite malle d'éveil</title>
-        <link rel="icon" href="images/logo-mpme.png">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li class="logo-header">
+						<img src="./images/logo-mpme2.png" alt="Ma Petite Malle d'Eveil" />
+						<!-- <h2>MaPetite Malle d'Eveil</h2> -->
+					</li>
+					<li class="tab">Accueil</li>
+					<li class="tab">A Propos</li>
+					<li class="tab">Mes Produits</li>
+					<!-- <li class="tab">Particuliers</li>
+					<li class="tab">Professionnels</li> -->
+				</ul>
+			</nav>
+		</header>
+		<section class="main-img">
+			<div class="container-text">
+				<h1>
+					Outils d'éveil sensoriels et inclusifs, respectueux de
+					l'environnement.
+				</h1>
+				<div class="primary-button">Je découvre</div>
+			</div>
+			<div class="container-img"></div>
+		</section>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-        <!-- For the footer logos -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Jost&family=Port+Lligat+Slab&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        
-    </head>
+		<section class="push-section">
+			<div class="push">
+				<img src="images/recycling.webp" alt="matériaux renouvelables" />
+				<span>Issus de ressources renouvelables.</span>
+			</div>
+			<div class="push">
+				<img src="images/carte.png" alt="matériaux français" />
+				<span>Des matériaux 100% français.</span>
+			</div>
+			<div class="push">
+				<img src="images/recycling.webp" alt="matériaux renouvelables" />
+				<span> Issus de ressources renouvelables.</span>
+			</div>
+		</section>
 
-    
-    <body>
-        <header>
-            <nav>
-       <!----------------- HEADER BANNER AND MENU--------------------->
-                <div class="header-banner">
+		<section class="products">
+			<h2>Les Bouteilles Sensorielles</h2>
+			<div class="container">
+				<div class="product">
+					<div class="img">
+						<img src="images/bouteille-bleue.jpg" alt="Bouteille thème marin" />
+					</div>
+						<p>Bouteille thème marin</p>
+						<p>16,90€</p>
+					
+					<div class="primary-button">J'achète</div>
+				</div>
+				<div class="product">
+					<div class="img">
+						<img
+							src="images/bouteille-rouge.jpg"
+							alt="Bouteille thème bouteille-rouge" />
+					</div>
+					<p>Bouteille thème volcan</p>
+					<p>16,90€</p>
+					<div class="primary-button">J'achète</div>
+				</div>
+				<div class="product">
+					<div class="img">
+						<img src="images/bouteille-hiver.jpg" alt="Bouteille thème hiver" />
+					</div>
+					<p>Bouteille thème hiver</p>
+					<p>16,90€</p>
+					<div class="primary-button">J'achète</div>
+				</div>
+			</div>
+		</section>
 
-                    <div class="logo">
-                        <img src="images/logo-mpme.png" alt="logo">
-                    </div>
-                    
-                    <div class="header-menu">
-                        <em class="site-intro">
-                            Des articles d'éveil pour tes enfants qui respectent l'environnement? 
-                            <a href="" class="shop-link">Direction la boutique</a><br>
-                            <span><strong>Made in France à la main avec amour</strong></span>
-                        </em>
-                                            
-                        <ul class="menu hide">
-                            <li class="accueil">Accueil</li>
-                            <!-- <li class="presentation">Présentation</li> -->
-                            <!-- <li class="bottles">Les bouteilles</li> -->
-                            <!-- <li class="kits">Kits</li> -->
-                            <!-- <li class="printables">Les imprimables</li> -->
-                            <li class="valeurs">Valeurs & Engagement</li>
-                            <li>La Boutique</li>
-                        </ul>
-    
-                    </div>
-
-                    <div class="burger" id="burger-button">
-                        <div class="burger-icon"></div>
-                        <div class="burger-icon"></div>
-                        <div class="burger-icon"></div>
-                    </div>
-
-                    <div class="connect-button">Me connecter</div>
-                    
-                </div>
-                
-                
-
-            </nav>
-        </header>
-
-        <section>
-
-        </section>
-
-        <footer>
-            <!-- <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a> -->
-
-
-        </footer>
-
-    </body>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

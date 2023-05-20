@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+body {
+	header {
+		//logo absolute par rapport au header, taille dans une variable et border de debugage aussi
+		height: $header-height;
+		display: flex;
+		justify-content: center;
+		nav {
+			height: 100%;
+			width: 90%;
+			position: relative;
+			ul {
+				//vaut mieux mettre un padding là plutot que de marges
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				list-style-type: none;
+				padding: 1%;
+				height: 100%;
+
+				li {
+					//& = on cible avec le  QUE le logo-header et QUE les tabs
+					&.logo-header {
+						display: flex;
+						margin-right: auto;
+						position: absolute;
+						top: 25px;
+						left: 30px;
+						font-family: $secondary-font;
+						img {
+							width: 180px;
+						}
+						h2 {
+							font-weight: normal;
+							margin-left: 0.3em;
+						}
+					}
+					//on cible tous les li
+					font-family: $primary-font;
+					font-size: 1em;
+
+					&.tab {
+						cursor: pointer;
+						margin: 0 1%;
+						margin-right: 3%;
+					}
+					//marge à droite
+					&:last-child {
+						margin-right: 6%;
+					}
+				}
+			}
+		}
+	}
+}

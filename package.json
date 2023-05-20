@@ -1,0 +1,19 @@
+{
+	"name": "starting-kit",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"esbuild-wasm": "latest",
+		"sass": "^1.62.1",
+		"vite": "^4.3.8"
+	},
+	"overrides": {
+		"esbuild": "npm:esbuild-wasm@latest"
+	}
+}

@@ -1,0 +1,38 @@
+@import "./variables.scss";
+
+body {
+	section.main-img {
+		display: flex;
+		margin: auto;
+		height: calc(100vh - #{$header-height});
+		background-color: $beige;
+		width: 90%;
+		.container-text {
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 7em 7em 7em 10em;
+		}
+		h1 {
+			color: $dark-grey;
+			font-family: $tertiary-font;
+			font-size: 2.5em;
+			font-weight: 500;
+		}
+		.primary-button {
+			margin-top: 6%;
+			margin-right: auto;
+		}
+		.container-img {
+			display: flex;
+			height: 100%;
+			background-image: url("./images/img-main3.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 50%;
+		}
+	}
+}

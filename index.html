@@ -7,21 +7,8 @@
 		<title>Vite App</title>
 	</head>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li class="logo-header">
-						<img src="./images/logo-mpme2.png" alt="Ma Petite Malle d'Eveil" />
-						<!-- <h2>MaPetite Malle d'Eveil</h2> -->
-					</li>
-					<li class="tab">Accueil</li>
-					<li class="tab">A Propos</li>
-					<li class="tab">Mes Produits</li>
-					<!-- <li class="tab">Particuliers</li>
-					<li class="tab">Professionnels</li> -->
-				</ul>
-			</nav>
-		</header>
+		{{>header}}
+
 		<section class="main-img">
 			<div class="container-text">
 				<h1>
@@ -52,31 +39,61 @@
 			<h2>Les Bouteilles Sensorielles</h2>
 			<div class="container">
 				<div class="product">
-					<div class="img">
+					<div class="product-img">
 						<img src="images/bouteille-bleue.jpg" alt="Bouteille thème marin" />
 					</div>
-						<p>Bouteille thème marin</p>
-						<p>16,90€</p>
-					
+					<p class="product-text">Bouteille thème marin</p>
+					<p class="product-price-homepage">16,90€</p>
 					<div class="primary-button">J'achète</div>
 				</div>
+
 				<div class="product">
 					<div class="img">
 						<img
 							src="images/bouteille-rouge.jpg"
 							alt="Bouteille thème bouteille-rouge" />
 					</div>
-					<p>Bouteille thème volcan</p>
-					<p>16,90€</p>
+					<p class="product-text">Bouteille thème volcan</p>
+					<p class="product-price-homepage">16,90€</p>
 					<div class="primary-button">J'achète</div>
 				</div>
+
 				<div class="product">
 					<div class="img">
 						<img src="images/bouteille-hiver.jpg" alt="Bouteille thème hiver" />
 					</div>
-					<p>Bouteille thème hiver</p>
-					<p>16,90€</p>
+					<p class="product-text">Bouteille thème hiver</p>
+					<p class="product-price-homepage">16,90€</p>
 					<div class="primary-button">J'achète</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="customer-reviews">
+			<div class="container">
+				<div class="review-card">
+					<div class="review-stars">
+						<img src="images/five-star-review.png" alt="review stars" />
+					</div>
+					<div class="review-text">
+						<p>Les bouteilles sont méga coolos!</p>
+					</div>
+				</div>
+				<div class="review-card">
+					<div class="review-stars">
+						<img src="images/five-star-review.png" alt="review stars" />
+					</div>
+					<div class="review-text">
+						<p>J'ai jamais vu une bouteille aussi coolos!</p>
+					</div>
+				</div>
+				<div class="review-card">
+					<div class="review-stars">
+						<img src="images/five-star-review.png" alt="review stars" />
+					</div>
+					<div class="review-text">
+						<p>Je vous ai dit que les bouteilles étaient coolos?</p>
+					</div>
 				</div>
 			</div>
 		</section>

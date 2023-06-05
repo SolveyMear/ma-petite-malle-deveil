@@ -1,61 +1,66 @@
 @import "./variables.scss";
 
-body{
-      section.products {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            //background-color: $beige;
-            width: 90%;
-            margin: auto;
-            h2{
-                  padding: 4%;
-                  font-family: $tertiary-font;
-                  font-size: 1.7em;
+body {
+	section.products {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		//background-color: $beige;
+		width: 90%;
+		margin: 5% auto;
 
-            }
-            .container {
-                  //ça fonctionne pas mais là je suis trop fatiguée
-                  display: flex;
-                  justify-content: center;
-                  width: 90%;
-                  gap: 2em;
-                  margin: 2%;
-                  //border: $border;
-            }
-            .product {
-                  display: flex;
-                  flex-direction: column;
-                  width: 30%;
-                  //border: $border1;
-                  align-items: center;
-                  .img {
-                        display: flex;
-                        justify-content: center;
-                        height:300px;
-                  }
-                  img {
-                        //max-width: 100%;
-                        height: 100%;
-                        // margin: 1%;
-                        // border: $border2;
-                        //height: fit-content;
-                        border-radius: 2px;
+		h2 {
+			margin: 4%;
+			font-family: $tertiary-font;
+			font-size: 1.7em;
+			border-bottom: 1px solid $dark-grey;
+		}
 
-                  }
-                  p{
-                        padding-top: 3%;
-                        font-family: $tertiary-font;
-                        font-size: 1em;
-                        font-weight: 300;
-                        text-align: center;
-                  }
-                  .primary-button{
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-end;
-                        margin: 4%;
-                  }
-            }
-      }
+		.container {
+			//ça fonctionne pas mais là je suis trop fatiguée
+			display: flex;
+			justify-content: center;
+			width: 90%;
+			gap: 2em;
+			margin: 2%;
+			//border: $border;
+		}
+		.product {
+			display: flex;
+			flex-direction: column;
+			width: 30%;
+			//border: $border1;
+			align-items: center;
+
+			//On donne une taille de 300px au containeur de l'image et lui met une height de 100%
+			.product-img {
+				display: flex;
+				justify-content: center;
+				height: 300px;
+			}
+
+			img {
+				//max-width: 100%;
+				height: 100%;
+				// margin: 1%;
+				// border: $border2;
+				//height: fit-content;
+				border-radius: 2px;
+			}
+			.product-text,
+			.product-price-homepage {
+				padding-top: 3%;
+				font-family: $tertiary-font;
+				font-size: 1em;
+				font-weight: 300;
+				text-align: center;
+			}
+		}
+		.primary-button {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			margin: 4%;
+		}
+	}
 }

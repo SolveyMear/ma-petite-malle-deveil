@@ -1,5 +1,6 @@
 import "../scss/reset.scss";
-import "../scss/index.scss";
+import "../scss/fonts.scss";
+import "../scss/generic-style.scss"
 import "../scss/buttons.scss";
 import "../scss/header.scss";
 import "../scss/main-img.scss";

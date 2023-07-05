@@ -10,9 +10,9 @@ export default defineConfig({
     liveReload([
       // edit live reload paths according to your source code
       // for example:
-      __dirname + '/(app|config|views)/**/*.php',
+      __dirname + '/../(app|config|views)/**/*.php',
       // using this for our example:
-      __dirname + '/../public/*.php',
+      __dirname + '/../pages/*.php',
     ]),
     splitVendorChunkPlugin(),
   ],

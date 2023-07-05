@@ -10,10 +10,11 @@
     
         <header>
             <div class="background"></div>
+            bonjour bonjour
             <nav>
                 <ul>
                     <li class="logo-header">
-                        <img src="./images/logo-mpme2.png" alt="Ma Petite Malle d'Eveil" />
+                        <img src="../images/logo-mpme2.png" alt="Ma Petite Malle d'Eveil" />
                     </li>
                     <li class="tab">Particuliers</li>
                     <li class="tab">Professionnel(le)s</li>

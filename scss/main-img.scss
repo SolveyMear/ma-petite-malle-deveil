@@ -16,7 +16,7 @@ section.main-img{
 					border: $border2;
 					height: 601px;
 					width: 236px;
-					object-fit: contain;
+					object-fit: cover;
 				}
 			}
 			.main-img-bouteille-hiver{
@@ -24,7 +24,7 @@ section.main-img{
 					border: $border3;
 					height: 601px;
 					width: 371px;
-					object-fit: contain;
+					object-fit: cover;
 				}
 			}
 		}

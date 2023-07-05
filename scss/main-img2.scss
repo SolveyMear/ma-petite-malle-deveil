@@ -2,19 +2,21 @@
 
 body {
     section{
-
-        header {
+        border: $border;
+        header.header-main-img{
             //logo absolute par rapport au header, taille dans une variable et border de debugage aussi
             height: $header-height;
             display: flex;
             justify-content: center;
             position: relative;
+            border: $border2;
             .background{
                 position: absolute;
                 background-color: $beige;
-                height: 800px;
+                height: 700px;
                 width: 600px;
                 z-index: -1;
+                border: $border1;
             }
             nav {
                 height: 100%;

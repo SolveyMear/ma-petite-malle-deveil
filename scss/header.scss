@@ -8,8 +8,7 @@ body {
 		justify-content: center;
 		nav {
 			height: 100%;
-			width: 90%;
-			position: relative;
+			width: 100%;
 			ul {
 				//vaut mieux mettre un padding là plutot que de marges
 				display: flex;
@@ -18,32 +17,21 @@ body {
 				list-style-type: none;
 				padding: 1%;
 				height: 100%;
+				border: $border;
 
 				li {
-					//& = on cible avec le  QUE le logo-header et QUE les tabs
-					&.logo-header {
-						display: flex;
-						margin-right: auto;
-						position: absolute;
-						top: 25px;
-						left: 30px;
-						font-family: $secondary-font;
-						img {
-							width: 180px;
-						}
-						h2 {
-							font-weight: normal;
-							margin-left: 0.3em;
-						}
-					}
 					//on cible tous les li
-					font-family: $primary-font;
-					font-size: 1em;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 400;
 
+					//& = on cible avec le  QUE les tabs
 					&.tab {
 						cursor: pointer;
 						margin: 0 1%;
 						margin-right: 3%;
+						font-size: 12px;
+						line-height: 14px;
+						text-transform: uppercase;
 					}
 					//marge à droite
 					&:last-child {
@@ -51,6 +39,12 @@ body {
 					}
 				}
 			}
+		}
+		.background{
+			background-color: $beige;
+			height: 800px;
+			width: 600px;
+			z-index: -1;
 		}
 	}
 }

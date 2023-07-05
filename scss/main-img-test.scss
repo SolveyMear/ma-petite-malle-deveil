@@ -1,0 +1,122 @@
+@import "./variables.scss";
+
+body {
+    section{
+        //border: $border;
+        header{
+            //logo absolute par rapport au header, taille dans une variable et border de debugage aussi
+            height: $header-height;
+            display: flex;
+            position: relative;
+            //border: $border2;
+            .background{
+                position: absolute;
+                background-color: $beige;
+                height: calc(700px + #{$header-height});
+                width: 550px;
+                z-index: -1;
+                //border: $border1;
+            }
+            nav {
+                height: 100%;
+                width: 100%;
+                ul {
+                    //vaut mieux mettre un padding là plutot que de marges
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    list-style-type: none;
+                    padding: 1% 0;
+                    height: 100%;
+                    //border: $border;
+                    
+                    li {
+                        //on cible tous les li
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        
+                        &.logo-header{
+                            position: absolute;
+                            left: 40px;
+                            top: 40px;
+                            width: 110px;
+                        }
+                        //& = on cible avec le  QUE les tabs
+                        &.tab {
+                            cursor: pointer;
+                            margin: 0 1%;
+                            margin-right: 3%;
+                            margin-bottom: 2%;
+                            font-size: 12px;
+                            line-height: 14px;
+                            text-transform: uppercase;
+                        }
+                        //marge à droite
+                        &:last-child {
+                            margin-right: 6%;
+                        }
+                    }
+                }
+            }
+           
+        }
+        .main-img{
+            display: flex;
+            //border: $border;
+            margin-top: 2%;
+            .left-section{
+                //height: calc(100vh - #{$header-height});
+                //border: $border1;
+                width: 50%;
+                height: 600px;
+                .container-img{
+                    display: flex;
+                    justify-content: flex-end;
+                    //border: $border2;
+                    min-height: 600px;  
+                    position: absolute;
+                    left: 50px;   
+                        .main-img-bouteille-bleue{
+                        background-image: url("../images/bouteille-bleue.jpg");
+                        background-size: cover;
+                        width: 236px;
+                        background-position: center;
+                        
+
+                    }
+                    .main-img-bouteille-hiver{
+                        background-image: url("../images/bouteille-hiver.jpg");
+                        background-size: cover;
+                        width: 371px;
+                        margin-left: 5%;
+                        //border: 1px solid red;
+                        background-position: center;
+
+
+                    }
+                }
+            }
+            .right-section{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                margin-left: 18%;
+                .container-text{
+                    display: flex;
+                    flex-direction: column;
+                    width: 450px;
+                  
+                    p{
+                        margin-top: 6%
+                    }
+                    .buttonsMain{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 10%
+                    }
+                }
+            }
+        }
+    }
+    }

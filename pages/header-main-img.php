@@ -1,3 +1,6 @@
+<?php 
+require_once __DIR__ . '/../vitephp/helpers.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -49,7 +52,7 @@
     </div>
     
     </section>
-    <script type="module" src="../js/main.js"></script>
-
+    <!-- <script type="module" src="../js/main.js"></script> -->
+    <?= vite('js/main.js') ?>
 </body>
 </html>

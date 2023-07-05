@@ -1,0 +1,12 @@
+{
+	"name": "vitephp",
+	"version": "0.0.0",
+	"scripts": {
+		"dev": "APP_ENV=development vite",
+		"build": "vite build"
+	},
+	"devDependencies": {
+		"vite": "^4.0.0",
+		"vite-plugin-live-reload": "^3.0.1"
+	}
+}

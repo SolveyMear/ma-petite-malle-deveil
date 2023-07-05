@@ -6,5 +6,5 @@ import "../scss/generic-style.scss";
 import "../scss/main-img-test.scss";
 //import "../scss/main-img.scss";
 //import "../scss/push.scss";
-//import "../scss/products.scss";
+import "../scss/products.scss";
 //import "../scss/customer-reviews.scss";

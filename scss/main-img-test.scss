@@ -24,7 +24,7 @@ body {
                     //vaut mieux mettre un padding là plutot que de marges
                     display: flex;
                     justify-content: flex-end;
-                    align-items: flex-end;
+                    align-items: center;
                     list-style-type: none;
                     padding: 1% 0;
                     height: 100%;
@@ -100,7 +100,7 @@ body {
                 width: 50%;
                 display: flex;
                 align-items: center;
-                margin-left: 12%;
+                margin-left: 18%;
                 .container-text{
                     display: flex;
                     flex-direction: column;

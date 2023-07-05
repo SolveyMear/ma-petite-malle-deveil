@@ -7,7 +7,7 @@ section.main-img{
 	.left-section{
 		width: 50%;
 		display: flex;
-		border: $border;
+		border: 2px dotted blue($color: #000000);
 		.container-img{
 			display: flex;
 			border: $border1;

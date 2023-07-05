@@ -13,14 +13,13 @@ require_once __DIR__ . '/../vitephp/helpers.php';
     
         <header>
             <div class="background"></div>
-            bonjour bonjour
             <nav>
                 <ul>
                     <li class="logo-header">
-                        <img src="../images/logo-mpme2.png" alt="Ma Petite Malle d'Eveil" />
+                        <img src="../images/logo-rond.png" alt="Ma Petite Malle d'Eveil" />
                     </li>
                     <li class="tab">Particuliers</li>
-                    <li class="tab">Professionnel(le)s</li>
+                    <li class="tab">Professionnels</li>
                     <li class="tab">Presse</li>
                     <li class="tab">Contactez-moi</li>
                 </ul>
@@ -33,23 +32,24 @@ require_once __DIR__ . '/../vitephp/helpers.php';
             <div class="left-section">
                 <div class="container-img">
                     <div class="main-img-bouteille-bleue">
-                        <img src="../images/bouteille-bleue.jpg" alt="bouteille-bleue">
+                        <!-- <img src="../images/bouteille-bleue.jpg" alt="bouteille-bleue"> -->
                     </div>
                     <div class="main-img-bouteille-hiver">
-                        <img src="../images/bouteille-hiver.jpg" alt="bouteille-hiver">
+                        <!-- <img src="../images/bouteille-hiver.jpg" alt="bouteille-hiver"> -->
                     </div>
                 </div>
             </div>
-            <div class="right-section">
-                
+            <div class="right-section">               
                 <div class="container-text">
                     <h1 class="main-title">
-                        Outils d'éveil sensoriels, <span>respectueux de
+                        Outils d'éveil sensoriels </br><span>respectueux de
                             l'environnement.</span> 
-                        </h1>
-                        <div class="buttonsMain">Je suis intéressé(e)</div>
+                    </h1>
+                    <p>J'ai conçu des bouteilles inclusives et non genrées pour s'adapter à tous les utilisateurs</p>
+                    <div class="buttonsMain">Je suis intéressé !
                     </div>
-    
+                </div>
+            </div>
     </div>
     
     </section>

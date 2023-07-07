@@ -54,7 +54,7 @@ p{
       margin: 2% 0;
 }
 
-.buttonsMain{
+.buttons-main{
       //border: $border2
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
@@ -68,22 +68,19 @@ p{
       border-radius: 2px;
 }
 
-.buttonsSecondary{
+.buttons-secondary{
       //border: border3
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 15px;
       line-height: 20px;
       color: $red;
+      &.green{
+            color: $dark-green;
+            margin: 5% 0;
+      }
 }
-.buttonsSecondaryGreen{
-      //border: border3
-      font-family: 'Roboto', sans-serif;
-      font-weight: 700;
-      font-size: 15px;
-      line-height: 20px;
-      color: $dark-green;
-}
+
 
 .tags{
       font-weight: 500;

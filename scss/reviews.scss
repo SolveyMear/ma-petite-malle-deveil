@@ -14,7 +14,8 @@ section.review-section{
 		}
 	}
 	.review-container{
-		width: 90%;
+		width: 80%;
+		//margin: 0 5%;
 		display: flex;
 		justify-content: space-evenly;
 
@@ -26,16 +27,37 @@ section.review-section{
       font-weight: 400;
       font-size: 19px;
       line-height: 23px;
-	  height: 423px;
+	  //height: 423px;
 	  width: 373px;
 	  border-radius: 6px;
+	  margin: 0 5%;
+	  .quotes{
+
+	  }
+	  .review-text{
+		margin: 40px 50px;
+		width: 75%;
+	  }
       .name{
 		margin-top: auto;
+		padding: 5%;
             font-family: 'Roboto', sans-serif;
-            font-weight: 500;
+            font-weight: 400;
             color: $dark-grey;
 			height: 121px;
 			border-radius: 0 0 6px 6px;
+			&:first-child{
+				font-weight: 700;
+			}
+			&.name1{
+				color: $light-red;
+			}
+			&.name2{
+				color: $dark-green
+			}
+			&.name3{
+				color: $red;
+			}
       }
 }
 

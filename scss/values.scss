@@ -6,15 +6,17 @@ section.values-section{
         display: flex;
         height: 495px;
         width: 100%;
+        background-color: #F1F1ED;
         //border: $border;
         position: relative;
-        .background5{
-            background-color: #F1F1ED;
-            height: 495px;
-            width: 100%;
-            position: absolute;
-            z-index: -1;
-        }
+
+        // .background5{
+        //     background-color: #F1F1ED;
+        //     height: 495px;
+        //     width: 100%;
+        //     position: absolute;
+        //     z-index: -1;
+        // }
         .values-left{
             display: flex;
             align-items: center;

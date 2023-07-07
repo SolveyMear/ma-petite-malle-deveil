@@ -9,11 +9,13 @@ section.pro-part-section{
         width: 100%;
         height: 100%;
         .pro-part-img{
-            border: $border;
             height: 100%;
             width: 61%;     
             background-image: url("../images/bouteille-hiver.jpg");    
-            background-repeat: no-repeat;  
+            background-repeat: no-repeat; 
+            background-size: 165%;  
+            background-position-x: 36%;
+            background-position-y: 42%; 
         }
         .pro-part-text{
             width: 100%;
@@ -34,7 +36,7 @@ section.pro-part-section{
                 p{
                     width: 450px;
                 }
-                .buttonsSecondary{
+                .buttons-secondary{
                     margin: 5% 0;
                 }
             }
@@ -56,10 +58,7 @@ section.pro-part-section{
                         width: 450px;
                         //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
                     }
-                    .buttonsSecondaryGreen{
-                        color: $dark-green;
-                        margin: 5% 0;
-                    }
+
                 }
                 
             }

@@ -41,13 +41,12 @@ section.montessori{
             .image-div{
                 height: 350px;
                 width: 431px;
-                border: $border1;
                 margin: 0 1%;
             }
-            .background3{
+            .background-absolute-montessori{
 				position: absolute;
                 right: 0;
-                bottom: -156px;
+                bottom: -155px;
                 background-color: $beige;
 				height: 560px;
 				width: 802px;
@@ -56,16 +55,24 @@ section.montessori{
             }
             .img1{
                 background-image: url("../images/girl-bottle.jpg");
-                background-size: cover;
+                background-repeat: no-repeat; 
+                background-size: 167%;  
+                background-position-x: 54%;
+                background-position-y: 29%;             
             }
             .img2{
                 background-image: url("../images/old-lady.jpg");
-                background-size: cover;
+                background-repeat: no-repeat; 
+                background-size: 198%;  
+                background-position-x: 36%;
+                background-position-y: 35%; 
             }
             .img3{
                 background-image: url("../images/handicaped-child.jpg");
-                background-size: cover;
-
+                background-repeat: no-repeat; 
+                background-size: 195%;  
+                background-position-x: 48%;
+                background-position-y: 42%; 
             }
         }
     }

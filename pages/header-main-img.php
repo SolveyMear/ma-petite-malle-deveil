@@ -46,7 +46,7 @@ require_once __DIR__ . '/../vitephp/helpers.php';
                             l'environnement.</span> 
                     </h1>
                     <p>J'ai conçu des bouteilles inclusives et non genrées pour s'adapter à tous les utilisateurs</p>
-                    <div class="buttonsMain">Je suis intéressé !
+                    <div class="buttons-main">Je suis intéressé !
                     </div>
                 </div>
             </div>

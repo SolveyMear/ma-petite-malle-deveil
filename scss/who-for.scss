@@ -43,21 +43,31 @@ section.who-for-section{
                 .who-for-image{
                         width: 268px;
                         height: 218px;
-                        //border: $border;
                         margin: 4% 4% 4% 0;
                         background-size: cover;  
 
 
                     }
                     .for-kids{
-                        background-image: url("../images/girl-bottle.jpg");     
+                        background-image: url("../images/girl-bottle.jpg");  
+                        background-repeat: no-repeat;
+                        background-size: 157%; 
+                        background-position-x: 58%;
+                        background-position-y: 0%;
                     }
                     .for-old-people{
                         background-image: url("../images/old-lady.jpg");
+                        background-size: 162%;  
+                        background-position-x: 36%;
+                        background-position-y: 42%;
 
                     }
                     .for-handi-people{
                         background-image: url("../images/handicaped-child.jpg");
+                        background-repeat: no-repeat;
+                        background-size: 163%; 
+                        background-position-x: 54%;
+                        background-position-y: 50%;
                     }
                 }
             .text-div{

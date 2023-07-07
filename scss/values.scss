@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+section.values-section{
+
+    .values-container{
+        display: flex;
+        height: 495px;
+        width: 100%;
+        //border: $border;
+        position: relative;
+        .background5{
+            background-color: #F1F1ED;
+            height: 495px;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+        }
+        .values-left{
+            display: flex;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+            //border: $border;
+            padding-left: 10%;
+            .values-title-text{
+
+                .white-green{
+                    width: 120px;
+                }
+                h2{
+                    text-align: start;
+                    margin: 5% 0;
+                }
+                p{
+                    width: 440px;
+                }
+            }
+        }
+        .values-right{
+            width: 50%;
+            //border: $border1;
+            position: relative;
+            .values-push{
+                display: flex;
+                .push-column-left{
+                    margin: 0 5%;
+                    position: absolute;
+                    bottom: -72px;
+                }
+                .push-column-right{
+                    position: absolute;
+                    right: 220px;
+                    bottom: -42px;
+                }
+            }
+            .push-borders{
+                display: flex;
+                .borders-column-left{
+                    margin: 0 5%;
+                    position: absolute;
+                    bottom: -60px;
+                    left: -13px;
+                }
+                .borders-column-right{
+                    position: absolute;
+                    right: 234px;
+                    bottom: -30px;
+                }
+            }
+        }
+    }
+}

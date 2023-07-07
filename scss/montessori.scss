@@ -1,0 +1,72 @@
+@import "./variables.scss";
+
+section.montessori{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    .montessori-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .montessori-title-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 650px;
+            h2{
+                em{
+                    font-style: normal;
+                    color: $red;
+                }
+            }
+            p{
+                text-align: center;
+            }
+            .malle-transp{
+                height: 236px;
+                width: 230px;
+                background-image: url("../images/malle-transparente.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-bottom: 10%;
+            }
+        }
+        .montessori-images{
+            width: 95%;
+            display: flex;
+            justify-content: center;
+            margin: 1%;
+            .image-div{
+                height: 350px;
+                width: 431px;
+                border: $border1;
+                margin: 0 1%;
+            }
+            .background3{
+				position: absolute;
+                right: 0;
+                bottom: -156px;
+                background-color: $beige;
+				height: 560px;
+				width: 802px;
+				z-index: -1;
+                //border: $border1;
+            }
+            .img1{
+                background-image: url("../images/girl-bottle.jpg");
+                background-size: cover;
+            }
+            .img2{
+                background-image: url("../images/old-lady.jpg");
+                background-size: cover;
+            }
+            .img3{
+                background-image: url("../images/handicaped-child.jpg");
+                background-size: cover;
+
+            }
+        }
+    }
+}

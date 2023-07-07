@@ -1,0 +1,74 @@
+@import "./variables.scss";
+
+section.who-for-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+
+    .who-for-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        .who-for-title-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 650px;
+            .tags{
+            }
+            h2{
+
+            }
+            p{
+                text-align: center;
+            }
+        }
+
+
+        .who-for-img-text{
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+            margin-top: 10%;
+
+            .who-for-div{
+                display: flex;
+                justify-content: center;
+                border-top: 2px solid $beige-light;
+                &:last-child{
+                    border-bottom: 2px solid $beige-light;
+                }
+
+                .who-for-image{
+                        width: 268px;
+                        height: 218px;
+                        //border: $border;
+                        margin: 4% 4% 4% 0;
+                        background-size: cover;  
+
+
+                    }
+                    .for-kids{
+                        background-image: url("../images/girl-bottle.jpg");     
+                    }
+                    .for-old-people{
+                        background-image: url("../images/old-lady.jpg");
+
+                    }
+                    .for-handi-people{
+                        background-image: url("../images/handicaped-child.jpg");
+                    }
+                }
+            .text-div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 60%;
+                .text{
+                    margin: 2% 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+section.review-section{
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.review-title{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.beige-dark-red{
+			width: 120px;
+		}
+	}
+	.review-container{
+		width: 90%;
+		display: flex;
+		justify-content: space-evenly;
+
+  .review-card{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: flex-start;
+	  font-family: 'Georgia', serif;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 23px;
+	  height: 423px;
+	  width: 373px;
+	  border-radius: 6px;
+      .name{
+		margin-top: auto;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            color: $dark-grey;
+			height: 121px;
+			border-radius: 0 0 6px 6px;
+      }
+}
+
+		.card1{
+		background-color: #F9F2EE;
+		.name1{
+			background-color: #F4E7E0;
+
+		}
+		}
+		.card2{
+		background-color:#F1F1ED;
+		.name2{
+			background-color:#A2A18526;
+		}
+		}
+		.card3{
+		background-color: #F6F0EF;
+		.name3{
+			background-color:#92403217;
+		}
+		}
+	}
+}
+
+
+
+

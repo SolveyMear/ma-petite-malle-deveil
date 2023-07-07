@@ -1,0 +1,68 @@
+@import "./variables.scss";
+
+section.pro-part-section{
+    margin-top: 12%;
+    //border: $border;
+    height: 1300px;
+    .pro-part-container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .pro-part-img{
+            border: $border;
+            height: 100%;
+            width: 61%;     
+            background-image: url("../images/bouteille-hiver.jpg");    
+            background-repeat: no-repeat;  
+        }
+        .pro-part-text{
+            width: 100%;
+            //border: $border1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .particulier{
+                margin-left: 13%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 50%;
+                h2{
+                    text-align: start;
+                }
+                p{
+                    width: 450px;
+                }
+                .buttonsSecondary{
+                    margin: 5% 0;
+                }
+            }
+            .pro{
+                background-color: #F1F1ED;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .pro-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 13%;
+                    h2{
+                        text-align: start;
+                    }
+                    p{
+                        width: 450px;
+                        //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
+                    }
+                    .buttonsSecondaryGreen{
+                        color: $dark-green;
+                        margin: 5% 0;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,11 +1,8 @@
 import "../scss/reset.scss";
 import "../scss/fonts.scss";
 import "../scss/generic-style.scss";
-//import "../scss/buttons.scss";
 //import "../scss/header.scss";
 import "../scss/main-img-test.scss";
-//import "../scss/main-img.scss";
-//import "../scss/push.scss";
 import "../scss/products.scss";
 import "../scss/who-for.scss";
 import "../scss/montessori.scss";
@@ -13,3 +10,5 @@ import "../scss/pro-part.scss";
 import "../scss/presentation-laurie.scss";
 import "../scss/values.scss";
 import "../scss/reviews.scss";
+import "../scss/sponsors-contact.scss";
+import "../scss/footer.scss"

@@ -1,0 +1,83 @@
+@import "./variables.scss";
+
+section.sponsors-section{
+    margin-top: 20%;
+    .sponsors-container{
+        width: 800px;
+        margin: auto;
+        p{
+            font-weight: 700;
+            font-size: 15px;
+            text-transform: uppercase;
+            text-align: center;
+            //color: $lig;
+        }
+        .sponsor-logo-div{
+            display: flex;
+            justify-content: center;
+            margin: 5% 0;
+            border-bottom: 1px solid #F5ECE3;
+
+            .sponsor-logo{
+                height: 120px;
+                width: 158px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                margin: 5% 4%;
+
+                &.pepite-logo{
+                    background-image: url(../images/pepite-logo.png);
+                    background-position: center;
+
+                }
+                &.cma-logo{
+                    background-image: url(../images/CMA-logo.png);
+                    background-position: center;
+
+                }
+                &.bge-logo{
+                    background-image: url(../images/BGE-logo.png);
+
+                }
+            }
+        }
+        .study-safety-text{
+            margin: auto;
+            text-align: center;
+            width: 600px;
+            margin-bottom: 5%;
+        }
+
+
+    }
+}
+section.contact{
+    display: flex;
+    padding: 10% 0 10% 17%;
+    background-color: #F9F2EEC2;
+    
+    .red{
+        width: 85px;
+    }
+    h2{
+        text-align: start;
+    }
+    .contact-me{
+        font-weight: 300;
+        margin: 1em 0;
+    }
+    .email{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        color:$red;
+        margin: 1em 0;
+    }
+    .malle-transp{
+        height: 236px;
+        width: 230px;
+        background-image: url("../images/malle-transparente.png");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

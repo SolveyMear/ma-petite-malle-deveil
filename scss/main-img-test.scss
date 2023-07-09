@@ -9,7 +9,7 @@ body {
             display: flex;
             position: relative;
             //border: $border2;
-            .background{
+            .background-absolute-header-main-img{
                 position: absolute;
                 background-color: $beige;
                 height: calc(700px + #{$header-height});
@@ -109,7 +109,7 @@ body {
                     p{
                         margin-top: 6%
                     }
-                    .buttonsMain{
+                    .buttons-main{
                         display: flex;
                         align-items: center;
                         justify-content: center;

@@ -1,0 +1,77 @@
+@import "./variables.scss";
+
+section.presentation-section{
+    height: 900px;
+    .lines-hearts{
+        display: flex;
+        justify-content: center;
+        margin: 10% 0 15% 0;
+        position: relative;
+        .lines{
+            border-bottom: 2px solid $beige;
+            width: 400px;
+            margin: 0 3%;
+        }
+        .hearts{
+            width: 44px;
+            height: 44px;
+            background-image: url("../images/hearts.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -10px;
+            left: 49%;
+        }
+    }
+
+    .presentation-laurie{
+        margin: auto;
+        width: 80%;
+        .presentation-container{
+            display: flex;
+            justify-content: center;
+            .presentation-img{
+                display: flex;
+                justify-content: flex-end;
+                .img-laurie{
+                    background-image: url("../images/laurie.png");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                position: relative;
+                .background-absolute-presentation-laurie{
+                    width: 310px;
+                    height: 460px;
+                    position: absolute;
+                    z-index: -1;
+                    left: 228px;
+                    bottom: -80px;
+                    background-color: #F6F0EF;
+        
+                }
+                width: 50%;
+                .img-laurie{
+                    width: 223px;
+                    height: 331px;
+                }
+            }
+            .presentation-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 50%;
+                margin-left: 5%;
+                margin-right: 4%;
+                .red{
+                    width: 110px;
+                }
+                h2{
+                    text-align: start;
+                }
+                p{
+                    width: 500px;
+                }
+            }
+        }
+
+    }
+}

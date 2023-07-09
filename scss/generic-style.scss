@@ -27,12 +27,21 @@ h2{
       text-align: center;
       width: 600px;
       margin: 2% 0;
+            
       span{
             //border: $border1
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             font-size: 42px;
             line-height: 47px;
+            @media screen and (max-width: 1050px) {
+                  font-size: 31px;    
+            }
+      }
+      @media screen and (max-width: 1050px) {
+            font-size: 31px;
+            line-height: 32px;
+    
       }
 }
 h3{

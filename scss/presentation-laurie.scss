@@ -13,13 +13,14 @@ section.presentation-section{
             margin: 0 3%;
         }
         .hearts{
-            width: 44px;
-            height: 44px;
+            width: 50px;
+            height: 50px;
             background-image: url("../images/hearts.png");
             background-repeat: no-repeat;
+            background-size: contain;
             position: absolute;
-            top: -10px;
-            left: 49%;
+            top: -18px;
+            left: 48.3%;
         }
     }
 

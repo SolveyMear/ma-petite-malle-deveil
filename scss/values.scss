@@ -8,7 +8,7 @@ section.values-section{
         width: 100%;
         background-color: #F1F1ED;
         //border: $border;
-        position: relative;
+        //position: relative;
 
         // .background5{
         //     background-color: #F1F1ED;
@@ -38,36 +38,42 @@ section.values-section{
                 }
             }
         }
+
         .values-right{
             width: 50%;
-            //border: $border1;
-            position: relative;
-            .values-push{
-                display: flex;
-                .push-column-left{
-                    margin: 0 5%;
-                    position: absolute;
-                    bottom: -72px;
-                }
-                .push-column-right{
-                    position: absolute;
-                    right: 220px;
-                    bottom: -42px;
-                }
+            display: flex;
+
+            .value-push-left{
+                height: 174px;
+                width: 173px;
+                background-color: white;
+                margin: 34%;
+                border-radius: 6px;
+                position: relative;
+                margin-top: -18%;
+                margin-left: 12%;
             }
-            .push-borders{
-                display: flex;
-                .borders-column-left{
-                    margin: 0 5%;
-                    position: absolute;
-                    bottom: -60px;
-                    left: -13px;
-                }
-                .borders-column-right{
-                    position: absolute;
-                    right: 234px;
-                    bottom: -30px;
-                }
+            .value-push-right{
+                height: 174px;
+                width: 173px;
+                background-color: white;
+                margin: 56%;
+                border-radius: 6px;
+                position: relative;
+                margin-top: -37%;
+                margin-left: 35%;
+            }
+            .value-push-left::before,
+            .value-push-right::before{
+                content: "";
+                top: -15px;
+                left: -15px;
+                height: 174px;
+                width: 173px;
+                border: 2px solid #A2A1855C;
+                // margin: -7%;
+                border-radius: 6px;
+                position: absolute;
             }
         }
     }

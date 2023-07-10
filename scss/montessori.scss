@@ -9,6 +9,7 @@ section.montessori{
         flex-direction: column;
         align-items: center;
         position: relative;
+        width: 100%;
 
         .montessori-title-text{
             display: flex;
@@ -37,10 +38,9 @@ section.montessori{
             width: 95%;
             display: flex;
             justify-content: center;
-            margin: 1%;
             .image-div{
                 height: 350px;
-                width: 431px;
+                width: calc(100%/3 - 2%);
                 margin: 0 1%;
             }
             .background-absolute-montessori{

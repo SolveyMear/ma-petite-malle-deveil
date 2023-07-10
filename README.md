@@ -10,3 +10,20 @@ mais ne pas cliquer sur le lien.
 
 -Relatif/Absolute: priviligier le positionnement avec top/left/right/bottom.
 
+-Structure de bas à respecter:
+    -section{
+        width: 100%;
+        -wrapper{
+            max-width: 1100px;
+            width: 90%;
+        }
+    }
+
+-Pour que les éléments prennent toute la place disponible automatiquement quand ça devient trop petit:
+responsive: max-width: 1050px{
+    max-width: 610px
+    width: 100%
+}
+
+
+-Pour éviter d'avoir une taille fixe à une section, on ajoute un padding au parent pour que la taille puisse augmenter en gardant tout le temps la même marge avec le bord du site.

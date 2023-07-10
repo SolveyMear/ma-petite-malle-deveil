@@ -18,7 +18,7 @@ section.pro-part-section{
             background-position-y: 42%; 
         }
         .pro-part-text{
-            width: 100%;
+            flex: 1;
             //border: $border1;
             display: flex;
             flex-direction: column;

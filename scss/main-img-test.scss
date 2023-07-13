@@ -1,170 +1,106 @@
 @import "./variables.scss";
+ 
+section.header-main-img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .background-absolute-header-main-img{
+        position: absolute;
+        background-color: $beige;
+        height: 100vh;
+        width: 550px;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        //border: $border1;
 
-body {
-    section{
-        width: 100%;
-        &.header-main-img{
-            height: 100%;
+        @media screen and (max-width: 1100px) {
+            width: 100%;
         }
+    }
+}
+//border: $border;
+
+
+    .main-img{
+        display: flex;
+        height: calc(100% - $header-height - 30px);
+        padding-top: 1.3em;
         //border: $border;
-        header{
-            //logo absolute par rapport au header, taille dans une variable et border de debugage aussi
-            height: $header-height;
-            display: flex;
-
-            //border: $border2;
-            .background-absolute-header-main-img{
-                position: absolute;
-                background-color: $beige;
-                height: 100vh;
-                width: 550px;
-                z-index: -1;
-                //border: $border1;
-
-                @media screen and (max-width: 1100px) {
-                    width: 100%;
-                }
+        .left-section{
+            //height: calc(100vh - #{$header-height});
+            //border: $border1;
+            @media screen and (max-width: 870px) {
+                display: none;
             }
-            nav {
-                height: 100%;
-                width: 100%;
-                margin-left: auto;
-                ul {
-                    //vaut mieux mettre un padding là plutot que de marges
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    list-style-type: none;
-                    padding: 0.6em 3.3em 0 2.1em;
-                    height: 100%;
+            width: 50%;
+            height: 100%;
+            padding-left: 5em;
+            .container-img{
+                display: flex;
+                //justify-content: flex-end;
+                //border: $border2;
+                height: 100%;  
+
+                    .main-img-bouteille-bleue{
+                    background-image: url("../images/bouteille-bleue.jpg");
                     //border: $border;
-                    @media screen and (max-width: 660px) {
-                        padding: 1% 4%;
-                    }
+                    background-size: cover;
+                    width: 236px;
+                    background-position: center top;
                     
-                    li {
-                        //on cible tous les li
-                        font-family: 'Roboto', sans-serif;
-                        font-weight: 400;
-                        
-                        &.logo-header{
-                            width: 110px;
-                            margin-right: auto;
-                        }
-                        //& = on cible avec le  QUE les tabs
-                        &.tab {
-                            cursor: pointer;
-                            margin: 0 1%;
-                            margin-right: 3%;
-                            margin-bottom: 2%;
-                            font-size: 12px;
-                            line-height: 14px;
-                            text-transform: uppercase;
-                            @media screen and (max-width: 660px){
-                                display: none;
-                            };
-                        }
-                    }
-                    .burger-menu{
-                        height: 50px;
-                        width: 50px;
-                        margin-left: auto;
-                        display: none;
-        
-                        .burger-menu-logo{
-                            border-bottom: 8px solid #BD6D52;
-                            margin-bottom: 0.5em;
-                        }
-        
-                    @media screen and (max-width: 660px){
-                        display: block;
-                    };
                 }
-            }
+                .main-img-bouteille-hiver{
+                    background-image: url("../images/bouteille-hiver.jpg");
+                    background-size: cover;
+                    width: 371px;
+                    margin-left: 5%;
+                    //border: 1px solid red;
+                    background-position: right top;
+                    //background-position-y: 0;
+                    background-repeat: no-repeat;
 
-                    
+                    @media screen and (max-width: 1030px) {
+                        
+                    }
+
                 }
             }
         }
-        .main-img{
+        .right-section{
+            width: 50%;
             display: flex;
-            height: calc(100% - $header-height - 30px);
-            padding-top: 1.3em;
-            //border: $border;
-            .left-section{
-                //height: calc(100vh - #{$header-height});
-                //border: $border1;
-                @media screen and (max-width: 870px) {
-                    display: none;
-                }
-                width: 50%;
-                height: 100%;
-                padding-left: 5em;
-                .container-img{
-                    display: flex;
-                    //justify-content: flex-end;
-                    //border: $border2;
-                    height: 100%;  
+            align-items: center;
+            padding-left: 9%;
+            padding-right: 3em;
 
-                        .main-img-bouteille-bleue{
-                        background-image: url("../images/bouteille-bleue.jpg");
-                        //border: $border;
-                        background-size: cover;
-                        width: 236px;
-                        background-position: center top;
-                        
-                    }
-                    .main-img-bouteille-hiver{
-                        background-image: url("../images/bouteille-hiver.jpg");
-                        background-size: cover;
-                        width: 371px;
-                        margin-left: 5%;
-                        //border: 1px solid red;
-                        background-position: right top;
-                        //background-position-y: 0;
-                        background-repeat: no-repeat;
-
-                        @media screen and (max-width: 1030px) {
-                            
-                        }
-
-                    }
-                }
+            @media screen and (max-width: 870px) {
+                width: 100%;
+                justify-content: center;
             }
-            .right-section{
-                width: 50%;
+            .container-text{
                 display: flex;
-                align-items: center;
-                padding-left: 9%;
-                padding-right: 3em;
-
+                flex-direction: column;
+                max-width: 450px;
+                align-items: flex-start;
                 @media screen and (max-width: 870px) {
-                    width: 100%;
-                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 5em;
                 }
-                .container-text{
-                    display: flex;
-                    flex-direction: column;
-                    max-width: 450px;
-                    align-items: flex-start;
-                    @media screen and (max-width: 870px) {
-                        align-items: center;
-                        text-align: center;
-                        padding: 5em;
-                    }
 
 
-                    p{
-                        margin-top: 6%;
-                    }
-                    .buttons-main{
-                        //display: flex;
-                        //align-items: center;
-                        //justify-content: center;
-                        margin-top: 10%;
-                    }
+                p{
+                    margin-top: 6%;
+                }
+                .buttons-main{
+                    //display: flex;
+                    //align-items: center;
+                    //justify-content: center;
+                    margin-top: 10%;
                 }
             }
         }
     }
+
     

@@ -2,6 +2,7 @@
 
 section.sponsors-section{
     margin-top: 10%;
+    width: 100%;
     .sponsors-container{
         width: 800px;
         margin: auto;
@@ -14,16 +15,23 @@ section.sponsors-section{
         }
         .sponsor-logo-div{
             display: flex;
-            justify-content: center;
-            margin: 5% 0;
+            margin: auto;
+            padding: 5% 3%;
             border-bottom: 1px solid #F5ECE3;
-
+            width: 85%;
+            @media screen and (max-width: 800px) {
+                width: 60%;
+            }
             .sponsor-logo{
                 height: 120px;
-                width: 158px;
+                width: calc(100%/3 - 8%);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 margin: 5% 4%;
+
+                @media screen and (max-width: 800px) {
+                    
+                }
 
                 &.pepite-logo{
                     background-image: url(../images/pepite-logo.png);
@@ -57,7 +65,8 @@ section.contact{
     background-color: #F9F2EEC2;
     
     .red{
-        width: 85px;
+        width: 120px;
+        //padding: 5px 8px;
     }
     h2{
         text-align: start;

@@ -2,33 +2,45 @@
 
 body {
     section{
+        width: 100%;
+        &.header-main-img{
+            height: 100%;
+        }
         //border: $border;
         header{
             //logo absolute par rapport au header, taille dans une variable et border de debugage aussi
             height: $header-height;
             display: flex;
-            position: relative;
+
             //border: $border2;
             .background-absolute-header-main-img{
                 position: absolute;
                 background-color: $beige;
-                height: calc(700px + #{$header-height});
+                height: 100vh;
                 width: 550px;
                 z-index: -1;
                 //border: $border1;
+
+                @media screen and (max-width: 1100px) {
+                    width: 100%;
+                }
             }
             nav {
                 height: 100%;
                 width: 100%;
+                margin-left: auto;
                 ul {
                     //vaut mieux mettre un padding là plutot que de marges
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
                     list-style-type: none;
-                    padding: 1% 0;
+                    padding: 0.6em 3.3em 0 2.1em;
                     height: 100%;
                     //border: $border;
+                    @media screen and (max-width: 660px) {
+                        padding: 1% 4%;
+                    }
                     
                     li {
                         //on cible tous les li
@@ -36,10 +48,8 @@ body {
                         font-weight: 400;
                         
                         &.logo-header{
-                            position: absolute;
-                            left: 40px;
-                            top: 40px;
                             width: 110px;
+                            margin-right: auto;
                         }
                         //& = on cible avec le  QUE les tabs
                         &.tab {
@@ -50,39 +60,59 @@ body {
                             font-size: 12px;
                             line-height: 14px;
                             text-transform: uppercase;
-                        }
-                        //marge à droite
-                        &:last-child {
-                            margin-right: 6%;
+                            @media screen and (max-width: 660px){
+                                display: none;
+                            };
                         }
                     }
+                    .burger-menu{
+                        height: 50px;
+                        width: 50px;
+                        margin-left: auto;
+                        display: none;
+        
+                        .burger-menu-logo{
+                            border-bottom: 8px solid #BD6D52;
+                            margin-bottom: 0.5em;
+                        }
+        
+                    @media screen and (max-width: 660px){
+                        display: block;
+                    };
                 }
             }
-           
+
+                    
+                }
+            }
         }
         .main-img{
             display: flex;
+            height: calc(100% - $header-height - 30px);
+            padding-top: 1.3em;
             //border: $border;
-            margin-top: 2%;
             .left-section{
                 //height: calc(100vh - #{$header-height});
                 //border: $border1;
+                @media screen and (max-width: 870px) {
+                    display: none;
+                }
                 width: 50%;
-                height: 600px;
+                height: 100%;
+                padding-left: 5em;
                 .container-img{
                     display: flex;
-                    justify-content: flex-end;
+                    //justify-content: flex-end;
                     //border: $border2;
-                    min-height: 600px;  
-                    position: absolute;
-                    left: 50px;   
+                    height: 100%;  
+
                         .main-img-bouteille-bleue{
                         background-image: url("../images/bouteille-bleue.jpg");
+                        //border: $border;
                         background-size: cover;
                         width: 236px;
-                        background-position: center;
+                        background-position: center top;
                         
-
                     }
                     .main-img-bouteille-hiver{
                         background-image: url("../images/bouteille-hiver.jpg");
@@ -90,8 +120,13 @@ body {
                         width: 371px;
                         margin-left: 5%;
                         //border: 1px solid red;
-                        background-position: center;
+                        background-position: right top;
+                        //background-position-y: 0;
+                        background-repeat: no-repeat;
 
+                        @media screen and (max-width: 1030px) {
+                            
+                        }
 
                     }
                 }
@@ -100,23 +135,36 @@ body {
                 width: 50%;
                 display: flex;
                 align-items: center;
-                margin-left: 18%;
+                padding-left: 9%;
+                padding-right: 3em;
+
+                @media screen and (max-width: 870px) {
+                    width: 100%;
+                    justify-content: center;
+                }
                 .container-text{
                     display: flex;
                     flex-direction: column;
-                    width: 450px;
-                  
+                    max-width: 450px;
+                    align-items: flex-start;
+                    @media screen and (max-width: 870px) {
+                        align-items: center;
+                        text-align: center;
+                        padding: 5em;
+                    }
+
+
                     p{
-                        margin-top: 6%
+                        margin-top: 6%;
                     }
                     .buttons-main{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 10%
+                        //display: flex;
+                        //align-items: center;
+                        //justify-content: center;
+                        margin-top: 10%;
                     }
                 }
             }
         }
     }
-    }
+    

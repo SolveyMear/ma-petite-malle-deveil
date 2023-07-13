@@ -10,7 +10,7 @@ mais ne pas cliquer sur le lien.
 
 -Relatif/Absolute: priviligier le positionnement avec top/left/right/bottom.
 
--Structure de bas à respecter:
+-Structure de base à respecter:
     -section{
         width: 100%;
         -wrapper{

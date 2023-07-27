@@ -1,2 +1,64 @@
 @import "./variables.scss";
 
+
+header.header-mobile{
+	display: none;
+	width: 100%;
+	height: 100vh;
+	min-height: 500px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	//border: 1px solid red;
+	background-color: $beige;
+	@media screen and (max-width: 660px) {
+		display: block;
+	}
+
+	ul{
+		li{
+			&.header-top{
+				display: flex;
+				padding: 1em;
+				//border-bottom:2px solid $beige-dark;
+			}
+			.logo-header{
+				width: 70px;
+				margin-right: auto;
+
+			}
+			.burger-menu{
+				height: 50px;
+				width: 27px;
+				margin-left: auto;
+				align-self: flex-start;
+				margin-top: 1.1em;
+				
+				.burger-menu-logo{
+					border-bottom: 3px solid $light-red;
+					margin-bottom: 0.3em;
+					border-radius: 2px;
+				}
+			}
+			&.tab{
+				border-top: 4px solid $beige;
+				background-color: lighten($color: $beige, $amount: 4%);
+				font-weight: 400;
+				&.tab-part{
+				border-top:4px solid $beige-dark;
+				}
+				
+				&:last-child{
+					border-bottom: 3px solid $beige;
+				}
+				a{
+					width: 100%;
+					padding: 1.2em;
+					display: inline-block;
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		}
+	}
+}

@@ -1,8 +1,8 @@
 import "../scss/reset.scss";
 import "../scss/fonts.scss";
 import "../scss/generic-style.scss";
-//import "../scss/header-mobile.scss";
 import "../scss/header.scss";
+import "../scss/header-mobile.scss";
 import "../scss/main-img-test.scss";
 import "../scss/products.scss";
 import "../scss/who-for.scss";

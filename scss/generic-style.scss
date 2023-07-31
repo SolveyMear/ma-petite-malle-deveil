@@ -50,14 +50,14 @@ h2{
       font-family: 'Georgia', serif;
       font-weight: 700;
       font-size: 2.4rem;
-      line-height: 49px;
+      line-height: 1.5;
       text-align: center;
       max-width: 600px;
-      margin: 2% 0;
+      padding: 1rem 1.5rem;
       
       @media screen and (max-width: 1050px) {
             font-size: 2rem;
-            line-height: 1.1;
+            line-height: 1.4;
     
       }
       @media screen and (max-width: 661px) {
@@ -70,7 +70,10 @@ h2{
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             font-size: 0.85em;
-            line-height: 47px;
+            line-height: 1.1;
+            @media screen and (max-width: 600px) {
+                  max-width: 300px;
+            }
 
       }
       & ~ p{
@@ -81,7 +84,7 @@ h2{
             max-height: 650px;
             @media screen and (max-width: 661px) {
                   font-size: 0.9em;
-                  max-width: 65%;
+                  max-width: 90%;
             }
       }
 }

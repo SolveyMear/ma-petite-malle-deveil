@@ -22,7 +22,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			width: 650px;
+			max-width: 650px;
 			.dark-green{
 				padding: 5px 10px;
 			}
@@ -30,6 +30,7 @@
 				text-align: center;
 			}
 			//voir generic-styles pour tags, h2, span et p
+
 		}
 
 		.products-img{
@@ -41,37 +42,56 @@
 			width: 100%;
 			//margin-top: 5%;
 			padding: 0 3%;
-			background-size: cover;
+			@media screen and (max-width: 1200px) {
+				max-width: 860px;
+				flex-wrap: wrap;
+			}
 			.product{
 				//border: $border;
+				background-size: cover;
+				background-position: center top;
 				width: 240px;
 				height: 426px;
 				margin: 3% 1%;
-			}
-			.photo1{
-				background-image: url("../images/bouteille-bleue.jpg");
-			}
-			.photo3{
-				background-image: url("../images/bouteille-bleue.jpg");
-			}
-			.photo5{
-				background-image: url("../images/bouteille-hiver.jpg");
-			}
-			.photo2{
-				height: 373px;
-				background-image: url("../images/bouteille-rouge.jpg");
-			}
-			.photo4{
-				background-image: url("../images/bouteille-rouge.jpg");
-				height: 373px;
+				@media screen and (max-width: 1200px) {
+					max-height: 370px;
+				}
+				@media screen and (max-width: 1100px) {
+					max-height: 300px;
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
+
+				//il faut trouver le moyen de mettre toutes les photos à la bonne hauteur à 1100px
+				&.photo1{
+					background-image: url("../images/bouteille-bleue.jpg");
+				}
+				&.photo3{
+					background-image: url("../images/bouteille-bleue.jpg");
+				}
+				&.photo5{
+					background-image: url("../images/bouteille-hiver.jpg");
+				}
+				&.photo2{
+					height: 370px;
+					background-image: url("../images/bouteille-rouge.jpg");
+					
+				}
+				&.photo4{
+					background-image: url("../images/bouteille-rouge.jpg");
+					height: 370px;
+				}
 			}
 			.background2{
 				position: absolute;
-                background-color: $beige;
+				background-color: $beige;
 				height: 380px;
 				width: 100%;
 				z-index: -1;
-                //border: $border1;
+				//border: $border1;
+				@media screen and (max-width: 1200px) {
+					display: none;
+				}
 			}
 
 		}

@@ -1,17 +1,18 @@
 @import "./variables.scss";
 
 section.sponsors-section{
-    margin-top: 10%;
+    padding: 7% 10%;
     width: 100%;
     .sponsors-container{
-        width: 800px;
+        max-width: 800px;
         margin: auto;
         p{
-            font-weight: 700;
-            font-size: 15px;
-            text-transform: uppercase;
-            text-align: center;
-            //color: $lig;
+            &.nous-accompagnent{
+                font-weight: 700;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+            }
         }
         .sponsor-logo-div{
             display: flex;
@@ -20,17 +21,19 @@ section.sponsors-section{
             border-bottom: 1px solid #F5ECE3;
             width: 85%;
             @media screen and (max-width: 800px) {
-                width: 60%;
+                width: 90%;
             }
             .sponsor-logo{
                 height: 120px;
                 width: calc(100%/3 - 8%);
                 background-repeat: no-repeat;
                 background-size: 100%;
+                background-position-y: 50%;
                 margin: 5% 4%;
 
                 @media screen and (max-width: 800px) {
-                    
+                    height: 90px;
+                    justify-content: center;
                 }
 
                 &.pepite-logo{
@@ -52,8 +55,8 @@ section.sponsors-section{
         .study-safety-text{
             margin: auto;
             text-align: center;
-            width: 600px;
-            margin-bottom: 5%;
+            max-width: 600px;
+            padding: 5%;
         }
 
 

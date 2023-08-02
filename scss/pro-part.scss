@@ -3,7 +3,7 @@
 section.pro-part-section{
     margin-top: 12%;
     //border: $border;
-    height: 1300px;
+    height: 1000px;
     .pro-part-container{
         display: flex;
         width: 100%;
@@ -11,11 +11,12 @@ section.pro-part-section{
         .pro-part-img{
             height: 100%;
             width: 61%;     
-            background-image: url("../images/bouteille-hiver.jpg");    
+            //background-image: url("../images/bouteille-hiver.jpg");    
             background-repeat: no-repeat; 
             background-size: 165%;  
             background-position-x: 36%;
-            background-position-y: 42%; 
+            background-position-y: 42%;
+            border: $border;
         }
         .pro-part-text{
             flex: 1;
@@ -23,40 +24,49 @@ section.pro-part-section{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            border: $border1;
             
             .particulier{
-                margin-left: 13%;
+                padding-left: 2em;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 height: 50%;
+                border: $border2;
                 h2{
                     text-align: start;
+                    line-height: 1.2;
                 }
                 p{
-                    max-width: 450px;
+                    max-width: 400px;
+                    font-size: 1.1em;
                 }
                 .buttons-secondary{
                     margin: 5% 0;
+                    //border: $border;
                 }
             }
             .pro{
+                padding: 1em 2em 1em 2em;
                 background-color: #F1F1ED;
                 height: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                border: $border2;
                 .pro-text{
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    margin-left: 13%;
                     h2{
                         text-align: start;
+                        line-height: 1.2;
                     }
                     p{
-                        width: 450px;
+                        max-width: 450px;
+                        font-size: 1.1em;
                         //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
+                        //border: $border;
                     }
 
                 }

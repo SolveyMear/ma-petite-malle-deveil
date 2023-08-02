@@ -1,12 +1,16 @@
 @import "./variables.scss";
 
 section.presentation-section{
-    height: 900px;
+    height: auto;
+    padding-bottom: 25%;
     .lines-hearts{
         display: flex;
         justify-content: center;
-        margin: 10% 0 15% 0;
+        margin: 25% 0 15% 0;
         position: relative;
+        @media screen and (max-width: 800px) {
+            margin-top: 32%;
+        }
         .lines{
             border-bottom: 2px solid $beige;
             width: 400px;
@@ -33,12 +37,12 @@ section.presentation-section{
             .presentation-img{
                 display: flex;
                 justify-content: flex-end;
+                position: relative;
                 .img-laurie{
                     background-image: url("../images/laurie.png");
                     background-repeat: no-repeat;
                     background-size: cover;
                 }
-                position: relative;
                 .background-absolute-presentation-laurie{
                     width: 310px;
                     height: 460px;
@@ -47,6 +51,20 @@ section.presentation-section{
                     left: 270px;
                     bottom: -80px;
                     background-color: #F6F0EF;
+                    @media screen and (max-width: 950px) {
+                        bottom: -60px;
+                        left: 140px;
+                    }
+                    @media screen and (max-width: 850px) {
+                        bottom: -30px;
+                        left: 140px;
+                    }
+                    @media screen and (max-width: 650px) {
+                        width: 100%;
+                        bottom: -80px;
+                        left: 100px;
+                    }
+
         
                 }
                 width: 50%;
@@ -55,9 +73,6 @@ section.presentation-section{
                     height: 331px;
                 }
             }
-
-
-        
 
             .presentation-text{
                 display: flex;
@@ -68,12 +83,19 @@ section.presentation-section{
                 margin-right: 4%;
                 .red{
                     padding: 5px 10px;
+                    width: 120px;
                 }
                 h2{
                     text-align: start;
+                    @media screen and (max-width: 800px){
+                        font-size: 1.7rem;
+                    }
                 }
                 p{
                     max-width: 500px;
+                    @media screen and (max-width: 800px){
+                        font-size: 0.9rem;
+                    }
                 }
             }
         }

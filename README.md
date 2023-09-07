@@ -27,3 +27,12 @@ responsive: max-width: 1050px{
 
 
 -Pour éviter d'avoir une taille fixe à une section, on ajoute un padding au parent pour que la taille puisse augmenter en gardant tout le temps la même marge avec le bord du site.
+
+
+Mon ecran: 1240px, quand je mets en responsive sur la console à 1240px, l'agencement est différent. Pourquoi?
+Pq 1240px c'est la taille totale de l'écran, donc avec la barre du navigateur en haut et en bas la barre des applis.
+
+Pour positionner correctement un absolute sur un relatif, il faut faire attention à quoi on attache l'absolute. L'absolute doit être l'enfant du relatif. On le place en top 0 et left 0 pour voir comment ça réagit.
+
+
+Comment déterminer quand donner une taille à une section ou une div ???

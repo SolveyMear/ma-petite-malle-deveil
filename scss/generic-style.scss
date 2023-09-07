@@ -126,7 +126,8 @@ h3{
 
 
 .buttons-main{
-      //border: $border2
+      display: inline;
+      //border: $border2;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 16px;
@@ -135,15 +136,19 @@ h3{
       color: $beige;
       text-align: center;
       border-radius: 2px;
+      cursor: pointer;
+
 }
 
 .buttons-secondary{
-      //border: border3
+      //border: $border3;
+      display: inline;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      font-size: 15px;
-      line-height: 20px;
+      font-size: 1em;
+      padding: 1em;
       color: $red;
+      cursor: pointer;
       &.green{
             color: $dark-green;
             margin: 5% 0;
@@ -153,9 +158,7 @@ h3{
 
 .tags{
       font-weight: 500;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline;
       border-radius: 2px;
       text-transform: uppercase;
       margin: 1% 0;

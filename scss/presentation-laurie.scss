@@ -37,32 +37,19 @@ section.presentation-section{
             .presentation-img{
                 display: flex;
                 justify-content: flex-end;
-                position: relative;
                 .img-laurie{
+                    position: relative;
                     background-image: url("../images/laurie.png");
                     background-repeat: no-repeat;
                     background-size: cover;
-                }
-                .background-absolute-presentation-laurie{
-                    width: 310px;
-                    height: 460px;
-                    position: absolute;
-                    z-index: -1;
-                    left: 270px;
-                    bottom: -80px;
-                    background-color: #F6F0EF;
-                    @media screen and (max-width: 950px) {
-                        bottom: -60px;
-                        left: 140px;
-                    }
-                    @media screen and (max-width: 850px) {
-                        bottom: -30px;
-                        left: 140px;
-                    }
-                    @media screen and (max-width: 650px) {
-                        width: 100%;
-                        bottom: -80px;
-                        left: 100px;
+                    .background-absolute-presentation-laurie{
+                        width: 310px;
+                        height: 460px;
+                        position: absolute;
+                        z-index: -1;
+                        left: 30px;
+                        top: -40px;
+                        background-color: #F6F0EF;
                     }
 
         

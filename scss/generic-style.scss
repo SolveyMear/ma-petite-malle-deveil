@@ -50,7 +50,7 @@ h2{
       font-family: 'Georgia', serif;
       font-weight: 700;
       font-size: 2.4rem;
-      line-height: 1.5;
+      line-height: 1.2;
       text-align: center;
       max-width: 600px;
       
@@ -60,9 +60,10 @@ h2{
     
       }
       @media screen and (max-width: 661px) {
-            font-size: 1.7rem;
+            font-size: 1.45rem;
             line-height: 1.1;
         }
+
 
       span{
             //border: $border1
@@ -142,7 +143,6 @@ h3{
 
 .buttons-secondary{
       //border: $border3;
-      display: inline;
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 1em;
@@ -151,17 +151,18 @@ h3{
       cursor: pointer;
       &.green{
             color: $dark-green;
-            margin: 5% 0;
       }
 }
+
+
 
 
 .tags{
       font-weight: 500;
       display: inline;
+      margin: 1% 0;
       border-radius: 2px;
       text-transform: uppercase;
-      margin: 1% 0;
       white-space: nowrap;
       &.light-red{
             background-color: $beige-medium;
@@ -185,35 +186,5 @@ h3{
       }
 
 }
-
-
-// .cross1{
-// 	width: 0;
-//       height: 0;
-//       border-top: 50px solid transparent;
-//       border-right: 100px solid red;	
-//       border-bottom: 50px solid transparent;			
-// }
-// .cross2{
-// 	width: 0;
-//       height: 0;
-//       border-top: 50px solid transparent;
-//       border-left: 100px solid red;	
-//       border-bottom: 50px solid transparent;			
-// }
-// .cross3{
-// 	width: 0;
-//       height: 0;
-//       border-left: 50px solid transparent;
-//       border-top: 100px solid red;	
-//       border-right: 50px solid transparent;			
-// }
-// .cross4{
-// 	width: 0;
-//       height: 0;
-//       border-right: 50px solid transparent;
-//       border-bottom: 100px solid red;	
-//       border-left: 50px solid transparent;			
-// }
 
 

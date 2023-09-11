@@ -2,14 +2,23 @@
 
 section.presentation-section{
     height: auto;
-    padding-bottom: 25%;
+    padding-bottom: 10em;
+    // @media screen and (max-width: 1050px) {
+    //     padding: 3em;
+    // }
+        @media screen and (max-width: 600px) {
+            padding: 2em;
+        }
     .lines-hearts{
         display: flex;
         justify-content: center;
-        margin: 25% 0 15% 0;
+        margin: 5em 0 7em 0;
         position: relative;
         @media screen and (max-width: 800px) {
-            margin-top: 32%;
+            margin: 4em 0.3em 5.7em 0.3em;
+        }
+        @media screen and (max-width: 600px) {
+            margin: 4em 0.3em 1.7em 0.3em;
         }
         .lines{
             border-bottom: 2px solid $beige;
@@ -34,53 +43,83 @@ section.presentation-section{
         .presentation-container{
             display: flex;
             justify-content: center;
+            @media screen and (max-width: 600px) {
+                flex-direction: column;
+                align-items: center;
+            }
             .presentation-img{
                 display: flex;
                 justify-content: flex-end;
                 .img-laurie{
                     position: relative;
-                    background-image: url("../images/laurie.png");
+                    background-image: url("../images/laurie-presentation.png");
                     background-repeat: no-repeat;
                     background-size: cover;
+                    width: 223px;
+                    height: 331px;
+                    top: 50px;
+                    // @media screen and (max-width: 500px) {
+                    //     width: 200px;
+                    //     height: 240px;
+                    // }
+                    @media screen and (max-width: 600px) {
+                        // width: 100px;
+                        // height: 140px;
+                        display: none;
+                    }
                     .background-absolute-presentation-laurie{
                         width: 310px;
                         height: 460px;
                         position: absolute;
                         z-index: -1;
                         left: 30px;
-                        top: -40px;
+                        top: -30px;
                         background-color: #F6F0EF;
+                        @media screen and (max-width: 600px) {
+                            display: none;
+                        }
                     }
-
-        
-                }
-                width: 50%;
-                .img-laurie{
-                    width: 223px;
-                    height: 331px;
                 }
             }
 
             .presentation-text{
                 display: flex;
                 flex-direction: column;
+                align-items: flex-start;
                 justify-content: space-between;
-                width: 50%;
-                margin-left: 5%;
-                margin-right: 4%;
+                max-width: 50%;
+                padding: 5%;
+                // @media screen and (max-width: 500px) {
+                //     width: 100%;
+                //     align-items: center;
+                //     padding: 2em;
+
+                // }
+                @media screen and (max-width: 600px) {
+                    align-items: center;
+                    padding: 10% 0;
+                    max-width: 90%;
+                    text-align: center;
+                }
                 .red{
-                    padding: 5px 10px;
-                    width: 120px;
+                    padding: 5px 5px;
+                    @media screen and (max-width: 500px) {
+                        margin: 1em;
+                    }
                 }
                 h2{
                     text-align: start;
-                    @media screen and (max-width: 800px){
+                    @media screen and (max-width: 850px){
                         font-size: 1.7rem;
+                    }
+                    @media screen and (max-width: 600px) {
+                        margin: 1em;
+                        text-align: center;
                     }
                 }
                 p{
                     max-width: 500px;
-                    @media screen and (max-width: 800px){
+                    @media screen and (max-width: 850px){
                         font-size: 0.9rem;
                     }
                 }

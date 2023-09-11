@@ -19,7 +19,7 @@ header.header-desktop{
             justify-content: flex-end;
             align-items: center;
             list-style-type: none;
-            padding: 0.6em 3.3em 0 2.1em;
+            padding: 0.6em 2em 0 2.1em;
             height: 100%;
             //border: $border;
             
@@ -43,11 +43,45 @@ header.header-desktop{
                     text-transform: uppercase;
                     //border: $border;
                     height: 100%;
+                    @media screen and (max-width: 680px) {
+                        font-size: 0.7em;
+                    }
+
+                    &.social-media-logo-div {
+                        display: flex;
+                        padding-top: 2.8em;
+                        //border: $border;
+                    }              
+                        .social-media-logo{
+
+                            svg.insta-header{
+                                //border: $border;
+                                &:hover{
+                                    path{
+                                        fill: $red;
+                                    } 
+                                }
+                            }
+                            
+                            svg.linkedin-header{
+                                //border: $border;
+                                &:hover{
+                                    path{
+                                        fill: $red;
+                                    }
+                                }
+                            }
+                        }
+                            
                 }
             }
 
         }
-        
-        
     }
 }
+
+        
+        
+        
+    
+

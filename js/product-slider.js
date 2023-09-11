@@ -1,1 +1,0 @@
-let sliderImages = ['./images/bouteille-bleue.jpg']

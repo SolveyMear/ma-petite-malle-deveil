@@ -33,6 +33,7 @@ section.header-main-img{
 
     .main-img{
         display: flex;
+        //flex-direction: column;
         height: calc(100% - $header-height - 30px);
         padding-top: 1.3em;
         min-height: 360px;
@@ -97,16 +98,12 @@ section.header-main-img{
                     align-items: center;
                     text-align: center;
                     padding: 5em;
+                    //border: $border;
                 }
-
-
                 p{
                     margin-top: 6%;
                 }
                 .buttons-main{
-                    //display: flex;
-                    //align-items: center;
-                    //justify-content: center;
                     margin-top: 10%;
                     
                 }

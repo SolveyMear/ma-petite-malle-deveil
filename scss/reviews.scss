@@ -35,8 +35,7 @@ section.review-section{
 			border-radius: 6px;
 			margin: 5% 3%;
 			.quotes{
-				padding-top: 15%;
-				padding-left: 15%;
+				padding: 3em;
 			}
 			.review-text{
 				margin: 40px 50px;
@@ -51,8 +50,7 @@ section.review-section{
 			}
 			.name{
 				margin-top: auto;
-				padding-left: 15%;
-				padding-top: 4%;
+				padding: 2em;
 				font-family: 'Roboto', sans-serif;
 				font-weight: 400;
 				color: $dark-grey;

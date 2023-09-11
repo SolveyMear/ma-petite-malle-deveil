@@ -37,18 +37,21 @@ section.sponsors-section{
                 }
 
                 &.pepite-logo{
-                    background-image: url(../images/pepite-logo.png);
+                    background-image: url(../images/logos-partners/logo-pepite.png);
                     background-position: center;
 
                 }
                 &.cma-logo{
-                    background-image: url(../images/CMA-logo.png);
+                    background-image: url(../images/logos-partners/logo-cma.png);
                     background-position: center;
 
                 }
                 &.bge-logo{
-                    background-image: url(../images/BGE-logo.png);
+                    background-image: url(../images/logos-partners/logo-bge.png);
 
+                }
+                &.epine-logo{
+                    background-image: url(../images/logos-partners/logo-concours-lepine.png);
                 }
             }
         }
@@ -58,29 +61,23 @@ section.sponsors-section{
             max-width: 600px;
             padding: 5%;
         }
-
-
     }
+
 }
 section.contact{
     display: flex;
     justify-content: space-evenly;
     background-color: #F9F2EEC2;
-    padding: 10% 10% 10% 17%;
-    // @media screen and (max-width: 750px) {
-        //     flex-direction: column;
-        // }
-        .contact-text{
+    padding: 2em 0 2em 10em;
+    @media screen and (max-width: 600px) {
+        padding: 4em;
+    }
+    
+    .contact-text{
         width: 50%;
-@media screen and (max-width: 750px) {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    width: auto;
-}
+
         .red{
             width: 75px;
-            //padding: 5px 8px;
         }
         h2{
             text-align: start;
@@ -103,16 +100,14 @@ section.contact{
     }
     .img-malle-div{
         width: 50%;
+        padding-left: 3em;
         .malle-transp{
-            //margin-left: 12em;
             height: 236px;
             width: 230px;
-            background-image: url("../images/malle-transparente.png");
+            background-image: url("../images/malle-contact-section.svg");
             background-repeat: no-repeat;
             background-position: center;
             @media screen and (max-width: 750px) {
-                //height: 170px;
-                //margin: 10%;
                 display: none;
             }
         }

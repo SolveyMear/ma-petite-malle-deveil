@@ -2,21 +2,29 @@
  
 section.header-main-img{
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
+    // min-height: 600px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3em;
+    // border: $border1;
+    //min-height: 680px;
+    // @media screen and (max-width: 1100px) {
+    //     min-height: 550px;
+    // }
     @media screen and (max-width: 660px) {
-        height: auto;
+        padding-bottom: 0;
     }
     .background-absolute-header-main-img{
         position: absolute;
         background-color: $beige;
-        height: 100vh;
-        width: 550px;
+        height: 100%;
+        width: 43%;
         z-index: -1;
         top: 0;
         left: 0;
         //border: $border1;
-
         @media screen and (max-width: 1100px) {
             width: 100%;
         }
@@ -33,11 +41,18 @@ section.header-main-img{
 
     .main-img{
         display: flex;
+        flex: 1;
+        padding-top: 1.5em;
         //flex-direction: column;
-        height: calc(100% - $header-height - 30px);
-        padding-top: 1.3em;
-        min-height: 360px;
-        //border: $border;
+        //height: calc(100% - $header-height - 30px);
+        // height: 100%;
+        // min-height: 350px;
+        //min-height: 500px;
+        @media screen and (max-width: 600px) {
+            padding-top: 0em;
+            margin-top: $header-height/2;
+        }
+        // border: $border;
         .left-section{
             //height: calc(100vh - #{$header-height});
             //border: $border1;
@@ -45,7 +60,7 @@ section.header-main-img{
                 display: none;
             }
             width: 50%;
-            height: 100%;
+            //height: 100%;
             padding-left: 5em;
             .container-img{
                 display: flex;
@@ -57,14 +72,14 @@ section.header-main-img{
                     background-image: url("../images/bouteille-bleue.jpg");
                     //border: $border;
                     background-size: cover;
-                    width: 236px;
+                    width: 40%;
                     background-position: center top;
                     
                 }
                 .main-img-bouteille-hiver{
                     background-image: url("../images/bouteille-hiver.jpg");
                     background-size: cover;
-                    width: 371px;
+                    width: 55%;
                     margin-left: 5%;
                     //border: 1px solid red;
                     background-position: right top;
@@ -82,8 +97,8 @@ section.header-main-img{
             width: 50%;
             display: flex;
             align-items: center;
-            padding-left: 9%;
-            padding-right: 3em;
+            padding: 1.3em 3em 1.3em 9%;
+        
 
             @media screen and (max-width: 870px) {
                 width: 100%;
@@ -94,17 +109,20 @@ section.header-main-img{
                 flex-direction: column;
                 max-width: 450px;
                 align-items: flex-start;
+                gap: 0.5em;
                 @media screen and (max-width: 870px) {
                     align-items: center;
                     text-align: center;
-                    padding: 5em;
+                    // padding: 5em;
                     //border: $border;
                 }
                 p{
-                    margin-top: 6%;
+                    //margin-top: 6%;
+                    max-width: 400px;
                 }
                 .buttons-main{
-                    margin-top: 10%;
+                    margin-top: 2em;
+                    //margin-top: 10%;
                     
                 }
             }

@@ -29,7 +29,7 @@ header.header-desktop{
                 font-weight: 400;
                 
                 &.logo-header{
-                    width: 110px;
+                    width: 6em;
                     margin-right: auto;
                 }
 
@@ -45,6 +45,11 @@ header.header-desktop{
                     height: 100%;
                     @media screen and (max-width: 680px) {
                         font-size: 0.7em;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $dark-grey;
+
                     }
 
                     &.social-media-logo-div {

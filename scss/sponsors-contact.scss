@@ -75,7 +75,7 @@ section.contact{
     background-color: #F9F2EEC2;
     padding: 4em 1em 4em 10em;
     @media screen and (max-width: 600px) {
-        padding: 4em;
+        padding: 3.5em;
     }
     @media screen and (max-width: 400px) {
         padding: 2em;
@@ -83,9 +83,8 @@ section.contact{
     
     .contact-text{
         width: 50%;
-
-        .red{
-            width: 75px;
+        @media screen and (max-width:680px) {
+            width: 100%;
         }
         h2{
             text-align: start;

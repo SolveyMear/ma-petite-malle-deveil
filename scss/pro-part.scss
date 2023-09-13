@@ -93,15 +93,7 @@ section.pro-part-section{
                     //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
                     //border: $border;
                 }
-                .buttons-secondary{
-                    display: inline-block;
-                    border: $border;
-                    &::before{
-                        content: " ";
-                        background-image: url(../images/icons-MPME/btn-fleche.svg);
-                        //background-size: 14px 18px;
-                  }
-                }
+
             }
         }
     }

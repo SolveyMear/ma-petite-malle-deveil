@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 section.review-section{
-	padding: 11em 5%;	
+	padding: 11em 5% 1em;	//j'ai rajouté 1em en bas 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -12,7 +12,7 @@ section.review-section{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		.beige-dark-red{
+		.brown{
 			padding: 4px 10px;
 		}
 		h2{
@@ -39,7 +39,7 @@ section.review-section{
 			min-width: 340px;
 			width: calc(100%/3 - 6%);
 			border-radius: 6px;
-			margin: 5% 3%;
+			margin: 5% 1%;  //j'ai changé la marge à gaiche/droite de 3% à 1% pour qu'ils restent sur une ligne en desktop
 			@media screen and (max-width: 1050px){
 				margin: 5%;
 			}
@@ -75,7 +75,7 @@ section.review-section{
 					font-weight: 700;
 				}
 				&.name1{
-					color: $light-red;
+					color: $brown;
 				}
 				&.name2{
 					color: $dark-green

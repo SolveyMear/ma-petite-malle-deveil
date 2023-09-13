@@ -17,10 +17,10 @@ section.montessori{
             align-items: center;
             max-width: 650px;
             min-height: 650px;
-            @media screen and (max-width: 600px) {
-                min-height: 500px;
+            // @media screen and (max-width: 600px) {
+            //     min-height: 500px;
 
-            }
+            // }
             h2{
                 em{
                     font-style: normal;
@@ -43,16 +43,15 @@ section.montessori{
             }
         }
         .montessori-images{
-            //pourquoi j'ai cette div qui sans la width on voit plus les photos
+
             width: 95%;
             display: flex;
             justify-content: center;
-            @media screen and (max-width: 600px) {
-                flex-direction: column;
-                align-items: center;
-            }
+            // @media screen and (max-width: 600px) {
+            //     flex-direction: column;
+            //     align-items: center;
+            // }
             .image-div{
-                //alors que cette classe là fait la même chose, chaque img à cette classe et les photos disparaissent aussi sans la width
                 background-size: cover;
                 height: 350px;
                 width: calc(100%/3 - 2%);
@@ -99,7 +98,7 @@ section.montessori{
                 background-position-x: 48%;
                 background-position-y: 42%; 
             }
-            
+            //the background is relative to the part section
             // .background-absolute-montessori{
 			// 	position: absolute;
             //     right: 0;

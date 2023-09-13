@@ -12,6 +12,9 @@ footer{
     @media screen and (max-width: 550px) {
         flex-direction: column;
     }
+    @media screen and (max-width: 400px) {
+        padding: 2em;
+    }
     .contact-footer{
         text-transform: uppercase;
         font-weight: 700;
@@ -30,11 +33,13 @@ footer{
 
     .social-media-logo-div{
         display: flex;
-        padding: 2em ;
+        padding: 0 4em ;
         align-items: center;
         @media screen and (max-width: 550px) {
             padding: 2em 0;
-
+        }
+        @media screen and (max-width: 400px) {
+            padding: 1em 0;
         }
 
         .social-media-logo{
@@ -57,7 +62,12 @@ footer{
             }
         }
     }
-
+    .signature{
+        font-size: 0.5em;
+        @media screen and (max-width: 400px) {
+            font-size: 0.4em;
+        }
+    }
 
     }
 

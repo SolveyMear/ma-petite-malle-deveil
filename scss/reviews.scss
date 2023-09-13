@@ -1,10 +1,13 @@
 @import "./variables.scss";
 
 section.review-section{
-	margin-top: 15%;
+	padding: 11em 5%;	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	@media screen and (max-width: 1050px){
+		padding-top: 6em;
+	}
 	.review-title{
 		display: flex;
 		flex-direction: column;
@@ -17,10 +20,11 @@ section.review-section{
 		}
 	}
 	.review-container{
-		width: 95%;
+		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
-		
+		align-content:baseline;
+		flex-wrap: wrap;
 		
 		.review-card{
 			display: flex;
@@ -32,18 +36,24 @@ section.review-section{
 			line-height: 1.4;
 			//height: 445px;
 			max-width: 373px;
+			min-width: 340px;
+			width: calc(100%/3 - 6%);
 			border-radius: 6px;
 			margin: 5% 3%;
+			@media screen and (max-width: 1050px){
+				margin: 5%;
+			}
+			@media screen and (max-width: 600px){
+				min-width: 100%;
+		}
 			.quotes{
-				padding: 3em;
+				padding: 3em 2.3em 1em;
 			}
 			.review-text{
-				margin: 40px 50px;
-				width: 75%;
+				padding: 2em;
 				font-family: 'Georgia', serif;
 				font-weight: 400;
 				font-size: 19px;
-				padding-bottom: 7%;
 				@media screen and (max-width: 1050px) {
 					font-size: 17px;    
 			  }
@@ -54,7 +64,6 @@ section.review-section{
 				font-family: 'Roboto', sans-serif;
 				font-weight: 400;
 				color: $dark-grey;
-				height: 121px;
 				border-radius: 0 0 6px 6px;
 				p{
 					font-size: 16px;
@@ -100,17 +109,7 @@ section.review-section{
 	}
 }
 
-@media screen and (max-width: 1050px){
-.review-container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 
-	.review-card{
-		margin: 1% 5%;
-	}
-}
-};
 
 
 

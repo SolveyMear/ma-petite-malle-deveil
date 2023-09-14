@@ -166,9 +166,6 @@ h3{
       }
 }
 
-
-
-
 .tags{
       font-weight: 500;
       display: inline;
@@ -198,4 +195,14 @@ h3{
 
 }
 
+.dot-circle{
+      position: absolute;
+      z-index: -2;
+      width: 50vw;
+      height: 50vw;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke-opacity='30%' stroke='%23E8CEBF' stroke-width='5' stroke-dasharray='35' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e " );
+      border-radius: 50%;
+   }
 
+   
+            

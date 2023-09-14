@@ -3,13 +3,21 @@
 section.montessori{
     display: flex;
     justify-content: center;
-
+    position: relative;
+    .dot-circle{
+        top: 21vw;
+        left: -24vw;
+        @media screen and (max-width: 650px) {
+            display: none;;
+        }
+    }
     .montessori-container{
         //position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+
 
         .montessori-title-text{
             display: flex;
@@ -41,6 +49,9 @@ section.montessori{
                 background-position: center;
             }
         }
+
+
+
         .montessori-images{
 
             width: 95%;

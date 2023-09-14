@@ -38,9 +38,7 @@ section.pro-part-section{
                 justify-content: center;
                 align-items: flex-start;
                 // height: 50%;
-                @media screen and (max-width: 1015px) {
-                    padding: 5em 10em; 
-                }
+
                 @media screen and (max-width: 600px) {
                     padding: 4em;
                 }

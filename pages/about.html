@@ -10,17 +10,17 @@
     <body>
         
         
-        {{>header this}}
+        {{>header}}
         
         <h1>ABOUT</h1>
         
-        <!-- tout ce qu'on veut répéter sur chaque page, on l'appelle avec {{>le nom du truc}} et ce qu'on veut appeler on le cale dans un fichier .hbs dans le dossier partials. Les autres pages du site vont dans le dossier pages, mais on garde l'index dans le dossier de base.-->
+        <!-- tout ce qu'on veut répéter sur chaque page, on l'appelle avec { {>le nom du truc}} et ce qu'on veut appeler on le cale dans un fichier .hbs dans le dossier partials. Les autres pages du site vont dans le dossier pages, mais on garde l'index dans le dossier de base.-->
     
         
-        {{>footer this}}
+        {{>footer}}
 
-		<script type="module" src="js/main.js"></script>
-		<script type="module" src="js/burger-menu.js"></script>
+		<script type="module" src="../js/main.js"></script>
+		<script type="module" src="../js/burger-menu.js"></script>
 
     </body>
 

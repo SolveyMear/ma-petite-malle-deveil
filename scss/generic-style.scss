@@ -139,8 +139,18 @@ h3{
       font-size: 1em;
       padding: 1em 1em 1em 0;
       color: $red;
+      opacity: 1;
+      transition: opacity 300ms linear;
       cursor: pointer;
+      &:hover{
+            opacity: 0.8;
+            &::before{
+                  transform: translate(5px, 0);
+            }   
+      }
       &::before{
+            transform: translate(0, 0);
+            transition: transform 300ms linear;
             content: " ";
             background-image: url(../images/icons-MPME/btn-fleche.svg);
             width: 13px;

@@ -3,7 +3,7 @@
 section.montessori{
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+
     .montessori-container{
         //position: relative;
         display: flex;
@@ -16,12 +16,12 @@ section.montessori{
             flex-direction: column;
             align-items: center;
             max-width: 650px;
-            min-height: 650px;
-            // @media screen and (max-width: 600px) {
-            //     min-height: 500px;
-
-            // }
+            padding: 7em 0;
+            @media screen and (max-width: 600px) {
+                padding: 4em 0 2em;
+            }
             h2{
+                margin-bottom: 0.5em;
                 em{
                     font-style: normal;
                     color: $red;
@@ -39,34 +39,41 @@ section.montessori{
                 background-image: url("../images/malle-transparente.png");
                 background-repeat: no-repeat;
                 background-position: center;
-                margin-bottom: 10%;
             }
         }
         .montessori-images{
 
             width: 95%;
+            height: 550px;
             display: flex;
             justify-content: center;
-            // @media screen and (max-width: 600px) {
-            //     flex-direction: column;
-            //     align-items: center;
-            // }
+            padding-top: 4em;
+
+            @media screen and (max-width: 1015px) {
+                height: 400px;
+                padding-top: 0;
+                align-items: center;
+
+            }
+
             .image-div{
                 background-size: cover;
                 height: 350px;
                 width: calc(100%/3 - 2%);
                 margin: 0 1%;
+
+                @media screen and (max-width: 1015px) {
+                    height: 70%;
+                }
                 @media screen and (max-width: 950px) {
                     width: calc(100%/3 - 6%);
                     margin: 0 3%;
-                    height: 205px;
                     background-size: cover;
                 }
                 @media screen and (max-width: 600px) {
                     flex-direction: column;
                     align-items: center;
                     width: 90vw;
-                    height: 60vw;
                     margin: 0;
                 }
             }
@@ -74,19 +81,14 @@ section.montessori{
             .img1{
                 background-image: url("../images/girl-bottle.jpg");
                 background-repeat: no-repeat; 
-                background-size: 167%;  
-                background-position-x: 54%;
-                background-position-y: 29%;   
+  
                 @media screen and (max-width: 600px) {
                     display: none;
                 }          
             }
             .img2{
-                background-image: url("../images/old-lady.jpg");
+                background-image: url("../images/old-people.jpg");
                 background-repeat: no-repeat; 
-                background-size: 198%;  
-                background-position-x: 36%;
-                background-position-y: 35%; 
                 @media screen and (max-width: 600px) {
                     display: none;
                 } 
@@ -94,9 +96,7 @@ section.montessori{
             .img3{
                 background-image: url("../images/handicaped-child.jpg");
                 background-repeat: no-repeat; 
-                background-size: 195%;  
-                background-position-x: 48%;
-                background-position-y: 42%; 
+ 
             }
             //the background is relative to the part section
             // .background-absolute-montessori{

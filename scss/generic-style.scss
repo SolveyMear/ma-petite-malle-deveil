@@ -46,27 +46,19 @@ h2{
       font-family: 'Georgia', serif;
       font-weight: 700;
       font-size: 2.4rem;
-      line-height: 1.2;
+      line-height: 1;
       text-align: center;
-      max-width: 600px;
-      
-      @media screen and (max-width: 1050px) {
-            font-size: 2rem;
-            line-height: 1.4;
-    
+      //max-width: 600px;
+      @media screen and (max-width: 600px) {
+            font-size: 1.9em;
       }
-      @media screen and (max-width: 661px) {
-            font-size: 1.45rem;
-            line-height: 1.1;
-        }
-
-
+      
       span{
             //border: $border1
             font-family: 'Roboto', sans-serif;
             font-weight: 300;
             font-size: 0.85em;
-            line-height: 1.1;
+            line-height: 1;
             @media screen and (max-width: 600px) {
                   max-width: 300px;
             }
@@ -77,9 +69,9 @@ h2{
             font-size: 1.2em;
             line-height: 1.4;
             margin: 2% 0;
-            max-height: 650px;
+            //max-height: 650px;
             @media screen and (max-width: 661px) {
-                  font-size: 0.9em;
+                  //font-size: 0.9em;
                   max-width: 90%;
             }
       }
@@ -91,16 +83,16 @@ h3{
       font-size: 1.3rem;
       line-height: 25px;
       @media screen and (max-width: 1050px) {
-            font-size: 1.1rem;
-            max-width: 90%;
+            //font-size: 1.1rem;
+            //max-width: 90%;
       }
       @media screen and (max-width: 900px) {
-            font-size: 1rem;
-            max-width: 65%;
+            //font-size: 1rem;
+            //max-width: 65%;
       }
       @media screen and (max-width: 680px) {
-            font-size: 0.9rem;
-            min-width: 200px;
+            //font-size: 0.9rem;
+            //min-width: 200px;
         }
       
       & ~ p{
@@ -108,15 +100,15 @@ h3{
             font-size: 1.1em;
             line-height: 1.4;
             margin: 2% 0;
-            @media screen and (max-width: 1050px) {
-                  font-size: 0.85em;
-            }
-            @media screen and (max-width: 900px) {
-                  font-size: 0.8em;
-            }
+            // @media screen and (max-width: 1050px) {
+            //       font-size: 0.85em;
+            // }
+            // @media screen and (max-width: 900px) {
+            //       font-size: 0.8em;
+            // }
             @media screen and (max-width: 680px) {
-                  font-size: 0.7rem;
-                  min-width: 200px;
+                  //font-size: 0.7rem;
+                  //min-width: 200px;
               }
       }
 }

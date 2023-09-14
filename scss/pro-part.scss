@@ -1,13 +1,6 @@
 @import "./variables.scss";
 
 section.pro-part-section{
-    margin-top: 9em;
-    @media screen and (max-width: 600px) {
-        margin-top: 5em;
-    }
-    //border: $border;
-    //height: 1000px;
-    //height: 246%;
     .pro-part-container{
         display: flex;
         width: 100%;
@@ -32,6 +25,7 @@ section.pro-part-section{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            width: 60%;
             //border: $border1;
             @media screen and (max-width: 1015px) {
                 width: 100%;
@@ -63,17 +57,17 @@ section.pro-part-section{
                     top: -$background-montessori;
                     background-color: $beige;
                     height: $background-montessori;
-                    width: 100.2%;
+                    width: 100%;
                     z-index: -1;
                     //border: $border1;
                     @media screen and (max-width: 1015px)  {
                         width: 100%;
-                        height: 380px;
-                        top: -430px;
+                        height: 300px;
+                        top: -300px;
                     }
                     @media screen and (max-width: 600px) {
-                        top: -550px;
-                        height: 550px;
+                        // top: -550px;
+                        // height: 550px;
                     }
                 }
             }
@@ -85,15 +79,18 @@ section.pro-part-section{
             .pro-text, .part-text {
                 h2{
                     text-align: start;
-                    line-height: 1.2;
+                    line-height: 1;
+                    margin-bottom: 1em;
                 }
                 p{
-                    max-width: 450px;
+                    //max-width: 450px;
                     font-size: 1.1em;
                     //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
                     //border: $border;
                 }
-
+                .buttons-secondary{
+                    margin-top: 2.2em;
+                }
             }
         }
     }

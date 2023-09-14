@@ -40,6 +40,9 @@ section.presentation-section{
     .presentation-laurie{
         margin: auto;
         width: 80%;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
         .presentation-container{
             display: flex;
             justify-content: center;
@@ -98,7 +101,7 @@ section.presentation-section{
                 @media screen and (max-width: 600px) {
                     align-items: center;
                     padding: 10% 0;
-                    max-width: 90%;
+                    max-width: 100%;
                     text-align: center;
                 }
                 .tags{
@@ -118,9 +121,7 @@ section.presentation-section{
                 }
                 p{
                     max-width: 500px;
-                    @media screen and (max-width: 850px){
-                        font-size: 0.9rem;
-                    }
+
                 }
             }
         }

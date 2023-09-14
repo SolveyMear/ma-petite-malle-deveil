@@ -27,7 +27,6 @@ header.header-desktop{
                 //on cible tous les li
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
-                
                 &.logo-header{
                     width: 6em;
                     margin-right: auto;
@@ -36,13 +35,14 @@ header.header-desktop{
                 //& = on cible avec le  QUE les tabs
                 &.tab {
                     cursor: pointer;
+                    align-self: flex-start;
                     margin: 0 1%;
-                    padding-top: 4em;
+                    padding: 1em 0;
+                    margin-top: 3em;
                     font-size: 0.8em;
                     line-height: 1.1;
                     text-transform: uppercase;
                     //border: $border;
-                    height: 100%;
                     @media screen and (max-width: 680px) {
                         font-size: 0.7em;
                     }
@@ -54,12 +54,14 @@ header.header-desktop{
 
                     &.social-media-logo-div {
                         display: flex;
-                        padding-top: 2.8em;
                         //border: $border;
-                    }              
+                        padding: 0;
                         .social-media-logo{
-
-                            svg.insta-header{
+                            svg{
+                                &.facebook-header{
+                                    fill: #616060
+                
+                            }
                                 //border: $border;
                                 &:hover{
                                     path{
@@ -67,17 +69,8 @@ header.header-desktop{
                                     } 
                                 }
                             }
-                            
-                            svg.linkedin-header{
-                                //border: $border;
-                                &:hover{
-                                    path{
-                                        fill: $red;
-                                    }
-                                }
-                            }
                         }
-                            
+                    }              
                 }
             }
 

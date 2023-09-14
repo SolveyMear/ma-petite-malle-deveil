@@ -18,6 +18,9 @@ section.who-for-section{
             flex-direction: column;
             align-items: center;
             max-width: 650px;
+            @media screen and (max-width: 700px) {
+                padding: 0 1em;
+            }
 
             h2{
                 margin: 0.5em 0;
@@ -47,7 +50,7 @@ section.who-for-section{
                 align-items: center;
                 border-top: 2px solid $beige-light;
                 padding: 4%;
-                @media screen and (max-width: 750px) {
+                @media screen and (max-width: 650px) {
                     flex-direction: column;
                     align-items: center;
                     padding: 10% 0;
@@ -59,11 +62,13 @@ section.who-for-section{
                 .who-for-image{
                         width: 268px;
                         height: 100%;
-                        margin-right: 4%;
+                        margin-right: 3em;
                         background-size: cover;  
-                        @media screen and (max-width: 830px) {
+                        @media screen and (max-width: 650px) {
                             height: 150px;
-                            width: 190px;
+                            width: 100%;
+                            margin-right: 0;
+
                         }
 
                     }
@@ -88,22 +93,22 @@ section.who-for-section{
                 flex-direction: column;
                 justify-content: center;
                 width: 60%;
-                    @media screen and (max-width: 830px) {
-                        align-items: center;
-                        margin: 10% 0;
+                    @media screen and (max-width: 650px) {
+                        align-items: flex-start;
+                        margin-top: 3em;
                         width: 100%;
                     }
 
                 h3{
-                    @media screen and (max-width: 830px) {
-                        text-align: center;
+                    @media screen and (max-width: 650px) {
+                        text-align: left;
                     }
 
                 }
                 .text{
                     padding: 1em 0.7%;
-                    @media screen and (max-width: 830px) {
-                        text-align: center;
+                    @media screen and (max-width: 650px) {
+                        text-align: left;
                         line-height: 1.7;
                     }
 

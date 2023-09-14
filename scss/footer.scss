@@ -3,10 +3,10 @@
 footer{
     display: flex;
     justify-content: space-between;
-    padding: 2em 0 2em 10em;
+    padding: 2em 10em 2em 10em;
     background-color: $dark-grey;
     color: #E6E5E5;
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
         padding: 4em;
     }
     @media screen and (max-width: 550px) {
@@ -33,7 +33,8 @@ footer{
 
     .social-media-logo-div{
         display: flex;
-        padding: 0 4em ;
+        gap: 0.5em;
+        //padding: 0 4em ;
         align-items: center;
         @media screen and (max-width: 550px) {
             padding: 2em 0;
@@ -43,17 +44,7 @@ footer{
         }
 
         .social-media-logo{
-            svg.insta-footer{   //on target le logo linkedin de la balise svg 
-                cursor: pointer;  
-                padding: 0.1em;  //je comprends pas pq c'est pris en compte mais pas dans la console     
-            }
-            &:hover{          //on target en hover le logo linkedin de la balise svg
-                path{
-                    fill: #F9F2EEC2//le logo change en bleu au hover
-                }
-            }
-            svg.linkedin-footer{
-                cursor: pointer;
+            svg{
             }
             &:hover{
                 path{

@@ -36,3 +36,10 @@ Pour positionner correctement un absolute sur un relatif, il faut faire attentio
 
 
 Comment déterminer quand donner une taille à une section ou une div ???
+
+Si erreur faites, vérifier git et faire flèche pour annuler.
+
+En général si qqchose fonctionne pas, ça fini par se gérer avec flex, donc dans la mesure du possible utiliser flex...
+
+Svg se copie-colle direct dans le html, sauf quand c'est en before, là c'est l'url dans le css.
+

@@ -77,7 +77,7 @@ section.presentation-section{
                         z-index: -1;
                         left: 30px;
                         top: -30px;
-                        background-color: #F6F0EF;
+                        background-color: $pale-pink;
                         @media screen and (max-width: 600px) {
                             display: none;
                         }

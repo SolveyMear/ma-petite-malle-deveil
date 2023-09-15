@@ -43,3 +43,4 @@ En général si qqchose fonctionne pas, ça fini par se gérer avec flex, donc d
 
 Svg se copie-colle direct dans le html, sauf quand c'est en before, là c'est l'url dans le css.
 
+        tout ce qu'on veut répéter sur chaque page, on l'appelle avec { {>le nom du truc}} et ce qu'on veut appeler on le cale dans un fichier .hbs dans le dossier partials. Les autres pages du site vont dans le dossier pages, mais on garde l'index dans le dossier de base.

@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+.campaign{
+    border: $border3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+    .campaign-container{
+        display: flex;
+        //border: $border;
+        width: 90%;
+        max-width: 1000px;
+        height: auto;
+        margin-top: 2em;
+        border-radius: 15px;
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            width: 70%;
+        }
+        .logo-kisskiss{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: $border1;
+            border-radius: 15px 0 0 15px;
+            width: 25%;
+            @media screen and (max-width: 600px) {
+                border-radius: 15px 15px 0 0;
+            }
+            a{
+                width: 75%;
+                display: block;
+                svg{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+        }
+        .campaign-text{
+            background-color: $pale-pink;
+            border: $border2;
+            padding: 1em 2em;
+            border-radius: 0 15px 15px 0;
+            h2{
+                text-align: left;
+            }
+            @media screen and (max-width: 600px) {
+                border-radius: 0 0 15px 15px;
+            }
+
+        }
+    }
+}
+

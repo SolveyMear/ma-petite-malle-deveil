@@ -9,6 +9,7 @@ section.who-for-section{
     background-repeat: repeat-y;
     width: 100%;
     position: relative;
+    padding-bottom: 7em;
     &:after {
         content:'';
         position: absolute;
@@ -22,6 +23,7 @@ section.who-for-section{
 
     @media screen and (max-width: 1200px) {
         background: none;
+        padding-bottom: 5em;
     }
     .who-for-container{
         display: flex;

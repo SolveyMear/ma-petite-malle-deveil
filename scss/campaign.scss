@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 .campaign{
-    border: $border3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,23 +13,31 @@
         height: auto;
         margin-top: 2em;
         border-radius: 15px;
-        @media screen and (max-width: 600px) {
+        background-color: $pale-pink;
+        box-shadow: 0 0 47px rgba(#616060, 0.07);        @media screen and (max-width: 1000px) {
             flex-direction: column;
             width: 70%;
         }
         .logo-kisskiss{
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: $border1;
             border-radius: 15px 0 0 15px;
-            width: 25%;
-            @media screen and (max-width: 600px) {
+            width: 30%;
+            @media screen and (max-width: 1000px) {
                 border-radius: 15px 15px 0 0;
+                width: 100%;
+                padding: 3.5em 0;
             }
             a{
                 width: 75%;
                 display: block;
+                @media screen and (max-width: 1000px) {
+                    width: 40%;
+                    min-width: 160px;
+                }
+                
                 svg{
                     width: 100%;
                     height: 100%;
@@ -39,18 +46,43 @@
             
         }
         .campaign-text{
-            background-color: $pale-pink;
-            border: $border2;
-            padding: 1em 2em;
+            padding: 2.5em 3.5em;
             border-radius: 0 15px 15px 0;
+            background-image: url('../images/confettis-small.svg');
+            background-repeat: no-repeat;
+            background-size: 35% auto;
+            background-position: right top;
+            @media screen and (max-width: 1000px) {
+                padding: 2em 2.8em;
+                border-radius: 0 0 15px 15px;
+            }
+            @media screen and (max-width: 400px) {
+                padding: 2em 1.8em;
+            }
+
             h2{
                 text-align: left;
+                font-size: 1.8rem;
+                @media screen and (max-width: 600px) {
+                    //text-align: center;
+                    margin-bottom: 0.5em;
+                }
             }
-            @media screen and (max-width: 600px) {
-                border-radius: 0 0 15px 15px;
+            p{
+                @media screen and (max-width: 600px) {
+                    //text-align: center;
+                }
+            
             }
 
         }
     }
+    .buttons-main{
+        background-color: $dark-grey;
+        border-radius: 5px;
+        a{
+            text-decoration: none;
+            color: white; 
+        }
+    }
 }
-

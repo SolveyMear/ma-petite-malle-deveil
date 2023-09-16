@@ -14,7 +14,8 @@
         margin-top: 2em;
         border-radius: 15px;
         background-color: $pale-pink;
-        box-shadow: 0 0 47px rgba(#616060, 0.07);        @media screen and (max-width: 1000px) {
+        box-shadow: 0 0 47px rgba(#616060, 0.07);        
+        @media screen and (max-width: 1000px) {
             flex-direction: column;
             width: 70%;
         }

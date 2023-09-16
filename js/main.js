@@ -14,3 +14,4 @@ import "../scss/values.scss";
 import "../scss/reviews.scss";
 import "../scss/sponsors-contact.scss";
 import "../scss/footer.scss";
+import "../scss/about.scss"

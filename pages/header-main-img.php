@@ -16,7 +16,7 @@ require_once __DIR__ . '/../vitephp/helpers.php';
             <nav>
                 <ul>
                     <li class="logo-header">
-                        <img src="../images/logo-rond.png" alt="Ma Petite Malle d'Eveil" />
+                        <img src="../images/logo-rond.png" alt=" Logo de l'entreprise Ma Petite Malle d'Eveil" />
                     </li>
                     <li class="tab">Particuliers</li>
                     <li class="tab">Professionnels</li>

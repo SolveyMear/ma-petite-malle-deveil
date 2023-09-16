@@ -2,7 +2,6 @@
 
 .product-section{
 	position: relative;
-	overflow: hidden;
 	//border: $border1;
 	padding: 7em 5% 0;
 	//height: 800px;
@@ -17,8 +16,8 @@
 			display: none;
 		}
 		&.left{
-			top: -38vw;
-			left: -15vw;
+			top: -40vw;
+			left: -26vw;
 
 		}
 		&.right{

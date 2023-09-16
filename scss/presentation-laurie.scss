@@ -56,19 +56,14 @@ section.presentation-section{
                 justify-content: flex-end;
                 .img-laurie{
                     position: relative;
-                    background-image: url("../images/laurie-presentation.png");
+                    background-image: url("../images/ceo-laurie.jpg");
                     background-repeat: no-repeat;
                     background-size: cover;
                     width: 223px;
                     height: 100%;
-                    // top: 50px;
-                    // @media screen and (max-width: 500px) {
-                    //     width: 200px;
-                    //     height: 240px;
-                    // }
+                    border-radius: 15px;
+
                     @media screen and (max-width: 600px) {
-                        // width: 100px;
-                        // height: 140px;
                         height: 300px;
                     }
                     .background-absolute-presentation-laurie{
@@ -78,6 +73,7 @@ section.presentation-section{
                         z-index: -1;
                         left: 25%;
                         top: -12%;
+                        border-radius: 15px;
                         background-color: $pale-pink;
                         @media screen and (max-width: 600px) {
                             display: none;

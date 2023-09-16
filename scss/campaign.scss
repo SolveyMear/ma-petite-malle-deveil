@@ -46,12 +46,12 @@
             
         }
         .campaign-text{
-            padding: 2.5em 3.5em;
+            padding: 3em 4.5em;
             border-radius: 0 15px 15px 0;
             background-image: url('../images/confettis-small.svg');
             background-repeat: no-repeat;
             background-size: 35% auto;
-            background-position: right top;
+            background-position: calc(100% - 30px) 50%;            
             @media screen and (max-width: 1000px) {
                 padding: 2em 2.8em;
                 border-radius: 0 0 15px 15px;

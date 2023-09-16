@@ -3,11 +3,22 @@
 section.who-for-section{
     display: flex;
     justify-content: center;
-    padding-top: 7em;
-    background-image: url('../images/background-stars.png');
-    background-position: left -24px;
+    background-image: url('../images/backgrounds/confettis.svg');
+    background-position: left top;
     background-size: 100% auto;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    width: 100%;
+    position: relative;
+    &:after {
+        content:'';
+        position: absolute;
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, white 100%);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
 
     @media screen and (max-width: 1200px) {
         background: none;
@@ -17,9 +28,9 @@ section.who-for-section{
         flex-direction: column;
         align-items: center;
         width: 90%;
-        @media screen and (max-width: 830px) {
-            width: 100%;
-        }
+        gap: 5em;
+        padding-top: 7em;
+        z-index: 1;
         .who-for-title-text{
             display: flex;
             flex-direction: column;
@@ -47,36 +58,40 @@ section.who-for-section{
         .who-for-img-text{
             display: flex;
             flex-direction: column;
-            width: 75%;
-            margin-top: 10%;
+            gap: 2em;
+            width: 100%;
+            max-width: 900px;
 
-            
             .who-for-div{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-top: 2px solid $beige-light;
-                padding: 4%;
-                @media screen and (max-width: 650px) {
+                border-radius: 15px;
+                box-shadow: 0 0 47px rgba(#616060, 0.07);
+                @media screen and (max-width: 750px) {
                     flex-direction: column;
-                    align-items: center;
-                    padding: 10% 0;
                 }
-                &:last-child{
-                    border-bottom: 2px solid $beige-light;
+                &:first-child{
+                    background-color: $beige-light;
                 }
-
+                &:nth-child(2){
+                    background-color: $light-green;
+                }
+                &:nth-child(3){
+                    background-color: $pale-pink;
+                }
                 .who-for-image{
-                        width: 268px;
+                        width: 300px;
                         height: 100%;
-                        margin-right: 3em;
-                        background-size: cover;  
-                        @media screen and (max-width: 650px) {
-                            height: 150px;
+                        min-height: 300px;
+                        border-radius: 15px 0 0 15px;
+                        background-size: cover;
+                        @media screen and (max-width: 750px) {
                             width: 100%;
-                            margin-right: 0;
-
-                        }
+                            border-radius: 15px 15px 0 0;
+                            height: 200px;
+                            min-height: inherit;
+                        } 
 
                     }
                     .for-kids{
@@ -99,21 +114,20 @@ section.who-for-section{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 60%;
-                    @media screen and (max-width: 650px) {
-                        align-items: flex-start;
-                        margin-top: 3em;
-                        width: 100%;
-                    }
+                align-items: flex-start;
+                flex: 1;
+                gap: 0.6em;
+                padding: 3em 4em 2em;
+                @media screen and (max-width: 550px) {
+                    padding: 2.5em 3em 1.5em;
+                }
 
                 h3{
-                    @media screen and (max-width: 650px) {
-                        text-align: left;
-                    }
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.4rem;
 
                 }
                 .text{
-                    padding: 1em 0.7%;
                     @media screen and (max-width: 650px) {
                         text-align: left;
                         line-height: 1.7;

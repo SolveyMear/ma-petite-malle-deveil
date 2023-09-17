@@ -19,7 +19,6 @@ burgerButton.addEventListener('click', function () {
 console.log('open', isHeaderOpen)
 
     if(isHeaderOpen){
-        debugger
         body.classList.remove('header-open')
     } else{
         body.classList.add('header-open')

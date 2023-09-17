@@ -12,13 +12,10 @@ section.montessori{
         }
     }
     .montessori-container{
-        //position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
-
-
         .montessori-title-text{
             display: flex;
             flex-direction: column;
@@ -49,10 +46,10 @@ section.montessori{
                 background-position: center;
             }
         }
-
-
-
+        
         .montessori-images{
+
+            //Le background des images montessori est en relatif à la partie part. de la section pro-part.
 
             width: 95%;
             height: 550px;
@@ -66,7 +63,6 @@ section.montessori{
                 align-items: center;
 
             }
-
             .image-div{
                 background-size: cover;
                 height: 350px;
@@ -109,26 +105,7 @@ section.montessori{
                 background-repeat: no-repeat; 
  
             }
-            //the background is relative to the part section
-            // .background-absolute-montessori{
-			// 	position: absolute;
-            //     right: 0;
-            //     bottom: -155px;
-            //     background-color: $beige;
-			// 	height: 56%;
-			// 	width: 62.7%;
-			// 	z-index: -1;
-            //     //border: $border1;
-            //     @media screen and (max-width: 1000px)  {
-            //         width: 100%;
-            //         height: 470px;
-            //         bottom: -100px;
-            //     }
-            //     @media screen and (max-width: 600px) {
-            //         bottom: -30px;
-            //         height: 550px;
-            //     }
-            // }
+      
         }
     }
 }

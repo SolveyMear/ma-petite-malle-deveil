@@ -6,27 +6,21 @@ section.pro-part-section{
         width: 100%;
         height: 100%;
         .pro-part-img{
-            //height: 100%;
             flex:1; 
             background-image: url("../images/bouteille-hiver.jpg");    
             background-repeat: no-repeat; 
             background-size: cover;  
             background-position-x: 0;
             background-position-y: top;
-            //border: $border;
             @media screen and (max-width: 1015px) {
                 display: none;
             }
         }
         .pro-part-text{
-            // flex: 1;
-            //border: $border1;
-            //width: 62.7%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 60%;
-            //border: $border1;
             @media screen and (max-width: 1015px) {
                 width: 100%;
             }
@@ -37,7 +31,6 @@ section.pro-part-section{
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                // height: 50%;
 
                 @media screen and (max-width: 600px) {
                     padding: 4em;
@@ -57,15 +50,10 @@ section.pro-part-section{
                     height: $background-montessori;
                     width: 100%;
                     z-index: -1;
-                    //border: $border1;
                     @media screen and (max-width: 1015px)  {
                         width: 100%;
                         height: 300px;
                         top: -300px;
-                    }
-                    @media screen and (max-width: 600px) {
-                        // top: -550px;
-                        // height: 550px;
                     }
                 }
             }
@@ -81,10 +69,7 @@ section.pro-part-section{
                     margin-bottom: 1em;
                 }
                 p{
-                    //max-width: 450px;
                     font-size: 1.1em;
-                    //trouver un solution pour ici parce que quand je mets un width c'est toute la div qui change de taille.
-                    //border: $border;
                 }
                 .buttons-secondary{
                     margin-top: 2.2em;

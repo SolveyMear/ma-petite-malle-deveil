@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 
-body.background-cotillions{
+body.background-cotillons{
     background-image: url('../images/backgrounds/confettis.svg');
     background-position: left top;
     background-size: 100% auto;
@@ -18,21 +18,39 @@ body.background-cotillions{
         left: 0;
         z-index: -1;
     }
+    }
 
     .main-section-about{
         padding: 2em 4em;
         height: auto;
         width: 70%;
-        border: $border;
         margin: auto;
-        .outil-pedagogique-about{
+        background-color: white;
+        @media screen and (max-width: 660px) {
+            margin: $header-height auto 0;
+            padding: 2em 2em;
+            width: 90%;
+        }
+        @media screen and (max-width: 400px) {
+            padding: 2em 1em;
+            width: 90%;
+        }
+        .outil-pedagogique-about-title{
             h2, p{
                 text-align: left;
+                margin-bottom: 1em;
 
             }
         }
+        .pour-qui-liste{
+            padding: 1em 0.5em;
+            b{
+                display: block;
+            }
+            .liste-des-bienfaits{
+                padding: 1em 0 3em 1.5em;
+            }
+        }
     }
-    
 
-}
 

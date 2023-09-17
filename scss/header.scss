@@ -1,38 +1,30 @@
 @import "./variables.scss";
 
 header.header-desktop{
-    //logo absolute par rapport au header, taille dans une variable et border de debugage aussi
     height: $header-height;
     display: none;
     @media screen and (min-width: 661px) {
         display: flex;
     }
     
-    //border: $border2;
     nav {
         height: 100%;
         width: 100%;
         margin-left: auto;
         ul {
-            //vaut mieux mettre un padding là plutot que de marges
             display: flex;
             justify-content: flex-end;
             align-items: center;
             list-style-type: none;
             padding: 0.6em 2em 0 2.1em;
-            height: 100%;
-            //border: $border;
-            
+            height: 100%;            
             li {
-                //on cible tous les li
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 &.logo-header{
                     width: 6em;
                     margin-right: auto;
                 }
-
-                //& = on cible avec le  QUE les tabs
                 &.tab {
                     cursor: pointer;
                     align-self: flex-start;
@@ -42,27 +34,21 @@ header.header-desktop{
                     font-size: 0.8em;
                     line-height: 1.1;
                     text-transform: uppercase;
-                    //border: $border;
                     @media screen and (max-width: 680px) {
                         font-size: 0.7em;
                     }
                     a{
                         text-decoration: none;
                         color: $dark-grey;
-
                     }
-
                     &.social-media-logo-div {
                         display: flex;
-                        //border: $border;
                         padding: 0;
                         .social-media-logo{
                             svg{
                                 &.facebook-header{
                                     fill: #616060
-                
                             }
-                                //border: $border;
                                 &:hover{
                                     path{
                                         fill: $red;

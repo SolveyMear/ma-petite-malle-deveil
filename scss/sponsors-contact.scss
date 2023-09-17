@@ -35,10 +35,8 @@ section.sponsors-section{
                 background-position: center;
                 margin: 5% 4%;
                 @media screen and (max-width: 600px) {
-                    //margin: 1em;
                     width: calc(100%/2 - 8%);
                     margin: 0 4%;
-
                 }
 
                 &.pepite-logo{
@@ -67,7 +65,6 @@ section.sponsors-section{
             padding: 5%;
         }
     }
-
 }
 section.contact{
     display: flex;

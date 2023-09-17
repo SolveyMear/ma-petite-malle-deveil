@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 section.review-section{
-	padding: 11em 5% 1em;	//j'ai rajouté 1em en bas 
+	padding: 11em 5% 1em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -34,12 +34,11 @@ section.review-section{
 			font-weight: 400;
 			font-size: 1em;
 			line-height: 1.4;
-			//height: 445px;
 			max-width: 373px;
 			min-width: 340px;
 			width: calc(100%/3 - 6%);
 			border-radius: 6px;
-			margin: 5% 1%;  //j'ai changé la marge à gaiche/droite de 3% à 1% pour qu'ils restent sur une ligne en desktop
+			margin: 5% 1%;
 			@media screen and (max-width: 1050px){
 				margin: 5%;
 			}

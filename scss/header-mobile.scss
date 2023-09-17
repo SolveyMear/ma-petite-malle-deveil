@@ -2,6 +2,8 @@
 
 
 body {
+	padding: 1px; //hack pour forcer la margin-top de la section à ne pas pousser le body avec: quand un élément parent (là c'est le body) n'a pas de padding, la margin-top sur l'élément enfant pousse le parent avec.
+
 	&.header-open {
 		overflow: hidden;
 	}
@@ -11,16 +13,13 @@ header.header-mobile {
 	display: none;
 	width: 100%;
 	position: absolute;
-	top: 0;
+	top: -1px; // voir commentaire du body ci-dessus
 	left: 0;
-	//border: 1px solid red;
 	background-color: $beige;
 
 	@media screen and (max-width: 660px) {
 		display: block;
-		//height: 150px;
 		min-height: 0;
-		//border: $border;
 		height: auto;
 	}
 
@@ -38,13 +37,11 @@ header.header-mobile {
 			&.header-top {
 				display: flex;
 				padding: 1em;
-				//border-bottom:2px solid $beige-dark;
 			}
 
 			.logo-header {
 				width: 70px;
 				margin-right: auto;
-
 			}
 
 			.burger-menu-btn {
@@ -64,7 +61,6 @@ header.header-mobile {
 			}
 		}
 
-
 		.menu-burger {
 			display: none;
 
@@ -80,6 +76,7 @@ header.header-mobile {
 
 					&:last-child {
 						border-bottom: 3px solid $beige;
+						//white-space: nowrap;
 					}
 
 					a {
@@ -89,8 +86,6 @@ header.header-mobile {
 						text-decoration: none;
 						color: inherit;
 					}
-
-					//display: none;
 				}
 			}
 		}

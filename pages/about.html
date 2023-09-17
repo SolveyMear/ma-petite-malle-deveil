@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite App</title>
-	</head>
 
-    <body class="background-cotillions">
-        
-		{{>header}}
-		{{>header-mobile}}
-		
-		<section class="main-section-about">
-			<div class="outil-pedagogique-about">
-				<h2>Un outils pédagogique <br> <span>pour développer les capacités cognitives sensorielles</span></h2>
-				<p>Les bouteilles sensorielles sont de parfaits outils pédagogiques permettant de développer de nombreuses capacités cognitives et sensorielles pouvant convenir à tous âges et toutes pathologies.</p>
-				<p>En fonction du public avec lequel vous travaillez, vous allez pouvoir travailler différents objectifs et surtout de façon ludique et agréable.</p>
-			</div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</section>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite App</title>
+</head>
 
-	
-        
-        
-        <!-- {{>campaign}}
+<body class="background-cotillons">
+
+	{{>header}}
+	{{>header-mobile}}
+
+	<section class="main-section-about">
+		<div class="outil-pedagogique-about-title">
+			<h2>Un outils pédagogique <br> <span>pour développer les capacités cognitives sensorielles</span></h2>
+			<p>Les bouteilles sensorielles sont de parfaits outils pédagogiques permettant de développer de nombreuses
+				capacités cognitives et sensorielles pouvant convenir à tous âges et toutes pathologies.</p>
+			<p>En fonction du public avec lequel vous travaillez, vous allez pouvoir travailler différents objectifs et
+				surtout de façon ludique et agréable.</p>
+		</div>
+		<div>
+			<ul class="pour-qui-liste">
+				<li>
+					<p><b>Pour les enfants :</b><p>
+					<ul class="liste-des-bienfaits">
+						<li>Développer le vocabulaire et l'imaginaire</li>
+						<li>Favoriser l'attention, la concentration et le retour au calme</li>
+						<li>Stimuler les sens (l'ouïe, la vue et le toucher)</li>
+						<li>Améliorer la motricité fine et globale</li>
+					</ul>
+				</li>
+
+				<li>
+					
+					<p><b>Pour les personnes en situation de handicap :</b><p></p>
+					<ul class="liste-des-bienfaits">
+						<li>Pour les troubles autistiques, d'hyperactivité, d'hypo ou d'hypersensibilité: vous allez
+							pouvoir proposer ces bouteilles qui vont agir comme un sas de décompression et comme
+							médiateur d'émotion. </li>
+						<li>Pour les troubles moteurs: proposer de toucher, soulever, agripper la bouteille, puis la
+							faire rouler et les empiler afin de développer la motricité fine.</li>
+					</ul>
+				</li>
+
+				<li>
+					<p><b>Pour les personnes âgées :</b><p>
+					<ul class="liste-des-bienfaits">
+						<li>Ces bouteilles limitent l'apparition des symptômes de la maladie d'Alzheimer car elle
+							favorisent la mémoire, la concentration et l'imaginaire.
+						</li>
+						<li>La stimulation de différents sens permet de limiter le développement de troubles sensoriels.
+						</li>
+						<li>Les personnes atteintes de démences pourront utiliser ces outils pour se recentrer et gérer
+							plus facilement leurs émotions.</li>
+						<li>Travailler la motricité fine et globale permet de garder une certaine mobilité dans les bras
+							et les mains pour garantir une meilleure autonomie.</li>
+					</ul>
+				</li>
+
+			</ul>
+			<div></div>
+		</div>
+	</section>
+
+
+
+
+	<!-- {{>campaign}}
         {{>sponsors}}
         {{>contact}}
         {{>footer}} -->
 
-		<script type="module" src="../js/main.js"></script>
-		<script type="module" src="../js/burger-menu.js"></script>
+</body>
+<script type="module" src="../js/main.js"></script>
+<script type="module" src="../js/burger-menu.js"></script>
 
-    </body>
 
-    
+
 </html>

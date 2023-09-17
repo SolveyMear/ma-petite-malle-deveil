@@ -34,7 +34,6 @@ footer{
     .social-media-logo-div{
         display: flex;
         gap: 0.5em;
-        //padding: 0 4em ;
         align-items: center;
         @media screen and (max-width: 550px) {
             padding: 2em 0;
@@ -44,8 +43,6 @@ footer{
         }
 
         .social-media-logo{
-            svg{
-            }
             &:hover{
                 path{
                     fill: $red
@@ -60,5 +57,5 @@ footer{
         }
     }
 
-    }
+}
 

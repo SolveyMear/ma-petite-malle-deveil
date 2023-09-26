@@ -8,6 +8,7 @@ body.background-cotillons{
     background-repeat: repeat-y;
     width: 100%;
     position: relative;
+
     &:after {
         content:'';
         position: absolute;
@@ -20,21 +21,8 @@ body.background-cotillons{
     }
     }
 
-    .main-section-about{
-        padding: 2em 4em;
-        height: auto;
-        width: 70%;
-        margin: auto;
-        background-color: white;
-        @media screen and (max-width: 660px) {
-            margin: $header-height auto 0;
-            padding: 2em 2em;
-            width: 90%;
-        }
-        @media screen and (max-width: 400px) {
-            padding: 2em 1em;
-            width: 90%;
-        }
+    .about-containers{
+
         .outil-pedagogique-about-title{
             h2, p{
                 text-align: left;
@@ -42,15 +30,87 @@ body.background-cotillons{
 
             }
         }
+
         .pour-qui-liste{
             padding: 1em 0.5em;
             b{
                 display: block;
             }
             .liste-des-bienfaits{
-                padding: 1em 0 3em 1.5em;
+                padding: 1em 0.5em 3em 1.5em;
             }
         }
+    }
+
+    section.campaign-section{
+        background-color: white;
+        padding: 1em 0 2em;
+
+    }
+
+    .press-section{
+        h2{
+            //text-align: left;
+            margin-bottom: 1em;
+        }
+        .sub-container{
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5em;
+            width: 100%;
+            .sub-container-divs{
+                height: 100%;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 47px rgba(#616060, 0.07);
+                @media screen and (max-width: 750px) {
+                      flex-direction: column;
+                }
+                .sub-container-text{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex: 1;
+                    gap: 0.6em;
+                    padding: 3em 4em 2em;
+                    background-color: $light-green;
+                    border-radius: 15px 0 0 15px;
+                    a.buttons-secondary{
+                        text-decoration: none;
+                        color: $dark-grey;
+                    }
+                    @media screen and (max-width: 550px) {
+                        padding: 2.5em 3em 1.5em;
+                    }
+                }
+                // .sub-container-logo{
+                //     width: 270px;
+                //     height: 100%;
+                //     min-height: 100px;
+                //     border-radius: 15px 0 0 15px;
+                //     background-repeat: no-repeat;
+                //     background-size: contain;
+                //     background-position: 50%;
+                //     &.logo-inventeurs{
+                //         background-image: url('../images/logo-salon-inventeurs.webp');
+                //         padding: 10px;
+                //     }
+                // }
+            }
+        }
+    }
+
+
+
+
+    .includes-about{
+        background-color: white;
+        //pour que le background cotillons s'arrête à la section d'avant.
     }
 
 

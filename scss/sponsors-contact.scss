@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 section.sponsors-section{
-    padding: 2em;
+    padding: 1.5em;
     width: 100%;
     .sponsors-container{
         max-width: 800px;
@@ -16,12 +16,12 @@ section.sponsors-section{
         }
         .sponsor-logo-div{
             display: flex;
-            flex-wrap: wrap;
             margin: auto;
-            padding: 5% 3%;
+            //padding: 5% 3%;
             border-bottom: 1px solid #F5ECE3;
-            width: 85%;
+            width: 100%;
             @media screen and (max-width: 800px) {
+                flex-wrap: wrap;
                 width: 100%;
             }
             @media screen and (max-width: 600px) {

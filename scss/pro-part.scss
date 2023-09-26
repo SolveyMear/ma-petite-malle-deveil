@@ -59,7 +59,12 @@ section.pro-part-section{
             }
 
             .pro {
-                background-color: $beige;
+                background-color: $light-green;
+                .pro-text {
+                    h2 {
+                        color: $dark-green;
+                    }
+                }
             }
             
             .pro-text, .part-text {

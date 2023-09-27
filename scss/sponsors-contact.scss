@@ -4,7 +4,7 @@ section.sponsors-section{
     padding: 1.5em;
     width: 100%;
     .sponsors-container{
-        max-width: 800px;
+        max-width: 900px;
         margin: auto;
         p{
             &.nous-soutiennent{
@@ -17,7 +17,6 @@ section.sponsors-section{
         .sponsor-logo-div{
             display: flex;
             margin: auto;
-            //padding: 5% 3%;
             border-bottom: 1px solid #F5ECE3;
             width: 100%;
             @media screen and (max-width: 800px) {
@@ -61,11 +60,7 @@ section.sponsors-section{
         .study-safety-text{
             margin: auto;
             text-align: center;
-            max-width: 750px;
-            padding: 3em 2em;
-            p{
-                margin: 0.5em 0;
-            }
+            padding: 3em 0em;
         }
     }
 }
@@ -74,25 +69,25 @@ section.contact{
     justify-content: space-evenly;
     background-color: #F9F2EEC2;
     padding: 4em 1em 4em 10em;
-    @media screen and (max-width: 750px) {
-        padding: 3.5em;
+    background-image: url("../images/malle-contact-section.svg");
+    background-repeat: no-repeat;
+    background-position: 85% center;
+    @media screen and (max-width: 1000px) {
+        padding: 5em;
     }
-    @media screen and (max-width: 400px) {
-        padding: 2em;
+    @media screen and (max-width: 750px) {
+        background-image: none;
     }
     
     .contact-text{
-        width: 50%;
-        @media screen and (max-width:680px) {
-            width: 100%;
-        }
+        width: 100%;
         h2{
             text-align: start;
             padding: 0.5em 0;
         }
         .contact-me{
             font-weight: 300;
-            margin: 1em 0 0.4em;
+            margin: 0em 0 0.4em;
         }
         .email{
             font-family: 'Roboto', sans-serif;
@@ -102,20 +97,6 @@ section.contact{
             white-space: nowrap;
             @media screen and (max-width: 400px) {
                 font-size: 0.9em;
-            }
-        }
-    }
-    .img-malle-div{
-        width: 50%;
-        padding-left: 3em;
-        .malle-transp{
-            height: 236px;
-            width: 230px;
-            background-image: url("../images/malle-contact-section.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-            @media screen and (max-width: 750px) {
-                display: none;
             }
         }
     }

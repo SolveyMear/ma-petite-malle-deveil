@@ -1,8 +1,12 @@
 @import "./variables.scss";
 
 header.header-desktop{
+    position: absolute;
+    top: 0;
+    left: 0;
     height: $header-height;
     display: none;
+    width: 100%;
     @media screen and (min-width: 661px) {
         display: flex;
     }
@@ -27,7 +31,7 @@ header.header-desktop{
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 &.logo-header{
-                    width: 6em;
+                    width: 7em;
                     margin-right: auto;
                 }
                 &.tab {

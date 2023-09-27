@@ -12,6 +12,7 @@ body {
       font-weight: 300;
       color: $dark-grey;
       position: relative;
+      overflow-x: hidden;
 }
 
 .wrapper {
@@ -117,7 +118,7 @@ h2 {
             line-height: 1.4;
             margin: 2% 0;
             @media screen and (max-width: 661px) {
-                  max-width: 90%;
+                  // max-width: 90%;
             }
       }
 }

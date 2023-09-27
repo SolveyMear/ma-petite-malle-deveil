@@ -6,71 +6,31 @@ section.header-main-img{
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 3em;
-    @media screen and (max-width: 660px) {
-        padding-bottom: 0;
-    }
-    .background-absolute-header-main-img{
-        position: absolute;
-        background-color: $pale-pink;
-        height: 100%;
-        width: 43%;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        @media screen and (max-width: 1100px) {
-            width: 100%;
-        }
-        @media screen and (max-width: 660px) {
-            height: 100%;
-        }   
-    }
+    background-image: url(../images/fillette-bouteilles-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
     .main-img{
         display: flex;
         flex: 1;
-        padding-top: 1.5em;
-
-        @media screen and (max-width: 600px) {
-            padding-top: 0em;
-            margin-top: $header-height/2;
-        }
-        .left-section{
-            @media screen and (max-width: 870px) {
-                display: none;
-            }
-            width: 50%;
-            padding-left: 5em;
-            .container-img{
-                display: flex;
-                height: 100%;  
-                    .main-img-bouteille-bleue{
-                    background-image: url("../images/bouteille-bleue.jpg");
-                    background-size: cover;
-                    width: 40%;
-                    background-position: center top;
-                }
-                .main-img-bebe-bouteille-or{
-                    background-image: url('../images/bebe-bouteille-or.jpg');
-                    background-size: cover;
-                    width: 55%;
-                    margin-left: 5%;
-                    background-position: -2em top;
-                    background-repeat: no-repeat;
-                }
-            }
-        }
         .right-section{
             width: 50%;
             display: flex;
             align-items: center;
             padding: 1.3em 3em 1.3em 9%;
+            margin-left: auto;
+            background-color: rgba(white, 90%);
+            min-width: 700px;
         
 
             @media screen and (max-width: 870px) {
                 width: 100%;
                 justify-content: center;
+            }
+            @media screen and (max-width: 700px) {
+                width: 100%;
+                min-width: 100%;
             }
             .container-text{
                 display: flex;

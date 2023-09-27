@@ -61,6 +61,11 @@ section.sponsors-section{
             margin: auto;
             text-align: center;
             padding: 3em 0em;
+            @media screen and (max-width: 600px) {
+                p {
+                    text-align: justify;
+                }
+            }
         }
     }
 }
@@ -77,6 +82,9 @@ section.contact{
     }
     @media screen and (max-width: 750px) {
         background-image: none;
+    }
+    @media screen and (max-width: 550px) {
+        padding: 3em;
     }
     
     .contact-text{

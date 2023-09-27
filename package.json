@@ -9,10 +9,11 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@vituum/vite-plugin-handlebars": "^1.0.0",
 		"esbuild-wasm": "latest",
 		"sass": "^1.62.1",
 		"vite": "^4.3.8",
-		"vite-plugin-handlebars": "^1.6.0"
+		"vituum": "^1.0.0"
 	},
 	"overrides": {
 		"esbuild": "npm:esbuild-wasm@latest"

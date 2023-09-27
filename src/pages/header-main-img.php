@@ -53,7 +53,7 @@ require_once __DIR__ . '/../vitephp/helpers.php';
     </div>
     
     </section>
-    <!-- <script type="module" src="../js/main.js"></script> -->
-    <?= vite('js/main.js') ?>
+    <!-- <script type="module" src="../../js/main.js"></script> -->
+    <?= vite('../../js/main.js') ?>
 </body>
 </html>

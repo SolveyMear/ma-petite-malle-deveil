@@ -6,8 +6,8 @@ const VITE_HOST = 'http://localhost:5133';
 // https://github.com/wp-bond/bond/blob/master/src/Tooling/Vite.php
 // https://github.com/wp-bond/boilerplate/tree/master/app/themes/boilerplate
 
-// you might check @vitejs/plugin-legacy if you need to support older browsers
-// https://github.com/vitejs/vite/tree/main/packages/plugin-legacy
+// you might check @vite../../js/plugin-legacy if you need to support older browsers
+// https://github.com/vite../../js/vite/tree/main/packages/plugin-legacy
 
 
 

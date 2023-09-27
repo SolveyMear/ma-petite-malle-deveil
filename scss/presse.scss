@@ -2,6 +2,10 @@
 
 
 .press-section{
+    margin-top: 10em;
+    @media screen and (max-width: 660px) {
+        margin-top: 2em;
+    }
     h2{
         //text-align: left;
         margin-bottom: 1.5em;
@@ -84,3 +88,6 @@
         }
     }
 
+.includes-presse{
+    background-color: white;
+}

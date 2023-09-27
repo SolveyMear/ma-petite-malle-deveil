@@ -70,6 +70,7 @@ section.who-for-section{
                         min-height: 300px;
                         border-radius: 15px 0 0 15px;
                         background-size: cover;
+                        background-position-x: center;
                         @media screen and (max-width: 750px) {
                             width: 100%;
                             border-radius: 15px 15px 0 0;
@@ -79,7 +80,7 @@ section.who-for-section{
 
                     }
                     .for-kids{
-                        background-image: url("../images/girl-bottle.jpg");  
+                        background-image: url("../images/for-kids-hd.jpg");  
                         background-repeat: no-repeat;
  
                     }

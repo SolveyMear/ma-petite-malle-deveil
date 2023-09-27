@@ -65,6 +65,9 @@ section.montessori{
             }
             .image-div{
                 background-size: cover;
+                background-position-x: center;
+                background-repeat: no-repeat; 
+
                 height: 350px;
                 width: calc(100%/3 - 2%);
                 margin: 0 1%;
@@ -86,23 +89,20 @@ section.montessori{
             }
 
             .img1{
-                background-image: url("../images/fille-debout-bouteille.jpg");
-                background-repeat: no-repeat; 
-  
+                background-image: url("../images/filles-jouent-bouteilles.jpg");
+                background-position-x: 70%;
                 @media screen and (max-width: 600px) {
                     display: none;
                 }          
             }
             .img2{
                 background-image: url("../images/old-people.jpg");
-                background-repeat: no-repeat; 
                 @media screen and (max-width: 600px) {
                     display: none;
                 } 
             }
             .img3{
-                background-image: url("../images/handicaped-child.jpg");
-                background-repeat: no-repeat; 
+                background-image: url("../images/enfant-handicapé-qui-joue.jpg");
  
             }
       

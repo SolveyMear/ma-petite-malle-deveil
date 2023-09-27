@@ -17,7 +17,6 @@
         width: 100%;
         flex-wrap: wrap;
         .sub-container-divs{
-            height: 100%;
             border-radius: 15px;
             display: flex;
             flex-direction: column;
@@ -38,7 +37,6 @@
                 padding: 3em 4em 2em;
                 background-color: $light-green;
                 border-radius: 0 0 15px 15px;
-                min-height: 350px;
                 a.buttons-secondary{
                     text-decoration: none;
                     color: $dark-grey;

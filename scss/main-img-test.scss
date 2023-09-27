@@ -34,7 +34,7 @@ section.header-main-img{
 
         @media screen and (max-width: 600px) {
             padding-top: 0em;
-            margin-top: $header-height/2;
+            margin-top: calc($header-height / 2);
         }
         .left-section{
             @media screen and (max-width: 870px) {

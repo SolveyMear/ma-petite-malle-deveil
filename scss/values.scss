@@ -47,6 +47,9 @@ section.values-section{
                     @media screen and (max-width: 1050px) {
                         text-align: center;
                     }
+                    @media screen and (max-width: 600px) {
+                        text-align: left;
+                    }
                 }
             }
         }
@@ -83,14 +86,23 @@ section.values-section{
                 height: 174px;
                 width: 173px;
                 background-color: white;
-                //margin: 1em 0;
                 border-radius: 6px;
                 position: relative;
+                @media screen and (max-width: 500px) {
+                    height: 121px;
+                    width: 120px;
+                }
 
                 &:first-child{
                     margin-top: 57px;
                     @media screen and (max-width: 1050px) {
                         margin-top: 0;
+                    }
+                }
+                svg {
+                    @media screen and (max-width: 500px) {
+                        width: 30px;
+                        height: 30px;
                     }
                 }
             }
@@ -136,8 +148,8 @@ section.values-section{
                 content: "";
                 top: -11px;
                 left: -13px;
-                height: 174px;
-                width: 173px;
+                height: 100%;
+                width: 100%;
                 border: 2px solid #A2A1855C;
                 border-radius: 6px;
                 position: absolute;

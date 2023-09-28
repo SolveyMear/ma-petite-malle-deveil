@@ -8,6 +8,9 @@ section.who-for-section{
         background: none;
         padding-bottom: 5em;
     }
+    &:after { // cotillons
+        z-index: 0;
+    }
     .who-for-container{
         display: flex;
         flex-direction: column;

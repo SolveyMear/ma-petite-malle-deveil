@@ -3,7 +3,7 @@
 section.values-section{
     width: 100%;
     background-color: $light-green;
-    padding: 7em 5%;
+    padding: 5.5em 5%;
 
     .values-container{
         display: flex;
@@ -17,14 +17,13 @@ section.values-section{
         .values-left{
             display: flex;
             align-items: center;
-            width: 56%;
+            justify-content: center;
+            width: 40%;
             height: 100%;
-            padding-left: 10%;
-            padding-right: 2em;
+            margin-left: 10%;
             @media screen and (max-width: 1050px) {
-                padding-left: 0;
-                padding-right: 0;
-                width: auto;
+                margin-left: 0;
+                width: 100%;
             }
             .values-title-text{
                 display: flex;
@@ -38,33 +37,28 @@ section.values-section{
                 h2{
                     text-align: start;
                     margin: 5% 0;
+                    color: $dark-green;
                     @media screen and (max-width: 1050px) {
                         text-align: center;
                     }
                 }
-                p{
-                    max-width: 440px;
-                    @media screen and (max-width: 1050px) {
-                        text-align: center;
-                    }
-                    @media screen and (max-width: 600px) {
-                        text-align: left;
-                    }
+                b {
+                    color: $dark-green;
                 }
             }
         }
 
         .values-right{
-            height: 655px;
-            top: 50%;
-            transform: translate(0, -50%);
+            height: 720px;
+            top: 58%;
+            transform: translate(100%, -50%);
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-content: flex-start;
-            gap: 2.3em 2.8em;
+            gap:3em;
             position: absolute;
-            right: 8%;
+            right: 40%;
 
             @media screen and (max-width: 1050px) {
                 margin-top: 0;
@@ -72,7 +66,7 @@ section.values-section{
                 justify-content: center;
                 height: auto;
                 padding-top: 3.5em;
-                max-width: 610px;
+                // max-width: 610px;
                 width: 100%;
                 position: relative;
                 height: auto;
@@ -83,18 +77,22 @@ section.values-section{
 
             .value-push{
 
-                height: 174px;
-                width: 173px;
+                height: 185px;
+                width: 185px;
                 background-color: white;
                 border-radius: 6px;
                 position: relative;
+                @media screen and (max-width: 800px) {
+                    height: 165px;
+                    width: 165px;
+                }
                 @media screen and (max-width: 500px) {
                     height: 121px;
                     width: 120px;
                 }
 
                 &:first-child{
-                    margin-top: 57px;
+                    margin-top: 1.5em;;
                     @media screen and (max-width: 1050px) {
                         margin-top: 0;
                     }
@@ -114,8 +112,11 @@ section.values-section{
                 padding-right: 1%;
                 position: relative;
                 top: 18%;
-                left: -2%;
-
+                left: -4px;
+                width: 94%;
+                @media screen and (max-width: 1050px) {
+                    left: 0;
+                }
             }
 
             .value-img{

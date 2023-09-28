@@ -2,7 +2,8 @@
  
 section.header-main-img{
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    min-height: 600px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -38,12 +39,11 @@ section.header-main-img{
                 max-width: 450px;
                 align-items: flex-start;
                 gap: 0.5em;
-                @media screen and (max-width: 870px) {
-                    align-items: center;
-                    text-align: center;
-                }
                 p{
                     max-width: 400px;
+                    @media screen and (max-width: 870px) {
+                        font-size: 1.2rem;
+                    }
                 }
                 .buttons-main{
                     margin-top: 2em;                    

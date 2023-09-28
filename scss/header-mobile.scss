@@ -15,7 +15,7 @@ header.header-mobile {
 	position: absolute;
 	top: -1px; // voir commentaire du body ci-dessus
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 
 	@media screen and (max-width: 660px) {
 		display: block;

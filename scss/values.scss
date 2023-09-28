@@ -17,14 +17,13 @@ section.values-section{
         .values-left{
             display: flex;
             align-items: center;
-            width: 56%;
+            justify-content: center;
+            width: 45%;
             height: 100%;
-            padding-left: 10%;
-            padding-right: 2em;
+            margin-left: 10%;
             @media screen and (max-width: 1050px) {
-                padding-left: 0;
-                padding-right: 0;
-                width: auto;
+                margin-left: 0;
+                width: 100%;
             }
             .values-title-text{
                 display: flex;
@@ -57,14 +56,14 @@ section.values-section{
         .values-right{
             height: 655px;
             top: 50%;
-            transform: translate(0, -50%);
+            transform: translate(100%, -50%);
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-content: flex-start;
             gap: 2.3em 2.8em;
             position: absolute;
-            right: 8%;
+            right: 40%;
 
             @media screen and (max-width: 1050px) {
                 margin-top: 0;

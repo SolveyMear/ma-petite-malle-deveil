@@ -1,35 +1,53 @@
 @import "./variables.scss";
 
-.section-particuliers{
+.section-individual{
     margin-top: 10em;
+    p, li{
+        margin: 0.2em;
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
 }
-.section-particuliers{
+.section-individual{
     max-width: 1200px;
 }
     .secondary-page-containers{
-        .pour-particuliers-title{
-            h2{
+        .for-individual-title{
+            h1{
                 text-align: left;
                 margin-bottom: 1em;
             }
         }
-        .pour-qui-liste{
+        .for-which-individual{
             padding: 1em 0.5em;
-            list-style-type: none;
-            li{
-                list-style-type: disc;
-
+            .for-families, .custom-bottles{
+                padding: 1em 0 1em;
+                h3{
+                    padding: 0.5em 0;
+                }
+                ul.children-benefit-list{
+                    gap: 0.3em;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0.5em 0 0.5em 1.5em;
+                }
+                p.contact-phrase{
+                    margin-top: 1em;
+                    span{
+                        color:$red;
+                    }
+                }
             }
+
         }
     }
-
 
     section.campaign-section{
         background-color: white;
         padding: 1em 0 2em;
     }
 
-    .includes-particuliers{
+    .includes-individual{
         background-color: white;
     }
 

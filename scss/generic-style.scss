@@ -24,19 +24,22 @@ body {
 
 
 .secondary-page-containers{
-      padding: 2em 2em;
+      padding: 4em 0;
       height: auto;
       width: 80%;
       margin: auto;
       background-color: white;
+      max-width: 900px;
       @media screen and (max-width: 660px) {
-          margin: $header-height auto 0;
-          padding: 2em 2em;
+          padding: 0;
           width: 90%;
       }
-      @media screen and (max-width: 400px) {
-          padding: 2em 1em;
-          width: 90%;
+
+      h2 {
+            font-weight: 700;
+            font-size: 1.3rem;
+            line-height: 25px;
+            text-align: left;
       }
 }
 
@@ -125,6 +128,10 @@ h3 {
 
 strong {
       font-weight: inherit;
+}
+
+.bold {
+      font-weight: bold;
 }
 
 .buttons-main {

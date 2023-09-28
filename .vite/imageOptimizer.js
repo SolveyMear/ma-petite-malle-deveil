@@ -144,6 +144,10 @@ export function imageOptimizer(options = {}){
                 if(ratio2 > ratio){
                     picture.height = Math.round(picture.width / ratio)
                 }
+                if(picture.width > metadata.width || picture.height > metadata.height){
+                    console.log(`[warning] ignoring ${path.relative('.',filename)} because it's smaller than ${picture.width}x${picture.height}`)
+                   continue
+                }
                 // console.log(metadata.format)
                 image = await image
                 .resize(picture.width, picture.height, {fit:sharp.fit.cover})

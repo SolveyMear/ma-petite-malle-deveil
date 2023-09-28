@@ -25,7 +25,8 @@ export default defineConfig({
 				{name:'iPhone 15 Pro', width:430, height:930, deviceScaleFactor:3},
 				{name:'fullhd', width: 1920, height: 1080, deviceScaleFactor:1},
 				{name:'Macbook Pro 16" 2023', width:3456 , height: 2304, deviceScaleFactor:1}
-			]
+			],
+			quality: 80
 		})
 	],
 	build: {

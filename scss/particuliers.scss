@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.section-particuliers{
+    margin-top: 10em;
+}
+.section-particuliers{
+    max-width: 1200px;
+}
+    .secondary-page-containers{
+        .pour-particuliers-title{
+            h2{
+                text-align: left;
+                margin-bottom: 1em;
+            }
+        }
+        .pour-qui-liste{
+            padding: 1em 0.5em;
+            list-style-type: none;
+            li{
+                list-style-type: disc;
+
+            }
+        }
+    }
+
+
+    section.campaign-section{
+        background-color: white;
+        padding: 1em 0 2em;
+    }
+
+    .includes-particuliers{
+        background-color: white;
+    }
+
+

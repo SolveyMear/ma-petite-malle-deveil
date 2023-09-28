@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+
+.section-professionnelles{
+    margin-top: 10em;
+    max-width: 1200px;
+    .secondary-page-containers{
+        .pour-professionnelles-title, .prestations{
+            h2, p, h3{
+                text-align: left;
+                margin-bottom: 1em;
+            }
+        }
+        .public-pro{
+            .pour-qui-liste{
+                padding: 1em 0.5em;
+                list-style-type: none;
+            b{
+                display: block;
+            }
+            .liste-des-bienfaits{
+                padding: 1em 0.5em 3em 1.5em;
+                list-style-type: disc;
+            }
+        }
+    }
+    .prestations{
+        padding: 1em 0.5em;
+        .liste-prestations{
+            .liste-item-prestations{
+                list-style-type: disc;
+                padding-left: 1.5em;
+                li{
+                    padding-bottom: 0.2em;
+                }
+            }
+        }
+        p{
+            margin-top: 3em;
+            span{
+                color: $red;
+            }
+        }
+    }                   
+
+    }
+}
+

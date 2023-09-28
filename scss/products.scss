@@ -2,7 +2,7 @@
 
 .product-section{
 	position: relative;
-	padding: 7em 5% 0;
+	padding: 5em 5% 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -116,21 +116,21 @@
 				}
 
 				&.photo1{
-					background-image: url("../images/bouteille-bleue.jpg");
+					background-image: url("../images/bouteilles-products/plusieurs-bouteilles.jpg");
 				}
 				&.photo3{
-					background-image: url("../images/bouteille-bleue.jpg");
+					background-image: url("../images/bouteilles-products/bouteille-paillettes.jpg");
 				}
 				&.photo5{
-					background-image: url("../images/bouteille-hiver.jpg");
+					background-image: url("../images/bouteilles-products/bouteille-automne.jpg");
 				}
 				&.photo2{
 					height: 370px;
-					background-image: url("../images/bouteille-rouge.jpg");
+					background-image: url("../images/bouteilles-products/bouchon.jpg");
 					
 				}
 				&.photo4{
-					background-image: url("../images/bouteille-rouge.jpg");
+					background-image: url("../images/bouteilles-products/bouteille-neige.jpg");
 					height: 370px;
 				}
 			}

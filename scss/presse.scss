@@ -2,6 +2,10 @@
 
 
 .press-section{
+    margin-top: 10em;
+    @media screen and (max-width: 660px) {
+        margin-top: 2em;
+    }
     h2{
         //text-align: left;
         margin-bottom: 1.5em;
@@ -77,10 +81,26 @@
             }
             .tv-tours{
                 background-image: url('../images/logo-tvtours.png');
-                background-size: 25% auto;
+                background-size: 28%;
+            }
+            .france-bleu{
+                background-image: url('../images/logo-france-bleu.svg');
+                background-size: 30%;
+            }
+            .cherie-fm{
+                background-image: url('../images/logo-cherie-fm.png');
+                background-size: 40%;
 
             }
             }
         }
+        .suivez-moi{
+            padding: 1em;
+            text-align: center;
+            font-size: 1em;
+        }
     }
 
+.includes-presse{
+    background-color: white;
+}

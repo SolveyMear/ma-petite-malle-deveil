@@ -1,13 +1,16 @@
 @import "./variables.scss";
 
-
-    .about-containers{
-
-        .outil-pedagogique-about-title{
-            h2, p{
+.section-particuliers{
+    margin-top: 10em;
+}
+.section-particuliers, .section-professionnelles{
+    max-width: 1000px;
+}
+    .secondary-pages-containers{
+        .pour-particuliers-title, .pour-professionnelles-title{
+            h2, p, h3{
                 text-align: left;
                 margin-bottom: 1em;
-
             }
         }
 
@@ -21,20 +24,32 @@
             .liste-des-bienfaits{
                 padding: 1em 0.5em 3em 1.5em;
                 list-style-type: disc;
-
+            }
+        }
+        .prestations{
+            h3, p{
+                text-align: left;
+                margin-bottom: 1em;
+            }
+            .liste-prestations{
+                padding: 1em 0.5em;
+                list-style-type: none;
+                li{
+                    padding: 1em 0.5em 3em 1.5em;
+                    list-style-type: disc;
+                }
             }
         }
     }
 
+
     section.campaign-section{
         background-color: white;
         padding: 1em 0 2em;
-
     }
 
     .includes-about{
         background-color: white;
-        //pour que le background cotillons s'arrête à la section d'avant.
     }
 
 

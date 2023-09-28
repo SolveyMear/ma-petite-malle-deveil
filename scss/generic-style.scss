@@ -23,7 +23,7 @@ body {
 }
 
 
-.about-containers{
+.secondary-pages-containers{
       padding: 2em 2em;
       height: auto;
       width: 80%;
@@ -157,10 +157,13 @@ h3 {
       font-weight: 700;
       font-size: 1.1em;
       padding: 1em 1em 1em 0;
-      color: $red;
       opacity: 1;
       transition: opacity 300ms linear;
       cursor: pointer;
+      a{
+            text-decoration: none;
+            color: $red;
+      }
 
       &:hover {
             opacity: 0.8;
@@ -182,10 +185,13 @@ h3 {
       }
 
       &.green {
-            color: $dark-green;
-
+            
             &::before {
                   background-image: url(../images/icons-MPME/btn-fleche-verte.svg);
+            }
+            a{
+                  color: $dark-green;
+                  
             }
       }
 }
@@ -230,5 +236,4 @@ h3 {
       background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke-opacity='30%' stroke='%23E8CEBF' stroke-width='5' stroke-dasharray='35' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e ");
       border-radius: 50%;
 }
-
 

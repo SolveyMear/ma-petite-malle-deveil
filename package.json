@@ -12,7 +12,7 @@
 		"@vituum/vite-plugin-handlebars": "^1.0.0",
 		"esbuild-wasm": "latest",
 		"node-http-server": "^8.1.5",
-		"puppeteer": "^21.3.5",
+		"puppeteer": "^19.8.0",
 		"sass": "^1.62.1",
 		"sharp": "^0.32.6",
 		"vite": "^4.3.8",

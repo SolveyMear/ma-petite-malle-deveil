@@ -1,27 +1,63 @@
 @import "./variables.scss";
 
-section.my-values{
+section.my-values {
     padding-top: 10em;
-    h1, h3{
-        margin: 0.5em 0;
+    .secondary-page-containers {
+        &.wrapper{
+            display: flex;
+            .content {
+                display: flex;
+                flex-direction: column;
+                //border: $border2;
+                
+                .block{
+                    gap: 1em;
+                    display: flex;
+                    margin-bottom: 4em;
+                    .text-content {
+                        flex: 1;
+                        //border: $border;
+                        p:nth-child(3){
+
+                            margin-bottom: 1.5em;
+                        }
+                        p{
+                           margin-bottom: 0.5em; 
+                        }
+                    }
+                    .image-content {
+                        height: 100%;
+                        width: 30%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: relative;
+                        &:after {
+                            content:"";
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            z-index: -1;
+                            right: -20%;
+                            top: -7%;
+                            border-radius: 15px;
+                            background-color: #F6F0EF;
+                        }
+                    
+                        &.suppliers-map {
+                            background-image: url("../images/fabrication-francaise.png");
+                        }
         
-    }
-    .content{
-        height: auto;
-        .image-content{
-            background-size: contain;
-                background-repeat: no-repeat;
-                //background-position: 50%;
-                width: 100%;
-                height: 200px;
-                .suppliers-map{
-                    background-image: url("../images/fabrication-francaise.png");
+                        &.bouchon-img {
+                            background-image: url("../images/bouteilles-products/bouchon.jpg");
+                        }
+                    }
                 }
-        }
-        .text-content{
-
+                .sub-title{
+                    font-size: 1.2em;
+                    margin: 1em 0;
+                }
+            }
         }
     }
-
-
 }

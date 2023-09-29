@@ -48,3 +48,5 @@ Svg se copie-colle direct dans le html, sauf quand c'est en before, là c'est l'
 
         Chargement différé:
             Toute balise <script> utilisant type="module" sera traitée comme un module JavaScript et son chargement sera différé par défaut.
+
+Attention a styliser body le moins possible.

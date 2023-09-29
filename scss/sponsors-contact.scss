@@ -17,7 +17,6 @@ section.sponsors-section{
         .sponsor-logo-div{
             display: flex;
             margin: auto;
-            border-bottom: 1px solid #F5ECE3;
             width: 100%;
             @media screen and (max-width: 800px) {
                 flex-wrap: wrap;
@@ -54,16 +53,6 @@ section.sponsors-section{
                 }
                 &.epine-logo{
                     background-image: url(../images/logos-partners/logo-concours-lepine.png);
-                }
-            }
-        }
-        .study-safety-text{
-            margin: auto;
-            text-align: center;
-            padding: 3em 0em;
-            @media screen and (max-width: 600px) {
-                p {
-                    text-align: justify;
                 }
             }
         }

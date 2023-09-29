@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-professionnelles, .section-individual {
+.section-professionnelles, .section-individual, .my-values {
     padding-top: 10em;
     &:after {
         z-index: 0;
@@ -19,10 +19,6 @@
             h2 {
                 font-size: 2rem;
             }
-            p b {
-                font-weight: 400;
-                color: $red;
-            }
 
             p {
                 margin-bottom: 2em;
@@ -40,7 +36,7 @@
                 flex-direction: column;
                 flex: 1;
                 // max-width: 600px;
-                margin: 5em auto 0;
+                margin: 2em auto 0;
                 p, .liste-des-bienfaits li {
                     font-size: 1.1em;
                     line-height: 1.4;
@@ -58,7 +54,7 @@
                     display: block;
                 }
                 .liste-des-bienfaits{
-                    padding: 1em 0.5em 1em 1.5em;
+                    padding: 1.5em 0.5em 1em 1.5em;
                     list-style-type: disc;
                 }
             }

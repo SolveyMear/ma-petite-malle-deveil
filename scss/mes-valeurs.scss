@@ -8,26 +8,44 @@ section.my-values {
             .content {
                 display: flex;
                 flex-direction: column;
+                gap: 2em;
+                .title {
+                    max-width: 1000px;
+                }
                 //border: $border2;
                 
-                .block{
-                    gap: 1em;
+                .block {
+                    gap: 3em;
                     display: flex;
                     margin-bottom: 4em;
-                    .text-content {
+                    @media screen and (max-width: 1000px) {
+                        flex-direction: column;
+                    }
+                    div.text {
                         flex: 1;
-                        //border: $border;
-                        p:nth-child(3){
-
+                        h2 {
                             margin-bottom: 1.5em;
-                        }
-                        p{
-                           margin-bottom: 0.5em; 
+                            // margin-top: 2em;
                         }
                     }
-                    .image-content {
-                        height: 100%;
-                        width: 30%;
+                    .text-content {
+                        flex: 1;
+                        p{
+                           margin-bottom: 0.5em;
+                           font-size: 1.1em;
+                           line-height: 1.4;
+                        }
+                        .logo-made-in-france {
+                            width: 50%;
+                            margin: 1.5em auto;
+                            @media screen and (max-width: 1000px) {
+                                width: 50%;
+                                max-width: 300px;
+                            }
+                        }
+                    }
+                    .image {
+                        width: 40%;
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -45,17 +63,31 @@ section.my-values {
                         }
                     
                         &.suppliers-map {
+                            width: 50%;
+                            height: 100%;
                             background-image: url("../images/fabrication-francaise.png");
+                            background-size: contain;
+                            &:after {
+                                display: none;
+                            }
+                            @media screen and (max-width: 1000px) {
+                                height: 90vw;
+                                width: 100%;
+                                max-width: 500px;
+                                max-height: 500px;
+                                margin: 0 auto;
+                            }
                         }
         
                         &.bouchon-img {
+                            width: 40%;
+                            background-size: 120%;
                             background-image: url("../images/bouteilles-products/bouchon.jpg");
+                            &:after {
+                                display: none;
+                            }
                         }
                     }
-                }
-                .sub-title{
-                    font-size: 1.2em;
-                    margin: 1em 0;
                 }
             }
         }

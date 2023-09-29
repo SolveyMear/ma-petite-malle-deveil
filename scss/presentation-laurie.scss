@@ -6,7 +6,7 @@ section.presentation-section{
     @media screen and (max-width: 1050px) {
         padding-bottom: 12em;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 670px) {
         padding: 6em 2em 6em;
     }
     .lines-hearts{
@@ -14,7 +14,7 @@ section.presentation-section{
         justify-content: center;
         margin-bottom: 9em;
         position: relative;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 670px) {
             margin: 0;
         }
         .lines{
@@ -37,7 +37,7 @@ section.presentation-section{
     .presentation-laurie{
         margin: auto;
         width: 90%;
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 670px) {
             width: 100%;
         }
         .presentation-container{
@@ -47,7 +47,7 @@ section.presentation-section{
             @media screen and (max-width: 850px) {
                 gap: 2em;
             }
-            @media screen and (max-width: 600px) {
+            @media screen and (max-width: 670px) {
                 flex-direction: column-reverse;
                 align-items: center;
             }
@@ -60,14 +60,15 @@ section.presentation-section{
                 }
                 .img-laurie{
                     position: relative;
-                    background-image: url("../images/ceo-laurie.jpg");
+                    background-image: url("../images/ceo-laurie-verhelst.jpg");
                     background-repeat: no-repeat;
-                    background-size: cover;
-                    width: 223px;
+                    background-size: auto 170%;
+                    width: 280px;
                     height: 100%;
                     border-radius: 15px;
+                    background-position: 56% 64%;
 
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 670px) {
                         height: 300px;
                     }
                     @media screen and (max-width: 500px) {
@@ -75,15 +76,15 @@ section.presentation-section{
                         height: 350px;
                     }
                     .background-absolute-presentation-laurie{
-                        width: 125%;
-                        height: 130%;
+                        width: 115%;
+                        height: 126%;
                         position: absolute;
                         z-index: -1;
                         left: 25%;
                         top: -12%;
                         border-radius: 15px;
                         background-color: $pale-pink;
-                        @media screen and (max-width: 600px) {
+                        @media screen and (max-width: 670px) {
                             display: none;
                         }
                     }
@@ -95,7 +96,7 @@ section.presentation-section{
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
-                @media screen and (max-width: 600px) {
+                @media screen and (max-width: 670px) {
                     align-items: center;
                     padding-top: 4em;
                     max-width: 100%;
@@ -103,14 +104,14 @@ section.presentation-section{
                 }
                 .tags{
                     margin-bottom: 1.5em;
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 670px) {
                         margin-bottom: 0;
                     }
                 }
                 h2{
                     text-align: start;
                     margin-bottom: 0.5em;
-                    @media screen and (max-width: 600px) {
+                    @media screen and (max-width: 670px) {
                         margin: 1em;
                         text-align: center;
                     }
@@ -120,6 +121,18 @@ section.presentation-section{
                     @media screen and (max-width: 800px) {
                         max-width: 100%;
                         text-align: left;
+                        width: 100%;
+                    }
+                }
+                .quote {
+                    max-width: 350px;
+                    @media screen and (max-width: 800px) {
+                        max-width: 100%;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.8em;
+                        color: #924032;
                     }
                 }
             }

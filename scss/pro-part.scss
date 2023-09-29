@@ -7,11 +7,11 @@ section.pro-part-section{
         height: 100%;
         .pro-part-img{
             flex:1; 
-            background-image: url("../images/bouteille-hiver.jpg");    
+            background-image: url("../images/frere-soeur/frere-soeur-jouent-bouteilles-5.jpg");    
             background-repeat: no-repeat; 
-            background-size: cover;  
-            background-position-x: 0;
-            background-position-y: top;
+            background-size: auto 105%;
+            background-position-x: 51%;
+            background-position-y: -2%;
             @media screen and (max-width: 1015px) {
                 display: none;
             }

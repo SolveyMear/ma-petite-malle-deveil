@@ -25,13 +25,9 @@ body {
 .secondary-page-containers{
       padding: 4em $secondary-page-padding-x 6em;
       height: auto;
-      // width: 80%;
       margin: auto;
-      // background-color: white;
-      // max-width: 1200px;
-      @media screen and (max-width: 660px) {
-          padding: 0;
-          width: 90%;
+      @media screen and (max-width: 1400px) {
+          width: 100%;
       }
 
       &.wrapper {

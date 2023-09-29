@@ -16,5 +16,6 @@ import "../scss/sponsors-contact.scss";
 import "../scss/footer.scss";
 import "../scss/particuliers.scss";
 import "../scss/professionnelles.scss";
+import "../scss/mes-valeurs.scss";
 import "../scss/presse.scss";
 import "../scss/legales.scss";

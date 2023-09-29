@@ -1,54 +1,65 @@
 @import "./variables.scss";
 
-.section-individual{
-    margin-top: 10em;
-    p, li{
-        margin: 0.2em;
-        font-size: 1.1em;
-        line-height: 1.4;
-    }
-}
-.section-individual{
-    max-width: 1200px;
-}
-    .secondary-page-containers{
-        .for-individual-title{
-            h1{
-                text-align: left;
-                margin-bottom: 1em;
+
+.section-individual {
+    .secondary-page-containers {
+        &.wrapper {
+            display: flex;
+            gap: 5em;
+
+            .content {
+                flex: 1;
+            }
+            .image {
+                width: 30%;
+                background-image: url('../images/photo-who-for/for-kids-hd.jpg');
+                background-position: 50% top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                // width: 100%;
+                position: relative;
+                &:after {
+                    content:"";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    right: -20%;
+                    top: -7%;
+                    border-radius: 15px;
+                    background-color: #F6F0EF;
+                }
             }
         }
-        .for-which-individual{
-            padding: 1em 0.5em;
-            .for-families, .custom-bottles{
-                padding: 1em 0 1em;
-                h3{
-                    padding: 0.5em 0;
-                }
-                ul.children-benefit-list{
-                    gap: 0.3em;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0.5em 0 0.5em 1.5em;
-                }
-                p.contact-phrase{
-                    margin-top: 1em;
-                    span{
-                        color:$red;
-                    }
-                }
+    }
+    .for-which-individual {
+        p {
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+        .for-families {
+            p {
+                margin-top: 0;
             }
-
+        }
+    }
+    ul{
+        // padding: 1em 0.5em;
+        padding: 1em 0.5em 3em 1.5em;
+        list-style-type: none;
+        gap: 0.6em;
+        display: flex;
+        flex-direction: column;
+        li {
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+        li {
+            // padding: 1em 0.5em 3em 1.5em;
+            list-style-type: disc;
         }
     }
 
-    section.campaign-section{
-        background-color: white;
-        padding: 1em 0 2em;
-    }
-
-    .includes-individual{
-        background-color: white;
-    }
+}
 
 

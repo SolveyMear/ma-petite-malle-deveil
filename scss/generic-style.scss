@@ -16,7 +16,7 @@ body {
 }
 
 .wrapper {
-      max-width: 1100px;
+      max-width: $wrapper-width;
       margin: 0 auto;
       width: 90%;
       //Dommage, je ne l'ai utilisée qu'une fois
@@ -24,15 +24,20 @@ body {
 
 
 .secondary-page-containers{
-      padding: 4em 0;
+      padding: 4em $secondary-page-padding-x 6em;
       height: auto;
-      width: 80%;
+      // width: 80%;
       margin: auto;
-      background-color: white;
-      max-width: 900px;
+      // background-color: white;
+      // max-width: 1200px;
       @media screen and (max-width: 660px) {
           padding: 0;
           width: 90%;
+      }
+
+      &.wrapper {
+            background-color: white;
+            max-width: calc($wrapper-width + 2*$secondary-page-padding-x);
       }
 
       h2 {
@@ -132,6 +137,10 @@ strong {
 
 .bold {
       font-weight: bold;
+}
+
+.radius {
+      border-radius: 15px;
 }
 
 .buttons-main {

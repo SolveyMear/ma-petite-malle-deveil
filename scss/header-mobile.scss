@@ -2,7 +2,7 @@
 
 
 body {
-	padding: 1px; //hack pour forcer la margin-top de la section à ne pas pousser le body avec: quand un élément parent (là c'est le body) n'a pas de padding, la margin-top sur l'élément enfant pousse le parent avec.
+	padding-top: 1px; //hack pour forcer la margin-top de la section à ne pas pousser le body avec: quand un élément parent (là c'est le body) n'a pas de padding, la margin-top sur l'élément enfant pousse le parent avec.
 
 	&.header-open {
 		overflow: hidden;

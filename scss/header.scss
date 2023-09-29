@@ -31,13 +31,14 @@ header.header-desktop{
             li {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
+                white-space: nowrap;
                 &.logo-header{
                     width: 7em;
                     margin-right: auto;
                 }
                 &.tab {
                     cursor: pointer;
-                    margin: -1em 1% 0;
+                    margin: -1em 0.7em 0;
                     padding: 1em 0;
                     font-size: 0.8em;
                     line-height: 1.1;

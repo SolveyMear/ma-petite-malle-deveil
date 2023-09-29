@@ -1,5 +1,27 @@
 @import "./variables.scss";
 
 section.my-values{
-    margin-top: 10em;
+    padding-top: 10em;
+    h1, h3{
+        margin: 0.5em 0;
+        
+    }
+    .content{
+        height: auto;
+        .image-content{
+            background-size: contain;
+                background-repeat: no-repeat;
+                //background-position: 50%;
+                width: 100%;
+                height: 200px;
+                .suppliers-map{
+                    background-image: url("../images/fabrication-francaise.png");
+                }
+        }
+        .text-content{
+
+        }
+    }
+
+
 }

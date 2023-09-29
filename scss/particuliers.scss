@@ -6,17 +6,24 @@
         &.wrapper {
             display: flex;
             gap: 5em;
+            @media screen and (max-width: 1400px) {
+                width: 100%;
+                padding-right: 10vw;
+            }
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+                gap: 2em;
+            }
 
             .content {
                 flex: 1;
             }
             .image {
                 width: 30%;
-                background-image: url('../images/photo-who-for/for-kids-hd.jpg');
-                background-position: 50% top;
+                background-image: url('../images/frere-soeur/frere-soeur-jouent-bouteille-2.jpg');
+                background-position: 61% top;
                 background-size: cover;
                 background-repeat: no-repeat;
-                // width: 100%;
                 position: relative;
                 &:after {
                     content:"";
@@ -28,6 +35,13 @@
                     top: -7%;
                     border-radius: 15px;
                     background-color: #F6F0EF;
+                }
+                @media screen and (max-width: 1000px) {
+                    width: 100%;
+                    height: 400px;
+                    &:after {
+                        display: none;
+                    }
                 }
             }
         }
@@ -44,8 +58,7 @@
         }
     }
     ul{
-        // padding: 1em 0.5em;
-        padding: 1em 0.5em 3em 1.5em;
+        padding: 1em 0em 3em 1.5em;
         list-style-type: none;
         gap: 0.6em;
         display: flex;
@@ -55,7 +68,6 @@
             line-height: 1.4;
         }
         li {
-            // padding: 1em 0.5em 3em 1.5em;
             list-style-type: disc;
         }
     }

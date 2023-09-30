@@ -19,6 +19,7 @@ import "../scss/professionnelles.scss";
 import "../scss/mes-valeurs.scss";
 import "../scss/presse.scss";
 import "../scss/legales.scss";
+import "../scss/insta.scss";
 
 // import Instafeed from "instafeed.js";
 // let render = function(post, data) {

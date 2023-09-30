@@ -27,7 +27,7 @@ section.sponsors-section{
             }
             .sponsor-logo{
                 height: 120px;
-                width: calc(100%/4 - 8%);
+                width: calc(100%/4 - 6%);
                 background-repeat: no-repeat;
                 background-size: 100%;
                 background-position: center;
@@ -43,12 +43,12 @@ section.sponsors-section{
 
                 }
                 &.cma-logo{
-                    background-image: url(../images/logos-partners/logo-cma.png);
+                    background-image: url(../images/logos-partners/logo-cma.svg);
                     background-position: center;
-
+                    width: 23%;
                 }
                 &.bge-logo{
-                    background-image: url(../images/logos-partners/logo-bge.png);
+                    background-image: url(../images/logos-partners/logo-bge.svg);
                     background-size: 65% auto;
                 }
                 &.epine-logo{

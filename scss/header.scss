@@ -55,6 +55,9 @@ header.header-desktop{
                     }
                     &:nth-child(2) {
                         margin-left: 3em;
+                        &:focus{
+                            text-decoration: underline;
+                        }
                     }
                     &:not(.social-media-logo-div):hover:after{
                         width: 100%;

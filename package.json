@@ -22,6 +22,7 @@
 		"esbuild": "npm:esbuild-wasm@latest"
 	},
 	"dependencies": {
-		"find-free-port": "^2.0.0"
+		"find-free-port": "^2.0.0",
+		"instafeed.js": "^2.0.0"
 	}
 }

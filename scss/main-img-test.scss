@@ -36,11 +36,11 @@ section.header-main-img{
             .container-text{
                 display: flex;
                 flex-direction: column;
-                max-width: 450px;
+                max-width: 600px;
                 align-items: flex-start;
                 gap: 0.5em;
                 p{
-                    max-width: 400px;
+                    max-width: 600px;
                     @media screen and (max-width: 870px) {
                         font-size: 1.2rem;
                     }

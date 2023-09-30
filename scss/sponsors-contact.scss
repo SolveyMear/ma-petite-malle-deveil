@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 section.sponsors-section{
-    padding: 1.5em;
+    padding: 3em 1.5em;
     width: 100%;
     .sponsors-container{
         max-width: 900px;
@@ -16,6 +16,7 @@ section.sponsors-section{
         }
         .sponsor-logo-div{
             display: flex;
+            justify-content: center;
             margin: auto;
             width: 100%;
             @media screen and (max-width: 800px) {
@@ -32,8 +33,12 @@ section.sponsors-section{
                 background-size: 100%;
                 background-position: center;
                 margin: 5% 4%;
+                @media screen and (max-width: 800px) {
+                    margin: 0 2%;
+                }
                 @media screen and (max-width: 600px) {
                     width: calc(100%/2 - 8%);
+                    max-width: 150px;
                     margin: 0 4%;
                 }
 
@@ -43,12 +48,17 @@ section.sponsors-section{
 
                 }
                 &.cma-logo{
-                    background-image: url(../images/logos-partners/logo-cma.png);
+                    background-image: url(../images/logos-partners/logo-cma.svg);
                     background-position: center;
-
+                    width: 23%;
+                    margin-left: 6%;
+                    @media screen and (max-width: 600px) {
+                        width: calc(100%/2 - 8%);
+                        margin: 0 4%;
+                    }
                 }
                 &.bge-logo{
-                    background-image: url(../images/logos-partners/logo-bge.png);
+                    background-image: url(../images/logos-partners/logo-bge.svg);
                     background-size: 65% auto;
                 }
                 &.epine-logo{

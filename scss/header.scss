@@ -8,6 +8,9 @@ header.header-desktop{
     display: none;
     width: 100%;
     z-index: 1;
+    @media screen and (max-width: 850px) {
+        font-size: 14px;
+    }
     @media screen and (min-width: 661px) {
         display: flex;
     }
@@ -23,22 +26,17 @@ header.header-desktop{
             list-style-type: none;
             padding: 0.6em 2em 0 2.1em;
             height: 100%;  
-           @media screen and (max-width: 750px) { 
-               padding: 0.6em 0.3em 0 1.5em;
-           } 
-
-
             li {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
                 white-space: nowrap;
                 &.logo-header{
-                    width: 7em;
+                    width: 8em;
                     margin-right: auto;
                 }
                 &.tab {
                     cursor: pointer;
-                    margin: -1em 0.7em 0;
+                    margin: -1em 0.8em 0;
                     padding: 1em 0;
                     font-size: 0.8em;
                     line-height: 1.1;
@@ -55,6 +53,9 @@ header.header-desktop{
                         background: transparent;
                         transition: width .5s ease, background-color .5s ease;
                     }
+                    &:nth-child(2) {
+                        margin-left: 3em;
+                    }
                     &:not(.social-media-logo-div):hover:after{
                         width: 100%;
                         background: lighten($dark-grey, 30%);
@@ -70,6 +71,10 @@ header.header-desktop{
                     &.social-media-logo-div {
                         display: flex;
                         padding: 0;
+                        margin-right: 0;
+                        @media screen and (max-width: 750px) {
+                            display: none;
+                        }
                         .social-media-logo{
                             width: 3.5em;
                             height: 3.5em;

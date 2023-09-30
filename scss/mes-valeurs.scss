@@ -15,11 +15,11 @@ section.my-values {
                 //border: $border2;
                 
                 .block {
-                    gap: 3em;
                     display: flex;
                     margin-bottom: 4em;
                     @media screen and (max-width: 1000px) {
                         flex-direction: column;
+                        margin-bottom: 2em;
                     }
                     div.text {
                         flex: 1;

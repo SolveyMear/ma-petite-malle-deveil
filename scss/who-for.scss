@@ -90,23 +90,17 @@ section.who-for-section{
                     .for-old-people{
                         background-image: url("../images/photo-who-for/personne-agee.jpg");
                         background-repeat: no-repeat;
-                        // @media screen and (max-whidth: 750px) {
-                        //     background-position: center top;
-                        // }
-                        // @media screen and (max-whidth: 450px) {
-                        //     background-position: center;
-                        // }
+                        @media screen and (max-width: 750px) {
+                            background-position: center 40%;
+                        }
 
                     }
                     .for-handi-people{
                         background-image: url("../images/photo-who-for/enfant-handicape-peinture.jpg");
                         background-repeat: no-repeat;
                         background-position-y: 22%;
-                        @media screen and (min-whidth: 750px) {
-                            background-position: center top;
-                        }
-                        @media screen and (min-whidth: 450px) {
-                            background-position: center;
+                        @media screen and (max-width: 750px) {
+                            background-position: center 40%;
                         }
 
                     }
@@ -125,8 +119,6 @@ section.who-for-section{
 
                 h3{
                     font-family: 'Roboto', sans-serif;
-                    font-size: 1.4rem;
-
                 }
                 .text{
                     @media screen and (max-width: 650px) {

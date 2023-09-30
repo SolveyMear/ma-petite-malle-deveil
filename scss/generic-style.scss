@@ -114,9 +114,9 @@ h2 {
 }
 
 h3 {
-      font-family: 'Georgia', serif;
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       line-height: 25px;
 
       &~p {
@@ -162,6 +162,7 @@ strong {
       opacity: 1;
       transition: opacity 300ms linear;
       cursor: pointer;
+      text-decoration: none;
       a{
             text-decoration: none;
             color: $red;
@@ -188,12 +189,12 @@ strong {
 
       &.green {
             
+            color: $dark-green;
             &::before {
                   background-image: url(../images/icons-MPME/btn-fleche-verte.svg);
             }
-            a{
+            a {
                   color: $dark-green;
-                  
             }
       }
 }

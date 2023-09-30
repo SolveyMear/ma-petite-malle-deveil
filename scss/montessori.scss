@@ -22,21 +22,21 @@ section.montessori{
             align-items: center;
             max-width: 650px;
             padding: 4em 0;
-            @media screen and (max-width: 600px) {
-                padding: 2em 0 2em;
+            @media screen and (max-width: 800px) {
+                padding: 2em;
             }
             h2{
                 margin-bottom: 0.5em;
-                em{
+                b{
                     font-style: normal;
                     color: $red;
-                }
-                @media screen and (max-width: 650px){
-                    padding: 1rem 1.5rem;
                 }
             }
             p{
                 text-align: center;
+                @media screen and (max-width: 600px) {
+                    text-align: left;
+                }
             }
             .malle-transp{
                 height: 236px;
@@ -90,20 +90,20 @@ section.montessori{
 
             .img1{
                 background-image: url("../images/photo-montessori/filles-jouent-bouteilles.jpg");
-                background-position-x: 70%;
-                background-position: top left;
+                background-position: 45% 0;
                 @media screen and (max-width: 600px) {
                     display: none;
                 }          
             }
             .img2{
-                background-image: url("../images/photo-montessori/personne-agee-contente.jpg");
+                background-image: url("../images/photo-montessori/bebe-bouteille.jpg");
+                background-position: center 60%;
                 @media screen and (max-width: 600px) {
                     display: none;
                 } 
             }
             .img3{
-                background-image: url("../images/photo-montessori/enfant-handicape-qui-joue.jpg");
+                background-image: url("../images/photo-montessori/fille-joue-bouteille.jpg");
                 background-position: top center;
  
             }

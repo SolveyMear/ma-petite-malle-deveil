@@ -19,13 +19,43 @@ header.header-desktop{
         height: 100%;
         width: 100%;
         margin-left: auto;
+
         ul {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             list-style-type: none;
             padding: 0.6em 2em 0 2.1em;
-            height: 100%;  
+            height: 100%; 
+            text-underline-position: under;
+
+            &.individual{
+                li:nth-child(2){
+                    text-decoration: underline;
+                    text-decoration-color: lighten($dark-grey, 30%);
+
+                }
+            } 
+            &.professionnelles{
+                li:nth-child(3){
+                    text-decoration: underline;
+                    text-decoration-color: lighten($dark-grey, 30%);
+                }
+            }
+            &.mes-valeurs{
+                li:nth-child(4){
+                    text-decoration: underline;
+                    text-decoration-color: lighten($dark-grey, 30%);
+                }
+            }
+            &.presse{
+                li:nth-child(5){
+                    text-decoration: underline;
+                    text-decoration-color: lighten($dark-grey, 30%);
+                   
+                }
+            }
+                
             li {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
@@ -37,7 +67,6 @@ header.header-desktop{
                 &.tab {
                     cursor: pointer;
                     margin: -1em 0.8em 0;
-                    padding: 1em 0;
                     font-size: 0.8em;
                     line-height: 1.1;
                     text-transform: uppercase;
@@ -47,7 +76,7 @@ header.header-desktop{
                         display: block;
                         position: absolute;
                         left: 0;
-                        bottom: 7px;
+                        bottom: -0.44px;
                         height: 1px;
                         width: 0px;
                         background: transparent;
@@ -55,10 +84,8 @@ header.header-desktop{
                     }
                     &:nth-child(2) {
                         margin-left: 3em;
-                        &:focus{
-                            text-decoration: underline;
-                        }
                     }
+
                     &:not(.social-media-logo-div):hover:after{
                         width: 100%;
                         background: lighten($dark-grey, 30%);
@@ -70,6 +97,8 @@ header.header-desktop{
                     a{
                         text-decoration: none;
                         color: $dark-grey;
+                        padding: 1em 0;
+
                     }
                     &.social-media-logo-div {
                         display: flex;

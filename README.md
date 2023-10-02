@@ -50,3 +50,13 @@ Svg se copie-colle direct dans le html, sauf quand c'est en before, là c'est l'
             Toute balise <script> utilisant type="module" sera traitée comme un module JavaScript et son chargement sera différé par défaut.
 
 Attention a styliser body le moins possible.
+
+Soulignage des onglets sur chaque page:
+    création d'une variable 'page'  [donc: {{>header page="index"}} pour l'index ]sur chaque page dans le l'index, puis on ajoute la classe avec la valeur de {{page}} dans le html de header. Puis on cible chaque onglet pour lui donner un style différent. 
+    Donc pour l'onglet "particulier", on va dans l'index et on ajoute dans particulier.hbs 
+    {{>header page="individual"}}
+	{{>header-mobile page="individual"}}
+
+    puis dans header.hbs on ajoute <ul class="{{individual}}">
+    puis on stylise chaque onglet dans header.css:
+    

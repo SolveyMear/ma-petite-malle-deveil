@@ -41,12 +41,13 @@ section.header-main-img{
                 gap: 0.5em;
                 p{
                     max-width: 600px;
+                  
                     @media screen and (max-width: 870px) {
                         font-size: 1.2rem;
                     }
                 }
                 .buttons-main{
-                    margin-top: 2em;                    
+                    margin-top: 2em; 
                 }
             }
         }

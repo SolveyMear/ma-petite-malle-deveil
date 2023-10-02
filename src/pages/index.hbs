@@ -16,8 +16,8 @@
 
 	<section class="header-main-img">
 
-		{{>header}}
-		{{>header-mobile}}
+		{{>header page="index"}}
+		{{>header-mobile page="index"}}
 	
 		<div class="main-img">
 			<div class="right-section">               
@@ -91,8 +91,7 @@
 					L'éveil n'a ni âge, </br>
 					<span>ni pathologie</span>
 				</h2>
-				<p>En fonction du public avec lequel vous travaillez, vous allez pouvoir travailler différents objectifs
-					et surtout de façon ludique et agréable.</p>
+				<p>En fonction de l'âge et la personnalité de vos enfants, ou même du public avec lequel vous travaillez, vous serez en mesure de développer différents objectifs pédagogiques de façon ludique et agréable.</p>
 
 			</div>
 
@@ -211,9 +210,7 @@
 						<h2>Je suis </br>
 							<span>un·e professionnel·le</span>
 						</h2>
-						<p>Professionnelle de la petite enfance proposant des ateliers d'éveil dans la région Centre Val
-							de Loire, pour tout type de structure accueillant du public.</p>
-						<p>(enfants, personnes en situation de handicap, personnes âgées)</p>
+						<p>Je suis une professionnelle de la petite enfance proposant des ateliers d'éveil sensoriels sur-mesure, dans la région Centre Val de Loire, pour tout type de structure accueillant du public (enfants, personnes en situation de handicap, personnes âgées).</p>
 						<div class="buttons-secondary green">
 							<a href="professionnelles.html">Découvrir les prestations</a>
 						</div>
@@ -269,6 +266,7 @@
 					<p>De la création des bouteilles à l’emballage du colis, le processus d’achat a réfléchi de A à Z,
 						pour être un maximum <b>respectueux de l’<strong>environnement</strong></b> et réduire
 						l'empreinte carbone. </p>
+						{{!-- <p>La bouteille est en plastique sans phtalates et sans bisphénol A. Le bouchon est imprimé avec une matière 100% biosourcée avec du roseau et de l’amidon de pomme de terre. Il y a un opercule supplémentaire pour garantir une étanchéité maximale. La colle pour sceller le tout est sans solvant.</p> --}}
 					<p>J’ai sélectionné pour vous, des matériaux de qualité et des fournisseurs expérimentés afin
 						qu’elles durent longtemps, qu’elles résistent à tout et avoir plaisir à grandir avec nos
 						jouets.</p>
@@ -464,29 +462,22 @@
 	{{>contact}}
 	{{>footer}}
 
-	<div class="test">
+	{{!-- <div class="test">
 
 		<div class="insta-post">
 			<img src="images/fille-regarde-bouteilles.jpg">
-			<p>Atelier Snoezelen ✨ Vous ne vous occupez de rien ! Je propose un atelier pour vos enfants, avec tout mon matériel, afin de découvrir et d'expérimenter la pédagogie Snoezelen en tout liberté 🥰 Un moment hors du commun avec des lumières tamisées et une musique douce, qui permettra à l'enfant de vivre une réelle expérience de détente 😴 Un temps de qualité spécialement dédié au bien être de l'enfant qui lui permettra de développer ses 5 sens dans un environnement adapté et sécurisé. 🎈 ➡ Je vous invite à me contacter en message privé ou sous ce post, si vous avez des questions ou si vous souhaitez réserver. ❤️ J'ai hâte de partager ce moment avec vous ! 📆 Samedi 7 octobre 🕒 14h30 à 15h15 📍 Centre Bien Naître en Touraine 34 Bis rue de la mairie 37 520 LA RICHE #snoezelen #pédagogie #pédagogiealternative#pedagogiealternative #sensoryactivity #sensorielactivity #sensoriel #detente #relax #relaxation #atelierenfant #enfant #enfance #aménagement #aménagementespace #espacesensoriel #tours #toursmaville #maman #papa #famille #activiteenfant #activite #petiteenfance #atelierpetiteenfance #prodelapetiteenfance #auxiliairedecreche #crèche #école</p>
+			<div class="overlay">
+				<p>Atelier Snoezelen ✨ Vous ne vous occupez de rien ! Je propose un atelier pour vos enfants, avec tout mon matériel, afin de découvrir et d'expérimenter la pédagogie Snoezelen en tout liberté 🥰 Un moment hors du commun avec des lumières tamisées et une musique douce, qui permettra à l'enfant de vivre une réelle expérience de détente 😴 Un temps de qualité spécialement dédié au bien être de l'enfant qui lui permettra de développer ses 5 sens dans un environnement adapté et sécurisé. 🎈 ➡ Je vous invite à me contacter en message privé ou sous ce post, si vous avez des questions ou si vous souhaitez réserver. ❤️ J'ai hâte de partager ce moment avec vous ! 📆 Samedi 7 octobre 🕒 14h30 à 15h15 📍 Centre Bien Naître en Touraine 34 Bis rue de la mairie 37 520 LA RICHE #snoezelen #pédagogie #pédagogiealternative#pedagogiealternative #sensoryactivity #sensorielactivity #sensoriel #detente #relax #relaxation #atelierenfant #enfant #enfance #aménagement #aménagementespace #espacesensoriel #tours #toursmaville #maman #papa #famille #activiteenfant #activite #petiteenfance #atelierpetiteenfance #prodelapetiteenfance #auxiliairedecreche #crèche #école</p>
+			</div>
 		</div>
 	</div>
 
 <div id="instafeed">
-</div>
+</div> --}}
 
 	<script type="module" src="../../js/main.js"></script>
 	<script type="module" src="../../js/burger-menu.js"></script>
-
-	<script type="text/javascript">
-	
-	//---------------------------- commenté de base -----------------
-		/*var feed = new Instafeed({
-			accessToken: 'IGQWRNbG5kZA1V6aXdndi1UaVJFOHNiVmdOa3YxZA3JSNWduSTRsZAkZA4bHBvTjFWcFFYekk3OWF5Nk9CT2xscmxpRU9zZA0I2N3RXY2lya2hIZAFZAuN2N2SmprX0dJMkNjQm9ydWRTeUtoWTB6bElXNFpoN3FmNmo4d3MZD'
-		});
-		feed.run();*/
-		//-------------------------------------------------------------
-	</script>
+	{{!-- <script type="text/javascript"></script> --}}
 </body>
 
 </html>

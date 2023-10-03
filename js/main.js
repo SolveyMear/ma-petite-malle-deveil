@@ -21,6 +21,10 @@ import "../scss/presse.scss";
 import "../scss/legales.scss";
 import "../scss/insta.scss";
 
+
+import "../js/sticky-menu.js";
+
+
 // import Instafeed from "instafeed.js";
 // let render = function(post, data) {
 //     console.log(post)

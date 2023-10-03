@@ -1,6 +1,7 @@
 @import "./variables.scss";
 
 html {
+      scroll-behavior: smooth;
       font-size: 14px;
       @media (min-width: 800px) {
             font-size: 14px;
@@ -8,7 +9,11 @@ html {
                   font-size: 16px;
             }
       }
+
 }
+:target {
+    scroll-margin-block: 4em;
+  }
 
 body {
       font-family: 'Roboto', sans-serif;
@@ -146,7 +151,6 @@ strong {
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
       font-size: 1.1em;
-      padding: 0.7em 2em;
       background-color: darken($pale-pink, 6%);
       color: $red;
       text-align: center;
@@ -155,6 +159,10 @@ strong {
       box-shadow: 0px 8px 15px rgba($red, 0.1);
       transition: all 0.3s ease 0s;
       // transition: box-shadow ease 300ms;
+      a{
+            display: block;
+            padding: 0.7em 2em;
+      }
       &:hover {
             background-color: $red;
             color: white;

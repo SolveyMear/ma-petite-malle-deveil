@@ -48,6 +48,12 @@ section.header-main-img{
                 }
                 .buttons-main{
                     margin-top: 2em; 
+                    a {
+                        text-decoration: none;
+                        &:visited {
+                            color: unset;
+                        }
+                    }
                 }
             }
         }

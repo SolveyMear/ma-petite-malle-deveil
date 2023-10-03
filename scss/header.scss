@@ -7,18 +7,33 @@ header.header-desktop{
     height: $header-height;
     display: none;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
+    background-color: transparent;
+    transition: .5s ease background-color;
+    &.sticky{
+        position: fixed;
+        background-color: white;
+        height: 85px;
+        box-shadow: 0 0 5px 5px lighten(rgba($dark-grey, 0.5), 45%);
+        li.logo-header{
+            padding-bottom: 0.6em;
+        }
+
+    }
     @media screen and (max-width: 850px) {
         font-size: 14px;
     }
     @media screen and (min-width: 661px) {
         display: flex;
     }
+   
     
     nav {
         height: 100%;
         width: 100%;
         margin-left: auto;
+        //position: fixed;
+
 
         ul {
             display: flex;
@@ -61,8 +76,15 @@ header.header-desktop{
                 font-weight: 400;
                 white-space: nowrap;
                 &.logo-header{
-                    width: 8em;
+                    width: auto;
                     margin-right: auto;
+                    height: 80%;
+
+                    img{
+                    height: 100%;
+                    width: auto;
+                    }
+
                 }
                 &.tab {
                     cursor: pointer;

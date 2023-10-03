@@ -25,15 +25,22 @@ import "../scss/insta.scss";
 import "../js/sticky-menu.js";
 
 
-// import Instafeed from "instafeed.js";
-// let render = function(post, data) {
-//     console.log(post)
-//     // createLogger
-//     return `<div>${post.caption}</div>
-//     <img src='${post.image}'>`
-// }
-// var feed = new Instafeed({
-//     accessToken: 'IGQWRNbG5kZA1V6aXdndi1UaVJFOHNiVmdOa3YxZA3JSNWduSTRsZAkZA4bHBvTjFWcFFYekk3OWF5Nk9CT2xscmxpRU9zZA0I2N3RXY2lya2hIZAFZAuN2N2SmprX0dJMkNjQm9ydWRTeUtoWTB6bElXNFpoN3FmNmo4d3MZD',
-//     render: render,
-// });
-// feed.run();
+import Instafeed from "instafeed.js";
+let render = function(post, data) {
+    console.log(post)
+    // createLogger
+    return `
+    
+    <div class="insta-post" style="background-image:url(${post.image})" >
+    
+    <div class="overlay">
+    <p>${post.caption}</p>
+    </div>
+    </div>`
+}
+var feed = new Instafeed({
+    accessToken: 'IGQWRNbG5kZA1V6aXdndi1UaVJFOHNiVmdOa3YxZA3JSNWduSTRsZAkZA4bHBvTjFWcFFYekk3OWF5Nk9CT2xscmxpRU9zZA0I2N3RXY2lya2hIZAFZAuN2N2SmprX0dJMkNjQm9ydWRTeUtoWTB6bElXNFpoN3FmNmo4d3MZD',
+    render: render,
+    limit: 4,
+});
+feed.run();

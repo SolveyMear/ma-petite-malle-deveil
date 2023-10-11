@@ -1,21 +1,31 @@
 @import "./variables.scss";
 
-.section-professionnelles, .section-individual, .my-values {
+.section-professionnelles,
+.section-individual,
+.my-values {
     padding-top: 10em;
+
     &:after {
         z-index: 0;
     }
+
     >* {
         z-index: 1;
         position: relative;
     }
 
-    .secondary-page-containers{
-        .title, .prestations {
-            h2, p, h3{
+    .secondary-page-containers {
+
+        .title,
+        .prestations {
+
+            h2,
+            p,
+            h3 {
                 text-align: left;
                 margin-bottom: 1em;
             }
+
             h2 {
                 font-size: 2rem;
             }
@@ -24,12 +34,15 @@
                 margin-bottom: 2em;
             }
         }
+
         .pour-professionnelles-title {
             margin-bottom: 4em;
         }
-        .public-pro{
+
+        .public-pro {
             display: flex;
-            ul.pour-qui-liste{
+
+            ul.pour-qui-liste {
                 list-style-type: none;
                 gap: 3.5em;
                 display: flex;
@@ -37,39 +50,49 @@
                 flex: 1;
                 // max-width: 600px;
                 margin: 2em auto 0;
-                p, .liste-des-bienfaits li {
+
+                p,
+                .liste-des-bienfaits li {
                     font-size: 1.1em;
                     line-height: 1.4;
                 }
+
                 >li {
                     list-style-type: none;
                 }
+
                 ul {
                     gap: 0.6em;
                     display: flex;
                     flex-direction: column;
                     // margin-bottom: 3em;
                 }
+
                 b {
                     display: block;
                 }
-                .liste-des-bienfaits{
+
+                .liste-des-bienfaits {
                     padding: 1.5em 0.5em 1em 1.5em;
                     list-style-type: disc;
                 }
             }
 
         }
+
         .content-pro {
             display: flex;
             gap: 5em;
+
             @media screen and (max-width: 1000px) {
                 flex-direction: column;
                 gap: 2em;
             }
+
             .title {
                 flex: 1;
             }
+
             .image {
                 width: 30%;
                 background-image: url('../images/pros-et-enfants.jpg');
@@ -77,8 +100,9 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 position: relative;
+
                 &:after {
-                    content:"";
+                    content: "";
                     width: 100%;
                     height: 100%;
                     position: absolute;
@@ -88,46 +112,126 @@
                     border-radius: 15px;
                     background-color: #F6F0EF;
                 }
+
                 @media screen and (max-width: 1000px) {
                     width: 100%;
                     height: 300px;
+
                     &:after {
                         display: none;
                     }
                 }
             }
-        } 
+        }
     }
-    section.prestations{
+
+    section.prestations {
         padding: 5em 0;
         background-color: $light-green;
+
         div.text {
             h2 {
                 text-align: left;
                 color: $dark-green;
             }
-            h2 + p {
+
+            h2+p {
                 margin-top: 2em;
                 margin-bottom: 2em;
             }
-            ul {
+
+            ul.liste-prestations {
                 list-style-type: disc;
                 padding-left: 1.5em;
-                gap: 0.5em;
+                gap: 1.5em;
                 display: flex;
                 flex-direction: column;
             }
-            p, li {
+
+            p,
+            li {
                 font-size: 1.1em;
                 line-height: 1.4;
             }
+
             p.infos {
                 margin-top: 2em;
-                span{
-                   color: $red;
-                }    
+
+                span {
+                    color: $red;
+                }
             }
         }
-    }                   
-}
 
+        ul.workshop-grid-list-container {
+            padding: 0 2em;
+            margin: 2em 0;
+            display: grid;
+            gap: 3.5em;
+            @media screen and (max-width: 800px) {
+                padding: 0 1em
+                
+            }
+
+            li {
+                //border: $border;
+                display: inline-grid;
+                grid-template-columns: 1fr auto;
+                gap: 3em;
+                align-items: center;
+
+                @media screen and (max-width: 1000px) {
+                    display:flex;
+                    flex-direction: column;
+                    div.workshop-img{
+                        margin: auto;
+                    }
+                }
+
+                p {
+                    font-size: 0.9em;
+                    max-width: 630px;
+                }
+                div.workshop-img{
+                    width: 300px;
+                    height:200px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: -1;
+                        right: -15%;
+                        top: -10%;
+                        border-radius: 15px;
+                        background-color: #e7cfcf;
+                        ;
+                    }
+
+                    @media screen and (max-width: 1000px) {
+                        width: 80%;
+                        height: 200px;
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+                div.image-snoezelen {
+                    background-image: url('../images/atelier-snoezelen.jpg');
+                    background-position: right center;
+                }
+
+                div.image-creative {
+                    background-image: url('../images/atelier-creatif.jpg');
+                    background-position: 61% 15%;
+                    position: relative;
+
+                }
+            }
+        }
+    }
+}

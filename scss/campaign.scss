@@ -85,7 +85,6 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
         font-size: 1em;
-        padding: 0.55em 2em;
         background-color: $dark-grey;
         color: $red;
         text-align: center;
@@ -95,8 +94,10 @@
         margin-top: 0;
         transition: bottom 0.3s ease 0s;
         a{
+            display: block;
             text-decoration: none;
             color: white; 
+            padding: 0.55em 2em;
         }
         &:hover {
               background-color: darken($dark-grey, 5%);

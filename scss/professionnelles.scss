@@ -193,11 +193,12 @@
                     max-width: 630px;
                 }
                 div.workshop-img{
-                    width: 300px;
+                    width: 400px;
                     height:200px;
                     background-size: cover;
                     background-repeat: no-repeat;
                     position: relative;
+
 
                     &:after {
                         content: "";
@@ -214,7 +215,7 @@
 
                     @media screen and (max-width: 1000px) {
                         width: 80%;
-                        height: 200px;
+                        height: 250px;
                         &:after {
                             display: none;
                         }
@@ -222,7 +223,11 @@
                 }
                 div.image-snoezelen {
                     background-image: url('../images/atelier-snoezelen.jpg');
-                    background-position: right center;
+                    background-position: right 40%;
+                    @media screen and (max-width: 1000px){
+                        background-position: right 41.7%;
+
+                    }
                 }
 
                 div.image-creative {

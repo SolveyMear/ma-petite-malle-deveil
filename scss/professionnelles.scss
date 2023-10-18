@@ -48,7 +48,6 @@
                 display: flex;
                 flex-direction: column;
                 flex: 1;
-                // max-width: 600px;
                 margin: 2em auto 0;
 
                 p,
@@ -65,7 +64,6 @@
                     gap: 0.6em;
                     display: flex;
                     flex-direction: column;
-                    // margin-bottom: 3em;
                 }
 
                 b {
@@ -174,7 +172,6 @@
             }
 
             li {
-                //border: $border;
                 display: inline-grid;
                 grid-template-columns: 1fr auto;
                 gap: 3em;

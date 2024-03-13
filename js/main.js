@@ -23,27 +23,3 @@ import "../scss/insta.scss";
 
 
 import "../js/sticky-menu.js";
-
-
-import Instafeed from "instafeed.js";
-let render = function(post, data) {
-    console.log(post)
-    // createLogger
-    return`
-
-    <div class="insta-post-grid-item"             
-            style="background-image:url(${post.image})" >
-        <a href="${post.link}"> 
-            <div class="overlay">
-            <p>${post.caption}</p>
-            </div>
-        </a>
-    </div>
-   `
-}
-var feed = new Instafeed({
-    accessToken: 'IGQWRNbG5kZA1V6aXdndi1UaVJFOHNiVmdOa3YxZA3JSNWduSTRsZAkZA4bHBvTjFWcFFYekk3OWF5Nk9CT2xscmxpRU9zZA0I2N3RXY2lya2hIZAFZAuN2N2SmprX0dJMkNjQm9ydWRTeUtoWTB6bElXNFpoN3FmNmo4d3MZD',
-    render: render,
-    limit: 6,
-});
-feed.run();
